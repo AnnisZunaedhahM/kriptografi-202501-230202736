@@ -2,7 +2,7 @@
 Minggu ke-: X  
 Topik: [judul praktikum]  
 Nama: anis 
-NIM: [NIM Mahasiswa]  
+NIM:   
 Kelas: [Kelas]  
 
 ---
