@@ -9,10 +9,11 @@ Kelas: [5IKRB]
 
 ## 1. Tujuan
 (Tuliskan tujuan pembelajaran praktikum sesuai modul.)
-1.Memahami Konsep: Mahasiswa dapat menjelaskan teori dasar yang terkait dengan praktikum.
-2.Keterampilan Praktis: Mahasiswa dapat melakukan prosedur praktikum dengan benar
-3.Analisis Data: Mahasiswa dapat menganalisis dan menginterpretasikan data hasil praktikum.
-4.Refleksi: Mahasiswa dapat merefleksikan hasil dan proses praktikum untuk perbaikan di masa depan.
+1.Menjelaskan sejarah dan evolusi kriptografi dari masa klasik hingga modern.
+2.Menyebutkan prinsip Confidentiality, Integrity, Availability (CIA) dengan benar.
+3.Menyimpulkan peran kriptografi dalam sistem keamanan informasi modern.
+4.Menyiapkan repositori GitHub sebagai media kerja praktikum.
+
 ---
 
 ## 2. Dasar Teori
