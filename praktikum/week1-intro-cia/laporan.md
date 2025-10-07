@@ -31,7 +31,7 @@ Modular aritmetika adalah sistem aritmetika yang bekerja dengan angka dalam sikl
 - Visual Studio Code / editor lain
 - Chrome
 - Git dan akun GitHub  
-- Library tambahan (misalnya pycryptodome, jika diperlukan)  )
+- Terminal
 
 ---
 
