@@ -1,21 +1,28 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: anis 
-NIM:   
-Kelas: [Kelas]  
+Topik: [judul praktikum Kriptografi]  
+Nama: anis zunaedhah muthoharoh
+NIM:  230202736 
+Kelas: [5IKRB]  
 
 ---
 
 ## 1. Tujuan
 (Tuliskan tujuan pembelajaran praktikum sesuai modul.)
-
+1.Memahami Konsep: Mahasiswa dapat menjelaskan teori dasar yang terkait dengan praktikum.
+2.Keterampilan Praktis: Mahasiswa dapat melakukan prosedur praktikum dengan benar
+3.Analisis Data: Mahasiswa dapat menganalisis dan menginterpretasikan data hasil praktikum.
+4.Refleksi: Mahasiswa dapat merefleksikan hasil dan proses praktikum untuk perbaikan di masa depan.
 ---
 
 ## 2. Dasar Teori
 (Ringkas teori relevan (cukup 2–3 paragraf).  
 Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
-
+Ringkasan
+Cipher Klasik
+Cipher klasik adalah metode enkripsi yang menyembunyikan pesan dengan mengganti atau mengacak huruf dalam teks asli. Contoh yang terkenal adalah Caesar cipher, di mana setiap huruf digeser sejumlah posisi dalam alfabet. Meskipun mudah digunakan, cipher klasik rentan terhadap analisis pola.
+Modular Aritmetika
+Modular aritmetika adalah sistem aritmetika yang bekerja dengan angka dalam siklus tertentu, dikenal sebagai modulus. Dalam kriptografi, ini digunakan untuk perhitungan dengan angka besar, seperti dalam algoritma RSA, yang menghasilkan kunci publik dan privat. Konsep ini meningkatkan efisiensi dalam enkripsi.
 ---
 
 ## 3. Alat dan Bahan
