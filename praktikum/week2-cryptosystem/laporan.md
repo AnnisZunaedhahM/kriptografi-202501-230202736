@@ -1,5 +1,5 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
+Minggu ke-: 02
 Topik: [Cryptosystem (Komponen, Enkripsi & Dekripsi, Simetris & Asimetris)]  
 Nama: [annis zunaedhah muthoharoh ]  
 NIM: [230202736]  
@@ -9,6 +9,9 @@ Kelas: [5 IKRB ]
 
 ## 1. Tujuan
 (Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+1.Mengidentifikasi komponen dasar kriptosistem (plaintext, ciphertext, kunci, algoritma).
+2.Menggambarkan proses enkripsi dan dekripsi sederhana.
+3.Mengklasifikasikan jenis kriptosistem (simetris dan asimetris).
 
 ---
 
