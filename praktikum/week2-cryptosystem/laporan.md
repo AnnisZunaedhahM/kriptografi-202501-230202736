@@ -39,9 +39,10 @@ Asimetris: Menggunakan dua kunci berbeda; kunci publik untuk enkripsi dan kunci 
 
 ## 3. Alat dan Bahan
 (- Python 3.x  
-- Visual Studio Code / editor lain  
+- Visual Studio Code / editor lain
+- Chrome
 - Git dan akun GitHub  
-- Library tambahan (misalnya pycryptodome, jika diperlukan)  )
+  Terminal
 
 ---
 
