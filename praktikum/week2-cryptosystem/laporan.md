@@ -18,6 +18,20 @@ Kelas: [5 IKRB ]
 ## 2. Dasar Teori
 (Ringkas teori relevan (cukup 2–3 paragraf).  
 Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Ringkasan
+Cryptosystem
+Cryptosystem adalah sistem yang digunakan untuk mengamankan informasi melalui proses enkripsi dan dekripsi. Secara umum, cryptosystem terdiri dari beberapa komponen utama yang bekerja sama untuk memastikan bahwa data tetap aman dari pihak yang tidak berwenang.
+Komponen Utama
+Plaintext: Data asli yang ingin dilindungi.
+Ciphertext: Data yang telah dienkripsi dan tidak dapat dibaca tanpa kunci.
+Kunci: Informasi rahasia untuk enkripsi dan dekripsi, bisa simetris (sama) atau asimetris (berbeda).
+Algoritma: Metode matematis untuk mengubah plaintext menjadi ciphertext dan sebaliknya.
+Proses
+Enkripsi: Mengubah plaintext menjadi ciphertext untuk menjaga kerahasiaan.
+Dekripsi: Mengubah ciphertext kembali menjadi plaintext menggunakan kunci yang tepat.
+Jenis Kriptografi
+Simetris: Menggunakan kunci yang sama untuk enkripsi dan dekripsi (contoh: AES). Proses cepat, tetapi sulit dalam distribusi kunci.
+Asimetris: Menggunakan dua kunci berbeda; kunci publik untuk enkripsi dan kunci privat untuk dekripsi (contoh: RSA). Memudahkan distribusi, tetapi lebih lambat.
 
 ---
 
