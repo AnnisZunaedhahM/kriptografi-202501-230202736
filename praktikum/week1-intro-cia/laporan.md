@@ -1,6 +1,6 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: 01
-Topik: [ praktikum Kriptografi]  
+Topik: [ praktikum  Sejarah Kriptografi]  
 Nama: annis zunaedhah muthoharoh
 NIM:  230202736 
 Kelas: [5 IKRB]  
@@ -21,10 +21,13 @@ Kelas: [5 IKRB]
 Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
 
 Ringkasan
-Cipher Klasik
-Cipher Klasik adalah teknik enkripsi yang digunakan untuk menyembunyikan pesan dengan mengubah teks asli (plaintext) menjadi teks yang tidak dapat dibaca (ciphertext). Metode ini sering menggunakan algoritma sederhana seperti penggantian huruf atau pengacakan posisi. Contoh terkenal adalah cipher Caesar, di mana setiap huruf digeser sejumlah tempat dalam alfabet. Meskipun efektif pada masanya, cipher klasik mudah dipecahkan dengan analisis frekuensi.
-Modular Aritmetika
-Modular Aritmetika adalah konsep matematika yang penting dalam kriptografi modern, terutama dalam algoritma kunci publik. Ini melibatkan perhitungan angka dalam sistem bilangan tertentu, di mana hasilnya kembali ke nol setelah mencapai nilai tertentu (modulus). Misalnya, 9 mod 5 menghasilkan 4, karena 9 dibagi 5 sisanya 4. Konsep ini digunakan dalam algoritma seperti RSA, di mana operasi matematika dilakukan dalam modulus untuk meningkatkan keamanan dan efisiensi proses enkripsi dan dekripsi.
+Kriptografi Klasik dimulai ribuan tahun lalu dengan metode sederhana untuk menyembunyikan pesan. Contoh awalnya adalah Caesar Cipher, yang menggeser huruf dalam alfabet untuk mengamankan komunikasi. Misalnya, dengan geseran tiga tempat, huruf A menjadi D. Selanjutnya, Vigenère Cipher menggunakan kunci untuk menghasilkan teks yang lebih kompleks. Meskipun efektif, kriptografi klasik memiliki kelemahan, karena banyak metode ini dapat dipecahkan dengan analisis frekuensi.
+
+Kriptografi Modern mulai berkembang pada abad ke-20 dengan penemuan kriptografi kunci publik. Algoritma RSA (Rivest-Shamir-Adleman) memungkinkan komunikasi aman tanpa pertukaran kunci rahasia, dengan menggunakan dua kunci untuk enkripsi dan dekripsi. Selain itu, AES (Advanced Encryption Standard) muncul sebagai standar enkripsi yang lebih aman dan efisien, menggantikan DES (Data Encryption Standard) dan banyak digunakan dalam aplikasi modern.
+
+Evolusi Menuju Kriptografi Kontemporer dipengaruhi oleh teknologi digital dan internet. Konsep blockchain dan cryptocurrency telah mengubah cara kita memandang keamanan informasi. Blockchain, sebagai teknologi di balik Bitcoin, menjaga integritas data dalam jaringan desentralisasi, sementara cryptocurrency menggunakan kriptografi untuk mengamankan transaksi dan mengontrol pembuatan unit baru. Dengan demikian, kriptografi kini tidak hanya melindungi komunikasi tetapi juga menciptakan sistem keuangan yang aman.
+
+
 ---
 
 ## 3. Alat dan Bahan
