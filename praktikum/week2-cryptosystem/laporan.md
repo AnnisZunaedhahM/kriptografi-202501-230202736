@@ -84,6 +84,7 @@ Hasil eksekusi program Caesar Cipher:
 
 ## 7. Jawaban Pertanyaan Diskusi
 (Jawab pertanyaan diskusi yang diberikan pada modul.)  
+
 1. Komponen Utama dalam Sebuah Kriptosistem
 Kriptosistem adalah sistem yang digunakan untuk mengamankan data melalui proses enkripsi (mengubah data asli menjadi bentuk yang tidak bisa dibaca) dan dekripsi (mengembalikan data ke bentuk asli). Komponen utama dalam sebuah kriptosistem meliputi:
 Plaintext: Data asli yang ingin diamankan.
@@ -91,7 +92,8 @@ Ciphertext: Data hasil enkripsi yang tidak bisa dibaca.
 Kunci: Rahasia untuk enkripsi dan dekripsi.
 Algoritma Enkripsi/Dekripsi: Aturan untuk mengubah data.
 Pengguna: Pengirim dan penerima pesan.
-2. Kelebihan dan Kelemahan Sistem Simetris Dibandingkan Asimetris
+
+3. Kelebihan dan Kelemahan Sistem Simetris Dibandingkan Asimetris
 Kriptografi Simetris
 Dalam kriptografi simetris, satu kunci digunakan untuk enkripsi dan dekripsi. Contoh algoritma simetris adalah AES (Advanced Encryption Standard) dan DES (Data Encryption Standard).
 Simetris (1 kunci untuk enkripsi & dekripsi, contoh: AES):
@@ -102,6 +104,7 @@ Simetris (1 kunci untuk enkripsi & dekripsi, contoh: AES):
 Asimetris (kunci publik & privat, contoh: RSA):
   Kelebihan: Distribusi kunci aman, cocok untuk komunikasi terbuka, mendukung tanda tangan digital.
   Kelemahan: Lambat, kurang efisien untuk data besar, kompleks.
+  
 3. Mengapa Distribusi Kunci Jadi Masalah di Kriptografi Simetris
 Kunci harus dibagikan secara aman kepada penerima. Jika kunci bocor atau dikirim lewat saluran tidak aman, pihak ketiga bisa mendekripsi pesan. Selain itu, untuk banyak pengguna, jumlah kunci yang dibutuhkan jadi sangat banyak, menyulitkan manajemen
 
@@ -110,7 +113,8 @@ Kunci harus dibagikan secara aman kepada penerima. Jika kunci bocor atau dikirim
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+
+Kriptosistem merupakan metode untuk mengamankan data melalui proses enkripsi dan dekripsi, dengan komponen utama meliputi plaintext (data asli), ciphertext (data terenkripsi), kunci (rahasia untuk mengenkripsi/mendekripsi), algoritma enkripsi/dekripsi (aturan pengubahan data), serta pengguna (pengirim dan penerima pesan). Kriptografi simetris, seperti AES, menawarkan kecepatan dan efisiensi untuk data besar, tetapi distribusi kunci menjadi masalah utama karena kunci harus dibagikan secara aman untuk mencegah kebocoran, dan manajemen kunci sulit untuk banyak pengguna. Sebaliknya, kriptografi asimetris, seperti RSA, memudahkan distribusi kunci dengan menggunakan kunci publik dan privat, sehingga cocok untuk komunikasi terbuka, namun lebih lambat dan kurang efisien untuk data besar. Dengan demikian, pilihan antara simetris dan asimetris bergantung pada kebutuhan kecepatan, skala, dan keamanan distribusi kunci.
 
 ---
 
