@@ -1,6 +1,6 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: 01
-Topik: [ praktikum  Sejarah Kriptografi]  
+Topik: [ praktikum  Sejarah Kriptografi & Prinsip CIA]  
 Nama: annis zunaedhah muthoharoh
 NIM:  230202736 
 Kelas: [5 IKRB]  
