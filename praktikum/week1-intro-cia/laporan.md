@@ -3,7 +3,7 @@ Minggu ke-: 01
 Topik: [ praktikum Kriptografi]  
 Nama: annis zunaedhah muthoharoh
 NIM:  230202736 
-Kelas: [5IKRB]  
+Kelas: [5 IKRB]  
 
 ---
 
@@ -19,6 +19,7 @@ Kelas: [5IKRB]
 ## 2. Dasar Teori
 (Ringkas teori relevan (cukup 2–3 paragraf).  
 Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+
 Ringkasan
 Cipher Klasik
 Cipher Klasik adalah teknik enkripsi yang digunakan untuk menyembunyikan pesan dengan mengubah teks asli (plaintext) menjadi teks yang tidak dapat dibaca (ciphertext). Metode ini sering menggunakan algoritma sederhana seperti penggantian huruf atau pengacakan posisi. Contoh terkenal adalah cipher Caesar, di mana setiap huruf digeser sejumlah tempat dalam alfabet. Meskipun efektif pada masanya, cipher klasik mudah dipecahkan dengan analisis frekuensi.
