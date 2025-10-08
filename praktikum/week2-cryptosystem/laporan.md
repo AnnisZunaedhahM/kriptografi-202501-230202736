@@ -66,7 +66,7 @@ Hasil eksekusi program Caesar Cipher:
 
 ---
 
-## 7. Jawaban Pertanyaan
+## 7. Jawaban Pertanyaan Diskusi
 (Jawab pertanyaan diskusi yang diberikan pada modul.  
 - Pertanyaan 1: …  
 - Pertanyaan 2: …  
