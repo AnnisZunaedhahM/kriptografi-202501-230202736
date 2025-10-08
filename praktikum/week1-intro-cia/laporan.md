@@ -95,25 +95,26 @@ ElGamal: Digunakan untuk enkripsi dan tanda tangan digital, algoritma ini juga b
 3. Apa Perbedaan Utama antara Kriptografi Klasik dan Kriptografi Modern?
 Perbedaan utama antara kriptografi klasik dan kriptografi modern dapat dijelaskan sebagai berikut:
 
-Pendekatan Kunci:
-
+Pendekatan Kunci
 Kriptografi Klasik: Mengandalkan metode simetris, di mana kunci yang sama digunakan untuk enkripsi dan dekripsi. Contohnya termasuk metode Caesar dan Vigenère. Masalah utama adalah pengiriman kunci yang aman.
 Kriptografi Modern: Menggunakan metode asimetris (kunci publik dan kunci privat). Ini memungkinkan pertukaran kunci yang aman tanpa memerlukan saluran komunikasi yang aman.
-Keamanan:
 
+Keamanan
 Kriptografi Klasik: Keamanan bergantung pada kerumitan algoritma dan panjang kunci. Banyak metode klasik telah dipecahkan dengan kemajuan dalam analisis matematika dan komputasi.
 Kriptografi Modern: Mengandalkan prinsip matematika yang lebih kompleks seperti teori bilangan dan masalah matematis yang sulit, sehingga lebih sulit untuk dipecahkan bahkan dengan teknologi komputer yang canggih.
-Penggunaan:
 
+Penggunaan
 Kriptografi Klasik: Terutama digunakan dalam situasi di mana komunikasi aman dapat dilakukan, seperti surat-menyurat rahasia.
 Kriptografi Modern: Digunakan dalam berbagai aplikasi, termasuk transaksi keuangan online, komunikasi aman di internet, dan sistem identifikasi digital.
+
 )
 ---
 
 ## 8. Kesimpulan
-Kriptografi telah mengalami perkembangan yang signifikan dari metode klasik hingga modern. Tokoh penting seperti Whitfield Diffie telah memainkan peran krusial dalam memperkenalkan konsep kriptografi kunci publik, yang memungkinkan komunikasi aman tanpa perlu bertukar kunci rahasia. Algoritma seperti RSA, DSA, ECC, dan ElGamal telah menjadi standar dalam keamanan digital saat ini.
 
+Kriptografi telah mengalami perkembangan yang signifikan dari metode klasik hingga modern. Tokoh penting seperti Whitfield Diffie telah memainkan peran krusial dalam memperkenalkan konsep kriptografi kunci publik, yang memungkinkan komunikasi aman tanpa perlu bertukar kunci rahasia. Algoritma seperti RSA, DSA, ECC, dan ElGamal telah menjadi standar dalam keamanan digital saat ini.
 Perbedaan utama antara kriptografi klasik dan modern terletak pada pendekatan kunci, tingkat keamanan, dan aplikasi penggunaannya. Kriptografi klasik, dengan metode simetriknya, lebih rentan terhadap serangan, sementara kriptografi modern menawarkan solusi yang lebih aman dan efisien dengan penggunaan kunci publik dan privat. Dengan demikian, pemahaman mengenai kedua jenis kriptografi ini sangat penting untuk melindungi informasi dalam era digital yang semakin kompleks.
+
 ---
 
 ## 9. Daftar Pustaka
