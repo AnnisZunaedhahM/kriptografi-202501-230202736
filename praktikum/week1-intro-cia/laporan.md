@@ -1,6 +1,6 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum Kriptografi]  
+Minggu ke-: 01
+Topik: [ praktikum Kriptografi]  
 Nama: annis zunaedhah muthoharoh
 NIM:  230202736 
 Kelas: [5IKRB]  
