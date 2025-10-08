@@ -21,9 +21,9 @@ Kelas: [5IKRB]
 Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
 Ringkasan
 Cipher Klasik
-Cipher klasik adalah metode enkripsi yang menyembunyikan pesan dengan mengganti atau mengacak huruf dalam teks asli. Contoh yang terkenal adalah Caesar cipher, di mana setiap huruf digeser sejumlah posisi dalam alfabet. Meskipun mudah digunakan, cipher klasik rentan terhadap analisis pola.
+Cipher Klasik adalah teknik enkripsi yang digunakan untuk menyembunyikan pesan dengan mengubah teks asli (plaintext) menjadi teks yang tidak dapat dibaca (ciphertext). Metode ini sering menggunakan algoritma sederhana seperti penggantian huruf atau pengacakan posisi. Contoh terkenal adalah cipher Caesar, di mana setiap huruf digeser sejumlah tempat dalam alfabet. Meskipun efektif pada masanya, cipher klasik mudah dipecahkan dengan analisis frekuensi.
 Modular Aritmetika
-Modular aritmetika adalah sistem aritmetika yang bekerja dengan angka dalam siklus tertentu, dikenal sebagai modulus. Dalam kriptografi, ini digunakan untuk perhitungan dengan angka besar, seperti dalam algoritma RSA, yang menghasilkan kunci publik dan privat. Konsep ini meningkatkan efisiensi dalam enkripsi.
+Modular Aritmetika adalah konsep matematika yang penting dalam kriptografi modern, terutama dalam algoritma kunci publik. Ini melibatkan perhitungan angka dalam sistem bilangan tertentu, di mana hasilnya kembali ke nol setelah mencapai nilai tertentu (modulus). Misalnya, 9 mod 5 menghasilkan 4, karena 9 dibagi 5 sisanya 4. Konsep ini digunakan dalam algoritma seperti RSA, di mana operasi matematika dilakukan dalam modulus untuk meningkatkan keamanan dan efisiensi proses enkripsi dan dekripsi.
 ---
 
 ## 3. Alat dan Bahan
