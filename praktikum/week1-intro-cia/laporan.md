@@ -1,7 +1,7 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: X  
 Topik: [judul praktikum Kriptografi]  
-Nama: anis zunaedhah muthoharoh
+Nama: annis zunaedhah muthoharoh
 NIM:  230202736 
 Kelas: [5IKRB]  
 
@@ -74,7 +74,35 @@ Hasil eksekusi program Caesar Cipher:
 
 ## 7. Jawaban Pertanyaan
 (Jawab pertanyaan diskusi yang diberikan pada modul.  
- 
+ 1. Siapa Tokoh yang Dianggap sebagai Bapak Kriptografi Modern?
+Tokoh yang dianggap sebagai bapak kriptografi modern adalah Whitfield Diffie. Bersama dengan Martin Hellman, Diffie mengembangkan konsep kriptografi kunci publik pada tahun 1976. Inovasi ini memungkinkan dua pihak untuk berkomunikasi secara aman tanpa perlu bertukar kunci rahasia sebelumnya, menggantikan metode kriptografi simetris yang sebelumnya dominan.
+
+2. Sebutkan Algoritma Kunci Publik yang Populer Digunakan Saat Ini
+Beberapa algoritma kunci publik yang populer dan banyak digunakan saat ini antara lain:
+
+RSA (Rivest-Shamir-Adleman): Salah satu algoritma paling awal dan paling umum untuk enkripsi dan tanda tangan digital. RSA menggunakan dua kunci, yaitu kunci publik untuk enkripsi dan kunci privat untuk dekripsi.
+
+DSA (Digital Signature Algorithm): Digunakan khusus untuk tanda tangan digital. DSA juga menggunakan kunci publik dan privat, tetapi metode matematikanya berbeda dari RSA.
+
+ECC (Elliptic Curve Cryptography): Menggunakan struktur matematika dari kurva eliptik untuk memberikan keamanan yang lebih tinggi dengan ukuran kunci yang lebih kecil dibandingkan RSA atau DSA.
+
+ElGamal: Digunakan untuk enkripsi dan tanda tangan digital, algoritma ini juga berbasis pada masalah logaritma diskrit.
+
+3. Apa Perbedaan Utama antara Kriptografi Klasik dan Kriptografi Modern?
+Perbedaan utama antara kriptografi klasik dan kriptografi modern dapat dijelaskan sebagai berikut:
+
+Pendekatan Kunci:
+
+Kriptografi Klasik: Mengandalkan metode simetris, di mana kunci yang sama digunakan untuk enkripsi dan dekripsi. Contohnya termasuk metode Caesar dan Vigenère. Masalah utama adalah pengiriman kunci yang aman.
+Kriptografi Modern: Menggunakan metode asimetris (kunci publik dan kunci privat). Ini memungkinkan pertukaran kunci yang aman tanpa memerlukan saluran komunikasi yang aman.
+Keamanan:
+
+Kriptografi Klasik: Keamanan bergantung pada kerumitan algoritma dan panjang kunci. Banyak metode klasik telah dipecahkan dengan kemajuan dalam analisis matematika dan komputasi.
+Kriptografi Modern: Mengandalkan prinsip matematika yang lebih kompleks seperti teori bilangan dan masalah matematis yang sulit, sehingga lebih sulit untuk dipecahkan bahkan dengan teknologi komputer yang canggih.
+Penggunaan:
+
+Kriptografi Klasik: Terutama digunakan dalam situasi di mana komunikasi aman dapat dilakukan, seperti surat-menyurat rahasia.
+Kriptografi Modern: Digunakan dalam berbagai aplikasi, termasuk transaksi keuangan online, komunikasi aman di internet, dan sistem identifikasi digital.
 )
 ---
 
@@ -96,7 +124,7 @@ Contoh:
 Contoh:
 ```
 commit abc12345
-Author: Nama Mahasiswa <email>
+Author: annis zunaedhah muthoharoh <email>
 Date:   2025-09-20
 
     week2-cryptosystem: implementasi Caesar Cipher dan laporan )
