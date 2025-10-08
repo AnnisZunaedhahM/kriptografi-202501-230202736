@@ -18,6 +18,7 @@ Kelas: [5 IKRB ]
 ## 2. Dasar Teori
 (Ringkas teori relevan (cukup 2–3 paragraf).  
 Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+
 Ringkasan
 Cryptosystem
 Cryptosystem adalah sistem yang digunakan untuk mengamankan informasi melalui proses enkripsi dan dekripsi. Secara umum, cryptosystem terdiri dari beberapa komponen utama yang bekerja sama untuk memastikan bahwa data tetap aman dari pihak yang tidak berwenang.
