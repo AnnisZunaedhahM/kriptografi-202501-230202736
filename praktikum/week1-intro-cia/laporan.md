@@ -78,7 +78,7 @@ Hasil eksekusi program Caesar Cipher:
 
 ## 7. Jawaban Pertanyaan
 (Jawab pertanyaan diskusi yang diberikan pada modul.  
- 1. Siapa Tokoh yang Dianggap sebagai Bapak Kriptografi Modern?
+1. Siapa Tokoh yang Dianggap sebagai Bapak Kriptografi Modern?
 Tokoh yang dianggap sebagai bapak kriptografi modern adalah Whitfield Diffie. Bersama dengan Martin Hellman, Diffie mengembangkan konsep kriptografi kunci publik pada tahun 1976. Inovasi ini memungkinkan dua pihak untuk berkomunikasi secara aman tanpa perlu bertukar kunci rahasia sebelumnya, menggantikan metode kriptografi simetris yang sebelumnya dominan.
 
 2. Sebutkan Algoritma Kunci Publik yang Populer Digunakan Saat Ini
