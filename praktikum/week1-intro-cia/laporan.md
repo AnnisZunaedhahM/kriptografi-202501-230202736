@@ -31,9 +31,10 @@ Era ini dimulai ketika kriptografi mulai dipublikasikan secara terbuka dan meman
 
 Kriptografi Kunci Simetris (Symmetric-Key): Menggunakan satu kunci yang sama untuk enkripsi dan dekripsi. Contoh yang terkenal adalah AES (Advanced Encryption Standard), algoritma enkripsi simetris yang paling umum digunakan untuk melindungi data, baik saat transit maupun saat disimpan.
 Kriptografi Kunci Asimetris/Publik (Asymmetric/Public-Key): Menggunakan dua kunci yang berbeda dan berpasangan—Kunci Publik yang dapat dibagikan untuk enkripsi dan Kunci Privat yang dirahasiakan untuk dekripsi. Contohnya adalah RSA, algoritma kunci publik yang banyak digunakan untuk tanda tangan digital dan pertukaran kunci yang aman.
-3. Evolusi Menuju Kriptografi Kontemporer (Era Desentralisasi)
-Kriptografi kini tidak hanya digunakan untuk mengamankan komunikasi, tetapi juga menjadi dasar bagi sistem keuangan dan otentikasi baru.
 
+3. Evolusi Menuju Kriptografi Kontemporer (Era Desentralisasi)
+
+Kriptografi kini tidak hanya digunakan untuk mengamankan komunikasi, tetapi juga menjadi dasar bagi sistem keuangan dan otentikasi baru.
 Blockchain dan Cryptocurrency: Teknologi ini, seperti Bitcoin dan Ethereum, bergantung pada kriptografi untuk menjamin integritas data dalam blok dan menggunakan kriptografi kunci publik untuk membuktikan kepemilikan aset tanpa perantara seperti bank.
 Kriptografi Pasca-Quantum: Fokus penelitian saat ini adalah mengembangkan algoritma baru yang tahan terhadap serangan dari komputer kuantum, yang dapat memecahkan sandi RSA dan ECC dengan mudah.
 
@@ -55,14 +56,15 @@ Soal 2 — Prinsip CIA Triad
 CIA Triad (Confidentiality, Integrity, Availability) adalah tiga pilar fundamental yang membentuk kerangka kerja keamanan informasi. Untuk memastikan bahwa sebuah sistem aman, ketiga prinsip ini harus dipertahankan.
 
 1. Confidentiality (Kerahasiaan)
-Prinsip ini bertujuan untuk melindungi informasi dari akses yang tidak berhak atau pengungkapan kepada pihak yang tidak memiliki izin.
 
+Prinsip ini bertujuan untuk melindungi informasi dari akses yang tidak berhak atau pengungkapan kepada pihak yang tidak memiliki izin.
 Analoginya: Seperti surat yang tersegel dalam amplop.
 Tujuannya: Menjaga privasi data, seperti kata sandi dan catatan medis, agar tetap rahasia.
 Mekanisme: Menggunakan enkripsi, password yang kuat, dan otorisasi untuk membatasi akses sesuai dengan peran pengguna.
-2.Integrity (Integritas)
-Prinsip ini memastikan bahwa informasi akurat, lengkap, dan tidak diubah oleh pihak yang tidak berwenang selama penyimpanan atau transmisi.
 
+2.Integrity (Integritas)
+
+Prinsip ini memastikan bahwa informasi akurat, lengkap, dan tidak diubah oleh pihak yang tidak berwenang selama penyimpanan atau transmisi.
 Analoginya: Seperti dokumen yang memiliki segel atau tanda tangan digital asli.
 Tujuannya: Menjamin keutuhan data sehingga penerima yakin bahwa pesan yang diterima sama persis dengan yang dikirim oleh sumber yang sah.
 Mekanisme: Menggunakan fungsi hash untuk mendeteksi perubahan dan tanda tangan digital untuk verifikasi.
@@ -70,7 +72,6 @@ Mekanisme: Menggunakan fungsi hash untuk mendeteksi perubahan dan tanda tangan d
 3.Availability (Ketersediaan)
 
 Prinsip ini memastikan bahwa sistem dan sumber daya informasi dapat diakses dan digunakan oleh pengguna yang sah kapan pun diperlukan.
-
 Analoginya: Seperti pintu bank yang selalu terbuka pada jam operasional.
 Tujuannya: Menjamin kelangsungan layanan sehingga kegagalan sistem tidak menghalangi akses informasi.
 Mekanisme: Menggunakan perangkat keras yang andal, bandwidth jaringan yang memadai, dan rencana pemulihan bencana
