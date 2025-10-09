@@ -19,6 +19,7 @@ Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
 Sejarah Kriptografi & Prinsip CIA Confidentiality
 
 Langkah 1 — Ringkasan Sejarah Kriptografi
+
 Kriptografi adalah seni dan ilmu untuk menyamarkan pesan agar tidak dapat dibaca oleh pihak yang tidak berwenang. Perkembangan kriptografi dapat dibagi menjadi tiga era utama, yang menunjukkan evolusi dari metode fisik yang sederhana hingga algoritma matematika yang kompleks.
 
 1. Era Kriptografi Klasik (Manual dan Fisik)
