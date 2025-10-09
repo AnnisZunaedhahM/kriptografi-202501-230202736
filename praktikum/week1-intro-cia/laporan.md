@@ -133,8 +133,8 @@ Jawaban Soal Quiz
 Claude Shannon adalah tokoh yang dianggap sebagai bapak kriptografi modern. Pada tahun 1949, ia menerbitkan karya penting yang berjudul "Communication Theory of Secrecy Systems," di mana ia memperkenalkan konsep-konsep dasar tentang keamanan informasi dan kriptografi. Shannon mengembangkan teori informasi yang menjelaskan bagaimana cara mengukur dan mengelola informasi dalam komunikasi. Karyanya menjadi landasan bagi banyak teknik kriptografi modern yang kita gunakan saat ini.
 
 2. Sebutkan Algoritma Kunci Publik yang Populer Digunakan Saat Ini
+   
 Beberapa algoritma kunci publik yang populer dan banyak digunakan saat ini antara lain:
-
 RSA (Rivest-Shamir-Adleman): Salah satu algoritma paling awal dan paling umum untuk enkripsi dan tanda tangan digital. RSA menggunakan dua kunci, yaitu kunci publik untuk enkripsi dan kunci privat untuk dekripsi.
 
 DSA (Digital Signature Algorithm): Digunakan khusus untuk tanda tangan digital. DSA juga menggunakan kunci publik dan privat, tetapi metode matematikanya berbeda dari RSA.
@@ -171,7 +171,6 @@ Tokoh kunci dalam transisi ini adalah Claude Shannon, yang menciptakan fondasi t
 Dalam konteks saat ini, prinsip-prinsip keamanan informasi—Confidentiality, Integrity, dan Availability (CIA)—menjadi landasan bagi sistem keamanan yang efektif. Kerahasiaan menjaga data tetap aman dari akses yang tidak sah, integritas memastikan bahwa informasi tidak diubah tanpa izin, dan ketersediaan menjamin bahwa data dapat diakses kapan saja oleh pihak yang berwenang.
 
 Secara keseluruhan, kriptografi modern tidak hanya melindungi data dan komunikasi, tetapi juga memainkan peran penting dalam membangun kepercayaan dalam transaksi digital, terutama di era di mana informasi sangat berharga dan rentan terhadap ancaman. Dengan pemahaman yang baik tentang kriptografi dan prinsip-prinsip keamanannya, kita dapat lebih siap menghadapi tantangan keamanan informasi di masa depan.
-
 
 ---
 
