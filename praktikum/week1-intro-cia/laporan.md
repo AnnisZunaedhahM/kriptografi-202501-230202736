@@ -19,6 +19,7 @@ Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
 Sejarah Kriptografi & Prinsip CIA Confidentiality
 
 Langkah 1 — Ringkasan Sejarah Kriptografi
+
 Kriptografi adalah ilmu menyamarkan pesan agar tidak dapat dibaca oleh pihak yang tidak berwenang. Perjalanan ilmu ini dapat dikelompokkan menjadi tiga era utama yang menunjukkan evolusi dari mekanisme fisik sederhana hingga algoritma matematika kompleks.
 1. Era Kriptografi Klasik (Manual dan Fisik)
 Pada era ini, enkripsi dilakukan tanpa bantuan mesin elektronik dan berfokus pada teknik substitusi (penggantian) atau transposisi (pengacakan posisi).
@@ -34,7 +35,9 @@ o	Contoh: RSA: Merupakan salah satu algoritma kunci publik tertua dan banyak dig
 Kriptografi terus berevolusi, melampaui sekadar mengamankan komunikasi menjadi fondasi untuk sistem keuangan dan otentikasi baru.
 •	Blockchain dan Cryptocurrency: Teknologi seperti Bitcoin dan Ethereum tidak akan ada tanpa kriptografi. Mereka menggunakan Fungsi Hash Kriptografi untuk menjamin integritas data dalam blok dan Kriptografi Kunci Publik untuk membuktikan kepemilikan aset tanpa perlu perantara (bank).
 •	Kriptografi Pasca-Quantum: Saat ini, fokus penelitian beralih pada pengembangan algoritma baru yang tahan terhadap serangan dari komputer kuantum, yang secara teoritis mampu memecahkan sandi RSA dan ECC dalam hitungan detik
+
 Soal 2 — Prinsip CIA Triad
+
 CIA Triad (Confidentiality, Integrity, Availability) adalah tiga pilar fundamental yang membentuk kerangka kerja keamanan informasi. Untuk menganggap sebuah sistem aman, ketiga prinsip ini harus dipertahankan.
 1. Confidentiality (Kerahasiaan)
 Prinsip ini bertujuan untuk melindungi informasi dari akses yang tidak berhak atau pengungkapan kepada pihak yang tidak memiliki izin.
