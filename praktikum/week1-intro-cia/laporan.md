@@ -5,8 +5,19 @@ Nama: annis zunaedhah muthoharoh
 NIM:  230202736 
 Kelas: [5 IKRB]  
 
+## 1. Tujuan
+(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+1.Menjelaskan sejarah dan evolusi kriptografi dari masa klasik hingga modern.
+2.Menyebutkan prinsip Confidentiality, Integrity, Availability (CIA) dengan benar.
+3.Menyimpulkan peran kriptografi dalam sistem keamanan informasi modern.
+4.Menyiapkan repositori GitHub sebagai media kerja praktikum.
 
-SOAL:1 .Sejarah Kriptografi & Prinsip CIA Confidentiality
+## 2. Dasar Teori
+(Ringkas teori relevan (cukup 2–3 paragraf).  
+Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+
+Sejarah Kriptografi & Prinsip CIA Confidentiality
+
 Langkah 1 — Ringkasan Sejarah Kriptografi
 Kriptografi adalah ilmu menyamarkan pesan agar tidak dapat dibaca oleh pihak yang tidak berwenang. Perjalanan ilmu ini dapat dikelompokkan menjadi tiga era utama yang menunjukkan evolusi dari mekanisme fisik sederhana hingga algoritma matematika kompleks.
 1. Era Kriptografi Klasik (Manual dan Fisik)
@@ -23,7 +34,6 @@ o	Contoh: RSA: Merupakan salah satu algoritma kunci publik tertua dan banyak dig
 Kriptografi terus berevolusi, melampaui sekadar mengamankan komunikasi menjadi fondasi untuk sistem keuangan dan otentikasi baru.
 •	Blockchain dan Cryptocurrency: Teknologi seperti Bitcoin dan Ethereum tidak akan ada tanpa kriptografi. Mereka menggunakan Fungsi Hash Kriptografi untuk menjamin integritas data dalam blok dan Kriptografi Kunci Publik untuk membuktikan kepemilikan aset tanpa perlu perantara (bank).
 •	Kriptografi Pasca-Quantum: Saat ini, fokus penelitian beralih pada pengembangan algoritma baru yang tahan terhadap serangan dari komputer kuantum, yang secara teoritis mampu memecahkan sandi RSA dan ECC dalam hitungan detik
-
 Soal 2 — Prinsip CIA Triad
 CIA Triad (Confidentiality, Integrity, Availability) adalah tiga pilar fundamental yang membentuk kerangka kerja keamanan informasi. Untuk menganggap sebuah sistem aman, ketiga prinsip ini harus dipertahankan.
 1. Confidentiality (Kerahasiaan)
@@ -42,6 +52,55 @@ Prinsip ini bertujuan untuk memastikan bahwa sistem dan sumber daya informasi da
 •	Tujuannya: Menjamin keberlanjutan layanan. Kegagalan sistem atau serangan siber yang menyebabkan sistem down melanggar prinsip Ketersediaan.
 •	Mekanisme: Hardware yang andal, Network bandwidth yang memadai, dan Rencana Pemulihan Bencana (Disaster Recovery Plan).
 
+---
+
+## 3. Alat dan Bahan
+(- Python 3.x  
+- Visual Studio Code / editor lain
+- Chrome
+- Git dan akun GitHub  
+  Terminal
+
+---
+## 4. Langkah Percobaan
+(Tuliskan langkah yang dilakukan sesuai instruksi.  
+Contoh format:
+1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
+2. Menyalin kode program dari panduan praktikum.
+3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+
+---
+
+## 5. Source Code
+(Salin kode program utama yang dibuat atau dimodifikasi.  
+Gunakan blok kode:
+
+```python
+# contoh potongan kode
+def encrypt(text, key):
+    return ...
+```
+)
+
+---
+
+## 6. Hasil dan Pembahasan
+(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
+- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
+- Jelaskan apakah hasil sesuai ekspektasi.  
+- Bahas error (jika ada) dan solusinya. 
+
+Hasil eksekusi program Caesar Cipher:
+
+![Hasil Eksekusi](screenshots/output.png)
+![Hasil Input](screenshots/input.png)
+![Hasil Output](screenshots/output.png)
+)
+
+---
+
+## 7. Jawaban Pertanyaan Diskusi
+(Jawab pertanyaan diskusi yang diberikan pada modul.)  
 Jawaban Soal Quiz
 1. Siapa Tokoh yang Dianggap sebagai Bapak Kriptografi Modern?
 Tokoh yang dianggap sebagai bapak kriptografi modern adalah Whitfield Diffie. Bersama dengan Martin Hellman, Diffie mengembangkan konsep kriptografi kunci publik pada tahun 1976. Inovasi ini memungkinkan dua pihak untuk berkomunikasi secara aman tanpa perlu bertukar kunci rahasia sebelumnya, menggantikan metode kriptografi simetris yang sebelumnya dominan.
@@ -95,3 +154,45 @@ o	Kriptografi Modern: Dirancang untuk tahan terhadap berbagai serangan, termasuk
 •	Aplikasi:
 o	Kriptografi Klasik: Digunakan lebih untuk komunikasi militer dan diplomatik.
 o	Kriptografi Modern: Diterapkan di berbagai bidang, termasuk keamanan internet, transaksi keuangan, dan perlindungan data pribadi.
+
+
+
+
+)
+---
+
+## 8. Kesimpulan
+Kriptografi telah mengalami perkembangan yang signifikan dari era klasik hingga modern, yang mencerminkan evolusi teknologi dan kebutuhan keamanan informasi.
+
+Di era klasik, metode kriptografi seperti Caesar Cipher dan Vigenère Cipher menggunakan teknik sederhana yang mudah dipecahkan. Keamanan bergantung pada kerahasiaan kunci, dan metode ini sering kali rentan terhadap analisis frekuensi. Dengan adanya kemajuan dalam matematika dan teknologi, kriptografi modern muncul dengan algoritma yang jauh lebih kompleks, seperti RSA dan AES. Algoritma ini tidak hanya lebih aman tetapi juga memungkinkan penggunaan kunci publik dan kunci privat, meningkatkan cara kita melindungi informasi.
+
+Tokoh kunci dalam transisi ini adalah Claude Shannon, yang menciptakan fondasi teoritis untuk kriptografi modern. Ia memperkenalkan konsep-konsep yang memungkinkan kita untuk memahami dan mengukur keamanan dalam komunikasi digital.
+
+Dalam konteks saat ini, prinsip-prinsip keamanan informasi—Confidentiality, Integrity, dan Availability (CIA)—menjadi landasan bagi sistem keamanan yang efektif. Kerahasiaan menjaga data tetap aman dari akses yang tidak sah, integritas memastikan bahwa informasi tidak diubah tanpa izin, dan ketersediaan menjamin bahwa data dapat diakses kapan saja oleh pihak yang berwenang.
+
+Secara keseluruhan, kriptografi modern tidak hanya melindungi data dan komunikasi, tetapi juga memainkan peran penting dalam membangun kepercayaan dalam transaksi digital, terutama di era di mana informasi sangat berharga dan rentan terhadap ancaman. Dengan pemahaman yang baik tentang kriptografi dan prinsip-prinsip keamanannya, kita dapat lebih siap menghadapi tantangan keamanan informasi di masa depan.
+
+
+
+
+---
+
+## 9. Daftar Pustaka
+(Cantumkan referensi yang digunakan.  
+Contoh:  
+- Katz, J., & Lindell, Y. *Introduction to Modern Cryptography*.  
+- Stallings, W. *Cryptography and Network Security*.  )
+
+---
+
+## 10. Commit Log
+(Tuliskan bukti commit Git yang relevan.  
+Contoh:
+```
+commit abc12345
+Author: Nama Mahasiswa <email>
+Date:   2025-09-20
+
+    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+```
+
