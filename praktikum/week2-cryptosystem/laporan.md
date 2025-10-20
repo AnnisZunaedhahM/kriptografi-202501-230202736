@@ -114,7 +114,7 @@ if __name__ == "__main__":
 Hasil eksekusi program Caesar Cipher:
 
 ![Hasil Eksekusi](Screenshots/Eksekusi.png)
-![Hasil Input](Screenshots/DiagramCryptosystem.png)
+![Hasil Input](Screenshots/Diagram_Cryptosystem.png)
 ![Hasil Output](screenshots/output.png)
 )
 
