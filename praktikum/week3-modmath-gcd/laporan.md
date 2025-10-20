@@ -65,8 +65,11 @@ Hasil eksekusi program Caesar Cipher:
 
 ## 7. Jawaban Pertanyaan
 (Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
+- Pertanyaan 1: Apa peran aritmetika modular dalam kriptografi modern?
+- Pertanyaan 2: Mengapa invers modular penting dalam algoritma kunci publik (misalnya RSA)? 
+- Pertanyaan 3:Apa tantangan utama dalam menyelesaikan logaritma diskrit untuk modulus besar?
+jawab
+
 )
 ---
 
