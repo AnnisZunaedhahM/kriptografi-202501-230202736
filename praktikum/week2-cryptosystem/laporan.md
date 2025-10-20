@@ -21,19 +21,32 @@ Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
 
 Ringkasan
 
+Kriptosistem adalah sistem untuk mengamankan informasi agar tidak bisa dibaca atau disalahgunakan oleh pihak yang tidak berhak. Bayangkan seperti mengunci pesan dalam kotak yang hanya bisa dibuka dengan kunci khusus. Berikut adalah komponen utama yang membuat kriptosistem bekerja:
 
-Cryptosystem adalah sistem yang digunakan untuk mengamankan informasi melalui proses enkripsi dan dekripsi. Secara umum, cryptosystem terdiri dari beberapa komponen utama yang bekerja sama untuk memastikan bahwa data tetap aman dari pihak yang tidak berwenang.
-Komponen Utama
-Plaintext: Data asli yang ingin dilindungi.
-Ciphertext: Data yang telah dienkripsi dan tidak dapat dibaca tanpa kunci.
-Kunci: Informasi rahasia untuk enkripsi dan dekripsi, bisa simetris (sama) atau asimetris (berbeda).
-Algoritma: Metode matematis untuk mengubah plaintext menjadi ciphertext dan sebaliknya.
-Proses
-Enkripsi: Mengubah plaintext menjadi ciphertext untuk menjaga kerahasiaan.
-Dekripsi: Mengubah ciphertext kembali menjadi plaintext menggunakan kunci yang tepat.
-Jenis Kriptografi
-Simetris: Menggunakan kunci yang sama untuk enkripsi dan dekripsi (contoh: AES). Proses cepat, tetapi sulit dalam distribusi kunci.
-Asimetris: Menggunakan dua kunci berbeda; kunci publik untuk enkripsi dan kunci privat untuk dekripsi (contoh: RSA). Memudahkan distribusi, tetapi lebih lambat.
+1. Plaintext (Pesan Asli)
+   
+Ini adalah informasi atau pesan yang ingin kamu lindungi. Misalnya, pesan "Aku mau ke pasar" atau dokumen penting seperti data bank. Plaintext adalah data dalam bentuk aslinya, yang masih bisa dibaca dan dimengerti sebelum diacak.
+
+2.Ciphertext (Pesan Terenkripsi)
+Ini adalah versi pesan yang sudah diacak sehingga tidak bisa dibaca tanpa kunci. Misalnya, "Aku mau ke pasar" bisa berubah jadi kode acak seperti "Kj2p9q" setelah dienkripsi. Ciphertext ini seperti pesan yang dikunci rapat, hanya orang dengan kunci yang tepat yang bisa membukanya.
+
+3.Kunci (Key)
+Kunci adalah rahasia utama dalam kriptosistem, seperti kata sandi khusus yang digunakan untuk mengacak (enkripsi) dan membuka kembali (dekripsi) pesan. Kunci bisa berupa angka, huruf, atau kombinasi, misalnya "123xyz". Tanpa kunci yang benar, pesan tetap acak dan tidak bisa dipahami.
+
+4.Algoritma Enkripsi
+Ini adalah "resep" atau cara matematis untuk mengubah plaintext menjadi ciphertext. Bayangkan seperti mesin pengacak yang mengikuti aturan tertentu. Contohnya, algoritma AES (untuk sistem simetris) atau RSA (untuk sistem asimetris). Algoritma ini menentukan bagaimana pesan diacak agar aman.
+
+5.Algoritma Dekripsi
+Ini adalah cara untuk mengembalikan ciphertext menjadi plaintext menggunakan kunci. Kalau algoritma enkripsi adalah mesin pengacak, algoritma dekripsi adalah mesin pembuka kode. Biasanya, algoritma dekripsi adalah kebalikan dari algoritma enkripsi.
+
+6.Pengguna atau Pihak yang Terlibat
+Kriptosistem melibatkan pengirim (yang mengacak pesan) dan penerima (yang membuka pesan). Kadang, ada juga pihak ketiga, seperti peretas, yang mencoba mencuri atau memecahkan pesan. Misalnya, kamu mengirim email rahasia ke teman, kalian berdua adalah pengguna, tapi peretas bisa jadi ancaman.
+
+7.Protokol Keamanan
+Ini adalah aturan tambahan untuk memastikan sistem tetap aman. Misalnya, bagaimana kunci dibagikan dengan aman, bagaimana memastikan pengirim dan penerima adalah orang yang tepat, atau bagaimana mencegah peretas. Protokol ini seperti petunjuk untuk menjaga seluruh proses tetap terlindungi.
+
+Cara Kerja Secara Sederhana
+Bayangkan kamu ingin mengirim pesan rahasia ke teman. Pesan asli (plaintext) diacak menggunakan kunci dan algoritma enkripsi hingga jadi kode acak (ciphertext). Temanmu menerima kode itu dan menggunakan kunci serta algoritma dekripsi untuk mengembalikan pesan ke bentuk asli. Protokol keamanan memastikan kunci sampai dengan aman dan tidak ada orang lain yang bisa membaca pesanmu. Semua komponen ini bekerja bersama seperti tim untuk menjaga pesan tetap rahasia dan aman.
 
 ---
 
@@ -109,29 +122,45 @@ Hasil eksekusi program Caesar Cipher:
 
 ## 7. Jawaban Pertanyaan Diskusi
 (Jawab pertanyaan diskusi yang diberikan pada modul.)  
-
 1. Komponen Utama dalam Sebuah Kriptosistem
-Kriptosistem adalah sistem yang digunakan untuk mengamankan data melalui proses enkripsi (mengubah data asli menjadi bentuk yang tidak bisa dibaca) dan dekripsi (mengembalikan data ke bentuk asli). Komponen utama dalam sebuah kriptosistem meliputi:
-Plaintext: Data asli yang ingin diamankan.
-Ciphertext: Data hasil enkripsi yang tidak bisa dibaca.
-Kunci: Rahasia untuk enkripsi dan dekripsi.
-Algoritma Enkripsi/Dekripsi: Aturan untuk mengubah data.
-Pengguna: Pengirim dan penerima pesan.
+Dalam sebuah kriptosistem, terdapat beberapa komponen utama yang saling berhubungan untuk melindungi informasi. Berikut adalah komponen-komponen tersebut:
 
-3. Kelebihan dan Kelemahan Sistem Simetris Dibandingkan Asimetris
-Kriptografi Simetris
-Dalam kriptografi simetris, satu kunci digunakan untuk enkripsi dan dekripsi. Contoh algoritma simetris adalah AES (Advanced Encryption Standard) dan DES (Data Encryption Standard).
-Simetris (1 kunci untuk enkripsi & dekripsi, contoh: AES):
+Pesan (Plaintext): Informasi asli yang ingin diamankan, seperti teks, gambar, atau data lainnya.
 
-  Kelebihan: Cepat, efisien untuk data besar, hemat sumber daya.
-  Kelemahan: Sulit mendistribusikan kunci, tidak cocok untuk banyak pengguna, risiko keamanan kunci.
+Kunci: Informasi rahasia yang digunakan dalam proses enkripsi dan dekripsi. Kunci ini harus dijaga kerahasiaannya.
 
-Asimetris (kunci publik & privat, contoh: RSA):
-  Kelebihan: Distribusi kunci aman, cocok untuk komunikasi terbuka, mendukung tanda tangan digital.
-  Kelemahan: Lambat, kurang efisien untuk data besar, kompleks.
-  
-3. Mengapa Distribusi Kunci Jadi Masalah di Kriptografi Simetris
-Kunci harus dibagikan secara aman kepada penerima. Jika kunci bocor atau dikirim lewat saluran tidak aman, pihak ketiga bisa mendekripsi pesan. Selain itu, untuk banyak pengguna, jumlah kunci yang dibutuhkan jadi sangat banyak, menyulitkan manajemen
+Algoritma Enkripsi: Metode atau teknik yang digunakan untuk mengubah plaintext menjadi ciphertext. Algoritma ini menentukan cara data disamarkan.
+
+Ciphertext: Hasil dari proses enkripsi, yaitu bentuk pesan yang telah disamarkan sehingga tidak dapat dibaca tanpa kunci yang tepat.
+
+Algoritma Dekripsi: Metode yang digunakan untuk mengubah ciphertext kembali menjadi plaintext. Ini berfungsi terbalik dari algoritma enkripsi.
+
+Pengguna: Pihak yang terlibat dalam proses enkripsi dan dekripsi, bisa berupa individu atau organisasi yang memerlukan perlindungan data.
+
+2. Kelebihan dan Kelemahan Sistem Simetris dibandingkan Asimetris
+Kelebihan Sistem Simetris:
+Kecepatan: Proses enkripsi dan dekripsi cenderung lebih cepat karena algoritma yang digunakan biasanya lebih sederhana. Ini membuat sistem simetris efisien untuk mengenkripsi data dalam jumlah besar.
+
+Rendahnya Beban Komputasi: Karena menggunakan kunci yang sama untuk enkripsi dan dekripsi, sistem simetris tidak memerlukan penghitungan yang rumit, sehingga lebih ringan dalam penggunaan sumber daya.
+
+Kelemahan Sistem Simetris:
+Masalah Distribusi Kunci: Kunci harus dibagikan secara aman kepada semua pihak yang terlibat. Jika kunci jatuh ke tangan yang salah, keamanan sistem terancam.
+
+Keterbatasan Skala: Dalam sistem yang melibatkan banyak pengguna, jumlah kunci yang dibutuhkan menjadi sangat besar (setiap pasangan pengguna memerlukan kunci unik). Ini menyulitkan manajemen kunci.
+
+Keamanan Kunci: Jika kunci bocor, semua komunikasi yang dienkripsi dengan kunci tersebut dapat diakses oleh pihak yang tidak berwenang.
+
+3. Mengapa Distribusi Kunci Menjadi Masalah Utama dalam Kriptografi Simetris?
+Distribusi kunci menjadi masalah utama dalam kriptografi simetris karena:
+
+Keamanan Kunci: Kunci harus dijaga kerahasiaannya. Jika kunci bocor atau jatuh ke tangan yang salah, maka semua data yang dienkripsi dengan kunci tersebut menjadi rentan dan dapat diakses oleh pihak yang tidak berwenang.
+
+Proses Pengiriman yang Berisiko: Mengirimkan kunci secara aman bisa menjadi tantangan. Jika kunci dikirim melalui saluran yang tidak aman, ada risiko intercept (penangkapan) oleh pihak ketiga yang bisa membahayakan keamanan komunikasi.
+
+Kompleksitas dalam Jaringan Besar: Dalam sistem yang melibatkan banyak pengguna, setiap pasangan pengguna memerlukan kunci unik. Dengan meningkatnya jumlah pengguna, distribusi kunci menjadi semakin rumit dan sulit dikelola.
+
+Tidak Ada Otoritas Pusat: Dalam banyak sistem simetris, tidak ada otoritas pusat yang mengelola kunci. Ini membuat proses pengelolaan kunci menjadi lebih sulit dan rawan kesalahan.
+
 
 
 )
