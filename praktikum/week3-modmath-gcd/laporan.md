@@ -6,12 +6,12 @@ NIM: [230202736]
 Kelas: [ 5IKRB]  
 
 ---
-
 ## 1. Tujuan
 (Tuliskan tujuan pembelajaran praktikum sesuai modul.)
 1.Menyelesaikan operasi aritmetika modular.
 2.Menentukan bilangan prima dan menghitung GCD (Greatest Common Divisor).
 3.Menerapkan logaritma diskrit sederhana dalam simulasi kriptografi.
+
 ---
 ## 2. Dasar Teori
 Ringkasan Teori Modular Arithmetic dan GCD
@@ -248,7 +248,7 @@ Contoh:
 Contoh:
 ```
 commit abc12345
-Author: Nama Mahasiswa <email>
+Author: Annis Zunaedhah M <email:anniszunaedah@gmail.com>
 Date:   2025-09-20
 
     week2-cryptosystem: implementasi Caesar Cipher dan laporan )
