@@ -12,214 +12,68 @@ Kelas: [ 5IKRB]
 1.Menyelesaikan operasi aritmetika modular.
 2.Menentukan bilangan prima dan menghitung GCD (Greatest Common Divisor).
 3.Menerapkan logaritma diskrit sederhana dalam simulasi kriptografi.
-
 ---
-
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
-# src/modular_math.py
+Ringkasan Teori Modular Arithmetic dan GCD
+ 1. Modular Arithmetic (Aritmetika Modular)
+Aritmetika modular** adalah cabang matematika yang mempelajari operasi aritmetika di bawah modulus tertentu. Dalam konteks ini, hasil dari operasi aritmetika dibatasi dalam rentang dari 0 hingga \( m-1 \), di mana \( m \) adalah modulus.
+Konsep Dasar
+- Modulus: Bilangan bulat positif yang digunakan untuk menentukan batasan. Misalnya, jika \( m = 5 \), maka hasil dari setiap operasi aritmetika akan berada dalam rentang 0 hingga 4.
+  
+- Notasi: Kita menuliskan \( a \equiv b \mod m \) untuk menunjukkan bahwa \( a \) dan \( b \) memiliki sisa yang sama ketika dibagi oleh \( m \). Contohnya, \( 7 \equiv 2 \mod 5 \) karena sisa dari \( 7 \) dibagi \( 5 \) adalah \( 2 \).
 
-def mod_add(a, b, m):
-    """Menjumlahkan dua bilangan dalam aritmetika modular."""
-    return (a + b) % m
+Operasi Dasar
 
-def mod_sub(a, b, m):
-    """Mengurangi dua bilangan dalam aritmetika modular."""
-    return (a - b) % m
+1. Penjumlahan: 
+   \[
+   (a + b) \mod m
+   \]
+   Contoh: \( (7 + 4) \mod 5 = 11 \mod 5 = 1 \).
 
-def mod_mul(a, b, m):
-    """Mengalikan dua bilangan dalam aritmetika modular."""
-    return (a * b) % m
+2. Pengurangan: 
+   \[
+   (a - b) \mod m
+   \]
+   Contoh: \( (3 - 5) \mod 5 = -2 \mod 5 = 3 \) (karena kita menambahkan \( 5 \)).
 
-def mod_exp(base, exp, mod):
-    """Menghitung eksponen dalam aritmetika modular."""
-    result = 1
-    base = base % mod
-    while exp > 0:
-        if (exp % 2) == 1:  # Jika exp adalah ganjil
-            result = (result * base) % mod
-        exp = exp >> 1  # Bagi exp dengan 2
-        base = (base * base) % mod
-    return result
+3. Perkalian: 
+   \[
+   (a \times b) \mod m
+   \]
+   Contoh: \( (3 \times 4) \mod 5 = 12 \mod 5 = 2 \).
 
-def gcd(a, b):
-    """Menghitung GCD menggunakan algoritma Euclidean."""
-    while b:
-        a, b = b, a % b
-    return a
+4. Eksponen: 
+   \[
+   (base^{exp}) \mod m
+   \]
+   Contoh: \( (2^3) \mod 5 = 8 \mod 5 = 3 \). Biasanya dihitung dengan metode eksponensiasi cepat untuk efisiensi.
 
-def extended_gcd(a, b):
-    """Menghitung GCD dan koefisien x dan y."""
-    if a == 0:
-        return b, 0, 1
-    gcd, x1, y1 = extended_gcd(b % a, a)
-    x = y1 - (b // a) * x1
-    y = x1
-    return gcd, x, y
+2. GCD (Greatest Common Divisor)
 
-def mod_inverse(a, m):
-    """Menghitung invers modular dari a mod m."""
-    gcd, x, _ = extended_gcd(a, m)
-    if gcd != 1:
-        raise ValueError("Invers tidak ada")
-    else:
-        return x % m
+GCD atau Faktor Persekutuan Terbesar adalah bilangan bulat terbesar yang dapat membagi dua bilangan bulat tanpa meninggalkan sisa. GCD sangat penting dalam berbagai aplikasi, termasuk penyederhanaan pecahan dan algoritma kriptografi.
+Konsep Dasar
+- Notasi: Ditulis sebagai \( \text{gcd}(a, b) \), di mana \( a \) dan \( b \) adalah dua bilangan bulat.
+Algoritma Euclidean
+Algoritma ini adalah metode efisien untuk menghitung GCD dari dua bilangan. Prosesnya adalah sebagai berikut:
 
-def is_prime(n):
-    """Menentukan apakah n adalah bilangan prima."""
-    if n <= 1:
-        return False
-    for i in range(2, int(n**0.5) + 1):
-        if n % i == 0:
-            return False
-    return True
+1. Ambil dua bilangan \( a \) dan \( b \).
+2. Hitung sisa \( r \) dari pembagian \( a \) oleh \( b \) (yaitu \( r = a \mod b \)).
+3. Ganti \( a \) dengan \( b \) dan \( b \) dengan \( r \).
+4. Ulangi langkah 2 dan 3 hingga \( b \) menjadi 0. Pada saat itu, nilai \( a \) adalah GCD.
 
-def discrete_log(g, y, p):
-    """Mencari x di mana g^x ≡ y (mod p)."""
-    current = 1
-    for x in range(p - 1):
-        if current == y:
-            return x
-        current = (current * g) % p
-    return None  # Jika tidak ditemukan
-Berikut adalah kode Python lengkap yang mencakup semua fungsi yang Anda butuhkan untuk aritmetika modular, GCD, invers modular, dan logaritma diskrit, lengkap dengan contoh penggunaannya.
-
-```python
-# src/modular_math.py
-
-def mod_add(a, b, m):
-    """Menjumlahkan dua bilangan dalam aritmetika modular."""
-    return (a + b) % m
-
-def mod_sub(a, b, m):
-    """Mengurangi dua bilangan dalam aritmetika modular."""
-    return (a - b) % m
-
-def mod_mul(a, b, m):
-    """Mengalikan dua bilangan dalam aritmetika modular."""
-    return (a * b) % m
-
-def mod_exp(base, exp, mod):
-    """Menghitung eksponen dalam aritmetika modular."""
-    result = 1
-    base = base % mod
-    while exp > 0:
-        if (exp % 2) == 1:  # Jika exp adalah ganjil
-            result = (result * base) % mod
-        exp = exp >> 1  # Bagi exp dengan 2
-        base = (base * base) % mod
-    return result
-
-def gcd(a, b):
-    """Menghitung GCD menggunakan algoritma Euclidean."""
-    while b:
-        a, b = b, a % b
-    return a
-
-def extended_gcd(a, b):
-    """Menghitung GCD dan koefisien x dan y."""
-    if a == 0:
-        return b, 0, 1
-    gcd, x1, y1 = extended_gcd(b % a, a)
-    x = y1 - (b // a) * x1
-    y = x1
-    return gcd, x, y
-
-def mod_inverse(a, m):
-    """Menghitung invers modular dari a mod m."""
-    gcd, x, _ = extended_gcd(a, m)
-    if gcd != 1:
-        raise ValueError("Invers tidak ada")
-    else:
-        return x % m
-
-def is_prime(n):
-    """Menentukan apakah n adalah bilangan prima."""
-    if n <= 1:
-        return False
-    for i in range(2, int(n**0.5) + 1):
-        if n % i == 0:
-            return False
-    return True
-
-def discrete_log(g, y, p):
-    """Mencari x di mana g^x ≡ y (mod p)."""
-    current = 1
-    for x in range(p - 1):
-        if current == y:
-            return x
-        current = (current * g) % p
-    return None  # Jika tidak ditemukan
-
-# Contoh penggunaan
-if __name__ == "__main__":
-    # Contoh Modular Arithmetic
-    print("Modular Addition: ", mod_add(17, 5, 12))  # Output: 10
-    print("Modular Subtraction: ", mod_sub(17, 5, 12))  # Output: 12
-    print("Modular Multiplication: ", mod_mul(4, 3, 5))  # Output: 2
-    print("Modular Exponentiation: ", mod_exp(3, 4, 11))  # Output: 9
-
-    # Contoh GCD
-    print("GCD of 48 and 18: ", gcd(48, 18))  # Output: 6
-
-    # Contoh Modular Inverse
-    print("Modular Inverse of 3 mod 11: ", mod_inverse(3, 11))  # Output: 4
-
-    # Contoh Bilangan Prima
-    print("Apakah 29 bilangan prima? ", is_prime(29))  # Output: True
-    print("Apakah 30 bilangan prima? ", is_prime(30))  # Output: False
-
-    # Contoh Discrete Log
-    print("Discrete Log of 3^x ≡ 4 mod 11: ", discrete_log(3, 4, 11))  # Output: 4
-```
-
-### Penjelasan Kode
-
-1. Fungsi Aritmetika Modular:
-   - `mod_add`: Menjumlahkan dua bilangan dan mengambil modulus.
-   - `mod_sub`: Mengurangi dua bilangan dan mengambil modulus.
-   - `mod_mul`: Mengalikan dua bilangan dan mengambil modulus.
-   - `mod_exp`: Menghitung hasil pangkat dengan modulus menggunakan metode eksponensiasi cepat.
-
-2. GCD dan Extended Euclidean:
-   - `gcd`: Menghitung GCD dari dua bilangan menggunakan algoritma Euclidean.
-   - `extended_gcd`: Mengembalikan GCD dan koefisien yang membentuk GCD sebagai kombinasi linear dari dua bilangan.
-
-3. Invers Modular:
-   - `mod_inverse`: Menghitung invers modular dari bilangan \( a \) modulo \( m \) menggunakan algoritma extended Euclidean.
-
-4. Bilangan Prima:
-   - `is_prime`: Memeriksa apakah bilangan \( n \) adalah bilangan prima.
-
-5. Logaritma Diskrit:
-   - `discrete_log`: Menghitung nilai \( x \) yang memenuhi \( g^x \equiv y \mod p \) dengan iterasi.
-
-### Contoh Penggunaan
-Bagian `if __name__ == "__main__":` menunjukkan contoh penggunaan untuk setiap fungsi. Anda dapat langsung menjalankan kode ini dalam lingkungan Python untuk melihat hasilnya.
-
-Jika ada pertanyaan lebih lanjut atau butuh bantuan, silakan beri tahu!
-# Contoh penggunaan
-if __name__ == "__main__":
-    # Contoh Modular Arithmetic
-    print("Modular Addition: ", mod_add(17, 5, 12))  # Output: 10
-    print("Modular Subtraction: ", mod_sub(17, 5, 12))  # Output: 12
-    print("Modular Multiplication: ", mod_mul(4, 3, 5))  # Output: 2
-    print("Modular Exponentiation: ", mod_exp(3, 4, 11))  # Output: 9
-
-    # Contoh GCD
-    print("GCD of 48 and 18: ", gcd(48, 18))  # Output: 6
-
-    # Contoh Modular Inverse
-    print("Modular Inverse of 3 mod 11: ", mod_inverse(3, 11))  # Output: 4
-
-    # Contoh Bilangan Prima
-    print("Apakah 29 bilangan prima? ", is_prime(29))  # Output: True
-    print("Apakah 30 bilangan prima? ", is_prime(30))  # Output: False
-
-    # Contoh Discrete Log
-    print("Discrete Log of 3^x ≡ 4 mod 11: ", discrete_log(3, 4, 11))  # Output: 4
----
+Contoh:
+Untuk menghitung \( \text{gcd}(48, 18) \):
+- \( 48 \mod 18 = 12 \)
+- Ganti: \( a = 18, b = 12 \)
+- \( 18 \mod 12 = 6 \)
+- Ganti: \( a = 12, b = 6 \)
+- \( 12 \mod 6 = 0 \)
+- GCD adalah \( 6 \).
+ Aplikasi
+- Modular Arithmetic: Banyak digunakan dalam kriptografi, pengkodean, dan algoritma komputer, terutama dalam penghitungan yang efisien.
+- GCD: Mempermudah penyederhanaan pecahan, analisis bilangan, dan algoritma yang memerlukan komputasi dengan bilangan bulat.
+Kesimpulan
+Modular arithmetic dan GCD adalah dua konsep fundamental dalam matematika yang memiliki aplikasi luas dalam teori bilangan dan kriptografi. Memahami kedua konsep ini memungkinkan kita untuk melakukan operasi matematis yang lebih kompleks dan mendesain algoritma yang lebih efisien. Dengan demikian, pengetahuan tentang aritmetika modular dan GCD sangat penting dalam pengembangan aplikasi yang aman dan efektif.
 
 ## 3. Alat dan Bahan
 (- Python 3.x  
