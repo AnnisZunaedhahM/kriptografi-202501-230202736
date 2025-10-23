@@ -355,9 +355,6 @@ Logaritma diskrit digunakan dalam protokol seperti Diffie-Hellman untuk pertukar
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
-## Kesimpulan
-
 Program Python yang disusun memberikan fondasi yang kuat dalam memahami dan menerapkan konsep-konsep penting dalam aritmetika modular dan teori bilangan. Berikut adalah ringkasan detail dari setiap komponen yang diimplementasikan:
 
 1. Aritmetika Modular:
@@ -373,7 +370,7 @@ Program Python yang disusun memberikan fondasi yang kuat dalam memahami dan mene
    - ungsi Extended GCD (`extended_gcd`)**: Menghitung GCD dan koefisien \( x \) dan \( y \) yang memenuhi persamaan \( ax + by = \text{GCD}(a, b) \). Ini berguna untuk menyelesaikan masalah di mana kombinasi linear diperlukan.
    - Fungsi Invers Modular (`mod_inverse`)**: Mengembalikan invers dari bilangan \( a \) modulo \( m \) jika \( a \) dan \( m \) relatif prima. Invers modular sangat penting dalam algoritma kriptografi untuk dekripsi kunci.
 
-4. Bilangan Prima**:
+4. Bilangan Prima:
    - Fungsi Bilangan Prima (`is_prime`)**: Menentukan apakah suatu bilangan adalah prima. Bilangan prima merupakan elemen kunci dalam banyak algoritma kriptografi, termasuk dalam pembangkitan kunci.
 
 5. Logaritma Diskrit:
