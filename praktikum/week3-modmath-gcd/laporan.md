@@ -12,6 +12,7 @@ Kelas: [ 5IKRB]
 1.Menyelesaikan operasi aritmetika modular.
 2.Menentukan bilangan prima dan menghitung GCD (Greatest Common Divisor).
 3.Menerapkan logaritma diskrit sederhana dalam simulasi kriptografi.
+
 ---
 
 ## 2. Dasar Teori
@@ -175,23 +176,23 @@ if __name__ == "__main__":
 
 ### Penjelasan Kode
 
-1. **Fungsi Aritmetika Modular**:
+1. Fungsi Aritmetika Modular:
    - `mod_add`: Menjumlahkan dua bilangan dan mengambil modulus.
    - `mod_sub`: Mengurangi dua bilangan dan mengambil modulus.
    - `mod_mul`: Mengalikan dua bilangan dan mengambil modulus.
    - `mod_exp`: Menghitung hasil pangkat dengan modulus menggunakan metode eksponensiasi cepat.
 
-2. **GCD dan Extended Euclidean**:
+2. GCD dan Extended Euclidean:
    - `gcd`: Menghitung GCD dari dua bilangan menggunakan algoritma Euclidean.
    - `extended_gcd`: Mengembalikan GCD dan koefisien yang membentuk GCD sebagai kombinasi linear dari dua bilangan.
 
-3. **Invers Modular**:
+3. Invers Modular:
    - `mod_inverse`: Menghitung invers modular dari bilangan \( a \) modulo \( m \) menggunakan algoritma extended Euclidean.
 
-4. **Bilangan Prima**:
+4. Bilangan Prima:
    - `is_prime`: Memeriksa apakah bilangan \( n \) adalah bilangan prima.
 
-5. **Logaritma Diskrit**:
+5. Logaritma Diskrit:
    - `discrete_log`: Menghitung nilai \( x \) yang memenuhi \( g^x \equiv y \mod p \) dengan iterasi.
 
 ### Contoh Penggunaan
@@ -359,24 +360,24 @@ Dengan penjelasan di atas, Anda seharusnya dapat memahami dasar-dasar operasi ar
 
 Program Python yang disusun memberikan fondasi yang kuat dalam memahami dan menerapkan konsep-konsep penting dalam aritmetika modular dan teori bilangan. Berikut adalah ringkasan detail dari setiap komponen yang diimplementasikan:
 
-1. **Aritmetika Modular**:
-   - **Fungsi Penjumlahan (`mod_add`)**: Menghitung hasil penjumlahan dua bilangan dalam ruang modulo, berguna untuk menghindari overflow dan menjaga hasil dalam batas tertentu.
-   - **Fungsi Pengurangan (`mod_sub`)**: Memungkinkan pengurangan dengan modulus, penting dalam berbagai algoritma yang melibatkan siklus atau pengulangan.
-   - **Fungsi Perkalian (`mod_mul`)**: Mengalikan dua bilangan dan mengambil modulus, digunakan dalam kriptografi untuk operasi yang melibatkan kunci.
-   - **Fungsi Eksponen Modular (`mod_exp`)**: Menghitung pangkat dengan modulus secara efisien menggunakan metode eksponensiasi cepat, mengurangi kompleksitas waktu dalam perhitungan besar.
+1. Aritmetika Modular:
+   - Fungsi Penjumlahan (`mod_add`): Menghitung hasil penjumlahan dua bilangan dalam ruang modulo, berguna untuk menghindari overflow dan menjaga hasil dalam batas tertentu.
+   - Fungsi Pengurangan (`mod_sub`): Memungkinkan pengurangan dengan modulus, penting dalam berbagai algoritma yang melibatkan siklus atau pengulangan.
+   - Fungsi Perkalian (`mod_mul`): Mengalikan dua bilangan dan mengambil modulus, digunakan dalam kriptografi untuk operasi yang melibatkan kunci.
+   - Fungsi Eksponen Modular (`mod_exp`): Menghitung pangkat dengan modulus secara efisien menggunakan metode eksponensiasi cepat, mengurangi kompleksitas waktu dalam perhitungan besar.
 
-2. **GCD (Greatest Common Divisor)**:
-   - **Fungsi GCD (`gcd`)**: Menghitung GCD dari dua bilangan menggunakan algoritma Euclidean, yang sangat efisien dan dasar untuk banyak aplikasi di teori bilangan, termasuk dalam penyederhanaan pecahan.
+2. GCD (Greatest Common Divisor):
+   - Fungsi GCD (`gcd`): Menghitung GCD dari dua bilangan menggunakan algoritma Euclidean, yang sangat efisien dan dasar untuk banyak aplikasi di teori bilangan, termasuk dalam penyederhanaan pecahan.
 
-3. **Extended Euclidean & Invers Modular**:
-   - **Fungsi Extended GCD (`extended_gcd`)**: Menghitung GCD dan koefisien \( x \) dan \( y \) yang memenuhi persamaan \( ax + by = \text{GCD}(a, b) \). Ini berguna untuk menyelesaikan masalah di mana kombinasi linear diperlukan.
-   - **Fungsi Invers Modular (`mod_inverse`)**: Mengembalikan invers dari bilangan \( a \) modulo \( m \) jika \( a \) dan \( m \) relatif prima. Invers modular sangat penting dalam algoritma kriptografi untuk dekripsi kunci.
+3. Extended Euclidean & Invers Modular:
+   - ungsi Extended GCD (`extended_gcd`)**: Menghitung GCD dan koefisien \( x \) dan \( y \) yang memenuhi persamaan \( ax + by = \text{GCD}(a, b) \). Ini berguna untuk menyelesaikan masalah di mana kombinasi linear diperlukan.
+   - Fungsi Invers Modular (`mod_inverse`)**: Mengembalikan invers dari bilangan \( a \) modulo \( m \) jika \( a \) dan \( m \) relatif prima. Invers modular sangat penting dalam algoritma kriptografi untuk dekripsi kunci.
 
-4. **Bilangan Prima**:
-   - **Fungsi Bilangan Prima (`is_prime`)**: Menentukan apakah suatu bilangan adalah prima. Bilangan prima merupakan elemen kunci dalam banyak algoritma kriptografi, termasuk dalam pembangkitan kunci.
+4. Bilangan Prima**:
+   - Fungsi Bilangan Prima (`is_prime`)**: Menentukan apakah suatu bilangan adalah prima. Bilangan prima merupakan elemen kunci dalam banyak algoritma kriptografi, termasuk dalam pembangkitan kunci.
 
-5. **Logaritma Diskrit**:
-   - **Fungsi Logaritma Diskrit (`discrete_log`)**: Mencari nilai \( x \) yang memenuhi \( g^x \equiv y \mod p \). Ini adalah masalah yang sulit dan menjadi dasar bagi banyak protokol kriptografi, seperti Diffie-Hellman, yang memanfaatkan kesulitan menghitung logaritma diskrit untuk keamanan.
+5. Logaritma Diskrit:
+   - Fungsi Logaritma Diskrit (`discrete_log`)**: Mencari nilai \( x \) yang memenuhi \( g^x \equiv y \mod p \). Ini adalah masalah yang sulit dan menjadi dasar bagi banyak protokol kriptografi, seperti Diffie-Hellman, yang memanfaatkan kesulitan menghitung logaritma diskrit untuk keamanan.
 
 ### Implikasi dan Aplikasi
 Implementasi fungsi-fungsi ini tidak hanya menunjukkan dasar-dasar matematika, tetapi juga bagaimana konsep-konsep ini diterapkan dalam kriptografi modern. Dengan memahami dan menggunakan fungsi ini, pengguna dapat:
