@@ -350,7 +350,7 @@ Jadi, \( x = 4 \) adalah solusi dari logaritma diskrit ini.
 
 Logaritma diskrit digunakan dalam protokol seperti Diffie-Hellman untuk pertukaran kunci, di mana keamanan bergantung pada kesulitan menghitung logaritma diskrit.
 
-Dengan penjelasan di atas, Anda seharusnya dapat memahami dasar-dasar operasi aritmetika modular, bilangan prima dan GCD, serta penerapan logaritma diskrit dalam kriptografi. Jika ada yang ingin ditanyakan lebih lanjut, silakan!
+\
 )
 ---
 
