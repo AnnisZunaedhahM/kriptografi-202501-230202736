@@ -63,12 +63,10 @@ def encrypt(text, key):
 ---
 
 ## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder screenshots/).
-
-Berikan tabel atau ringkasan hasil uji jika diperlukan.
-
-Jelaskan apakah hasil sesuai ekspektasi. jawab Berdasarkan gambar yang ditampilkan, berikut adalah analisis apakah hasilnya sesuai ekspektasi:
-Hasil eksekusi program Caesar Cipher:
+(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
+- Berikan tabel atau ringkasan hasil uji jika diperlukan.
+  
+- Jelaskan apakah hasil sesuai ekspektasi.
 
 ![Hasil Eksekusi](Screenshots/Hasil_5.png)
 
