@@ -4,9 +4,7 @@ Topik: [Entropy & Unicity Distance (Evaluasi Kekuatan Kunci dan Brute Force]
 Nama: [Annis Zunaedhah M]  
 NIM: [230202736]  
 Kelas: [5 IKRB]  
-
 ---
-
 ## 1. Tujuan
 (Tuliskan tujuan pembelajaran praktikum sesuai modul.)
 1.Menyelesaikan perhitungan sederhana terkait entropi kunci.
@@ -17,15 +15,10 @@ Kelas: [5 IKRB]
 
 ## 2. Dasar Teori
 (Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
-## Ringkasan Teori Entropi dan Unicity Distance
-
-### 1. Teori Entropi
-
+Ringkasan Teori Entropi dan Unicity Distance
+1. Teori Entropi
 Entropi adalah konsep yang berasal dari teori informasi, yang diusulkan oleh Claude Shannon. Entropi mengukur ketidakpastian atau ketidakteraturan dalam sebuah sistem. Dalam konteks informasi, entropi memberikan ukuran rata-rata informasi yang diperlukan untuk menggambarkan keadaan suatu variabel acak.
-
-#### Rumus Entropi
-
+Rumus Entropi
 Entropi \( H(X) \) dari variabel acak \( X \) didefinisikan sebagai:
 
 \[ 
@@ -35,18 +28,15 @@ H(X) = -\sum_{i} P(x_i) \log_b P(x_i)
 Di mana:
 - \( P(x_i) \) adalah probabilitas dari kejadian \( x_i \).
 - \( b \) adalah basis logaritma (biasanya 2 untuk bit).
-
-### Aplikasi Entropi
-
+ Aplikasi Entropi
 1. Komunikasi: Mengukur efisiensi pengkodean pesan.
 2. Kriptografi: Menilai keamanan kunci enkripsi; kunci dengan entropi tinggi lebih sulit diprediksi.
 3. Statistik: Menganalisis distribusi data dan variabilitas.
 
-### 2. Unicity Distance
+2. Unicity Distance
 
 Unicity Distance adalah konsep dalam kriptografi yang mengacu pada jarak minimum antara dua pesan yang dapat dijelaskan dengan satu kunci enkripsi. Ini adalah ukuran seberapa banyak data yang diperlukan untuk memastikan bahwa kunci enkripsi yang digunakan dalam suatu sistem adalah unik, sehingga hanya satu kunci yang dapat digunakan untuk mendekripsi pesan.
-
-#### Rumus Unicity Distance
+ Rumus Unicity Distance
 
 Unicity distance \( d \) dapat dihitung menggunakan rumus:
 
@@ -58,12 +48,12 @@ Di mana:
 - \( H(K) \) adalah entropi kunci.
 - \( H(M) \) adalah entropi pesan.
 
-### Aplikasi Unicity Distance
+ Aplikasi Unicity Distance
 
 1. Keamanan Kriptografi: Menentukan seberapa banyak data yang dibutuhkan untuk menjamin bahwa kunci enkripsi adalah unik.
 2. Analisis Serangan: Membantu dalam merancang sistem yang tahan terhadap analisis frekuensi atau serangan brute-force.
 
-### Hubungan Antara Entropi dan Unicity Distance
+ Hubungan Antara Entropi dan Unicity Distance
 
 - Entropi tinggi dalam kunci dan pesan menciptakan unicity distance yang lebih besar, sehingga meningkatkan keamanan sistem kriptografi.
 - Analisis entropi membantu menentukan seberapa kuat kunci dan pesan, serta berapa banyak informasi yang dibutuhkan untuk menjamin keunikan kunci.
