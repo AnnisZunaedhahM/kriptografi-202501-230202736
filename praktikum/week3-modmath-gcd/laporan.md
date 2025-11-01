@@ -107,9 +107,45 @@ def encrypt(text, key):
 ## 6. Hasil dan Pembahasan
 (- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
 - Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
+- Jelaskan apakah hasil sesuai ekspektasi.
+  jawab
+Berikut adalah analisis hasil dari kode yang ditampilkan:
+Hasil
+1. Fungsi dalam Kode:
+   - Kode tersebut tampaknya berhubungan dengan operasi matematika, mungkin untuk menghitung modulus atau operasi lainnya yang berhubungan dengan bilangan bulat.
 
+2. Output yang Dihasilkan:
+   - Jika output yang muncul di terminal menunjukkan nilai yang benar dan sesuai dengan perhitungan yang diharapkan, maka hasil tersebut bisa dikatakan sesuai ekspektasi.
+
+3. Format dan Struktur Output:
+   - Jika hasil ditampilkan dengan format yang jelas dan mudah dibaca, serta mencerminkan hasil dari perhitungan yang dilakukan, ini juga menunjukkan bahwa hasilnya sesuai harapan.
+
+Kesimpulan
+Jika semua aspek di atas menunjukkan bahwa fungsi berjalan dengan baik dan output sesuai yang diharapkan, maka hasilnya memang sesuai ekspektasi. Namun, jika ada ketidaksesuaian, perlu dilakukan pemeriksaan lebih lanjut pada kode untuk menemukan dan memperbaiki potensi masalah.
+
+- Bahas error (jika ada) dan solusinya. 
+jawab
+Berikut adalah beberapa potensi error yang mungkin muncul dalam kode yang ditampilkan, beserta solusinya:
+
+1.Kesalahan pada Input
+   - Masalah: Jika input yang dimasukkan tidak valid (misalnya, bukan bilangan bulat), program bisa gagal atau memberikan hasil yang tidak sesuai.
+   - Solusi: Tambahkan pengecekan untuk memastikan bahwa input yang diberikan adalah bilangan bulat sebelum melanjutkan ke proses berikutnya.
+
+ 2. Error dalam Perhitungan Modulus
+   - Masalah: Jika ada kesalahan dalam logika perhitungan modulus, hasil yang diperoleh bisa salah.
+   - Solusi: Tinjau kembali rumus dan logika yang digunakan dalam fungsi untuk memastikan perhitungan dilakukan dengan benar.
+
+ 3. Pembagian dengan Nol
+   - Masalah: Jika terdapat pembagian dengan nol dalam perhitungan, program akan mengalami error.
+   - Solusi: Tambahkan pengecekan untuk memastikan tidak ada nilai yang digunakan sebagai penyebut yang bernilai nol.
+
+ 4. Pengecualian Saat Eksekusi
+   - Masalah: Jika terjadi kesalahan saat menjalankan program (misalnya, kesalahan dalam akses indeks), ini bisa membuat program berhenti.
+   - Solusi: Gunakan blok `try-except` untuk menangani kesalahan dan memberikan pesan yang jelas kepada pengguna.
+
+5. Masalah Kinerja
+   - Masalah: Jika kode tidak dioptimalkan dengan baik, terutama untuk input yang besar, proses bisa berjalan lambat.
+   - Solusi: Pertimbangkan untuk mengoptimalkan algoritma atau
 Hasil eksekusi program Caesar Cipher:
 
 ![Hasil Eksekusi](Screenshots/hasil_3.JPG)
