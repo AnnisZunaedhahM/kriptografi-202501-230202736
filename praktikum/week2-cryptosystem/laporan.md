@@ -108,9 +108,48 @@ if __name__ == "__main__":
 ## 6. Hasil dan Pembahasan
 (- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
 - Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
+- Jelaskan apakah hasil sesuai ekspektasi.
+jawab
+Berdasarkan gambar yang disertakan, berikut adalah analisis mengenai apakah hasilnya sesuai ekspektasi:
+Hasil
+1. Fungsi Enkripsi dan Dekripsi:
+   - Jika fungsi enkripsi dan dekripsi berhasil menampilkan hasil yang diharapkan (misalnya, pesan yang telah dienkripsi dan kemudian didekripsi kembali ke bentuk asli), maka hasil tersebut sesuai dengan ekspektasi.
 
+2. Output:
+   - Jika output dari program menunjukkan pesan yang sama sebelum dan setelah proses enkripsi dan dekripsi, maka dapat disimpulkan bahwa hasilnya sesuai dengan yang diharapkan.
+
+3. Format dan Struktur:
+   - Jika hasil output terlihat rapi dan terformat dengan baik, serta menampilkan informasi dengan jelas, maka ini juga merupakan indikator bahwa hasilnya sesuai ekspektasi.
+
+ Kesimpulan
+Jika semua elemen di atas menunjukkan bahwa fungsi bekerja dengan baik dan output sesuai dengan yang diharapkan, maka dapat dikatakan bahwa hasilnya memang sesuai ekspektasi. Namun, jika terdapat ketidaksesuaian, perlu dilakukan analisis lebih lanjut terhadap kode untuk menemukan dan memperbaiki potensi masalah.
+
+- Bahas error (jika ada) dan solusinya. 
+jawab
+Berikut adalah beberapa potensi error yang mungkin muncul dalam kode enkripsi dan dekripsi, beserta solusinya:
+
+1. Error pada Input
+   - Masalah: Jika input yang diberikan mengandung karakter yang tidak valid (misalnya, angka atau simbol), fungsi mungkin akan gagal atau menghasilkan output yang tidak diharapkan.
+   - olusi: Tambahkan validasi input untuk memeriksa apakah semua karakter dalam plaintext adalah huruf. Jika tidak, tampilkan pesan kesalahan atau abaikan karakter tersebut.
+
+ 2. Kesalahan dalam Logika Enkripsi/Dekripsi
+   - **Masalah**: Jika hasil dekripsi tidak sama dengan pesan asli, kemungkinan terdapat kesalahan dalam cara pergeseran (shift) diterapkan.
+   - Solusi: Tinjau kembali rumus pergeseran yang digunakan dalam fungsi enkripsi dan dekripsi. Pastikan bahwa nilai kunci (key) diterapkan dengan benar dalam kedua fungsi.
+
+3. Output yang Tidak Sesuai
+   - Masalah: Jika output tidak sesuai dengan yang diharapkan (misalnya, nama atau string yang salah), bisa jadi ada kesalahan dalam pengolahan data.
+   - Solusi: Debug dengan mencetak nilai intermediate dalam fungsi untuk melacak nilai yang dihasilkan pada setiap langkah, sehingga bisa menemukan di mana kesalahan terjadi.
+
+4. Pengecualian di Waktu Eksekusi
+   - **Masalah**: Jika ada kesalahan saat menjalankan program (misalnya, division by zero atau index out of range), ini bisa menyebabkan program berhenti.
+   - Solusi: Tambahkan penanganan pengecualian (try-except) untuk menangani error ini dengan baik, sehingga program tidak berhenti secara tiba-tiba dan dapat memberikan umpan balik yang lebih baik kepada pengguna.
+
+5. Masalah Kinerja
+   - Masalah: Jika proses enkripsi atau dekripsi memakan waktu lama pada input yang besar, ini bisa menjadi masalah kinerja.
+   - Solusi: Pertimbangkan untuk mengoptimalkan algoritma atau menggunakan metode yang lebih efisien untuk mengolah data.
+
+Kesimpulan
+Memastikan bahwa semua bagian kode berfungsi dengan baik dan melakukan pengujian menyeluruh dapat membantu mengidentifikasi dan memperbaiki error yang mungkin muncul.
 Hasil eksekusi program Caesar Cipher:
 
 ![Hasil Eksekusi](Screenshots/Eksekusi.png)
@@ -127,7 +166,7 @@ soal:
 2.Apa kelebihan dan kelemahan sistem simetris dibandingkan asimetris?
 3.Mengapa distribusi kunci menjadi masalah utama dalam kriptografi simetris?  
 jawab:
-1. Komponen Utama dalam Sebuah Kriptosistem
+1. Komponen Utama dalam Sebuah Kriptosistem?
 Dalam sebuah kriptosistem, terdapat beberapa komponen utama yang saling berhubungan untuk melindungi informasi. Berikut adalah komponen-komponen tersebut:
 
 Pesan (Plaintext): Informasi asli yang ingin diamankan, seperti teks, gambar, atau data lainnya.
@@ -142,7 +181,7 @@ Algoritma Dekripsi: Metode yang digunakan untuk mengubah ciphertext kembali menj
 
 Pengguna: Pihak yang terlibat dalam proses enkripsi dan dekripsi, bisa berupa individu atau organisasi yang memerlukan perlindungan data.
 
-2. Kelebihan dan Kelemahan Sistem Simetris dibandingkan Asimetris
+2. Kelebihan dan Kelemahan Sistem Simetris dibandingkan Asimetris?
 Kelebihan Sistem Simetris:
 Kecepatan: Proses enkripsi dan dekripsi cenderung lebih cepat karena algoritma yang digunakan biasanya lebih sederhana. Ini membuat sistem simetris efisien untuk mengenkripsi data dalam jumlah besar.
 
