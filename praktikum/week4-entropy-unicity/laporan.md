@@ -93,9 +93,7 @@ def encrypt(text, key):
 - Berikan tabel atau ringkasan hasil uji jika diperlukan.
   
 - Jelaskan apakah hasil sesuai ekspektasi.
-  jawab
-  Berdasarkan gambar yang ditampilkan, berikut adalah analisis apakah hasilnya sesuai ekspektasi:
-
+jawab
 Hasil
 1. Fungsi dalam Kode:
    - Kode tersebut tampaknya berkaitan dengan enkripsi, khususnya dengan metode Caesar Cipher. Fungsi-fungsi yang ada mungkin digunakan untuk menghitung jarak enkripsi dan melakukan brute force untuk menemukan kunci.
@@ -111,8 +109,6 @@ Jika semua elemen di atas menunjukkan bahwa fungsi berjalan dengan baik dan outp
 
 - Bahas error (jika ada) dan solusinya. 
 jawab
-Berikut adalah beberapa potensi error yang mungkin muncul dalam kode yang ditampilkan, beserta solusinya:
-
  1. Kesalahan pada Input
    - Masalah: Jika input yang dimasukkan tidak valid (misalnya, karakter yang tidak sesuai untuk enkripsi), program bisa gagal atau memberikan hasil yang tidak diharapkan.
    - olusi: Tambahkan validasi untuk memastikan bahwa input yang diberikan adalah teks yang valid sebelum melanjutkan ke proses enkripsi.
