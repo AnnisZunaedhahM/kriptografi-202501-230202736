@@ -88,7 +88,33 @@ Untuk mengevaluasi apakah hasil dari kode yang ditampilkan sesuai ekspektasi, ki
 Kesimpulan
 Jika semua aspek di atas diperiksa dan hasilnya sesuai dengan ekspektasi, maka dapat dikatakan bahwa hasil dari kode tersebut sesuai dengan yang diharapkan. Jika ada ketidaksesuaian, perlu dilakukan debugging untuk menemukan sumber masalah.
 
+- Bahas error (jika ada) dan solusinya. 
+jawab
+Berikut adalah beberapa potensi error yang mungkin muncul dalam kode enkripsi dan dekripsi Caesar, beserta solusinya:
 
+ 1. Kesalahan dalam Penanganan Karakter Non-Huruf
+   - Masalah: Jika kode tidak menangani karakter non-huruf dengan benar, seperti angka atau simbol, ini dapat memengaruhi hasil.
+   - Solusi: Pastikan untuk memeriksa apakah karakter adalah huruf sebelum menerapkan pergeseran. Jika tidak, karakter tersebut harus ditambahkan ke hasil tanpa perubahan.
+
+ 2. Kesalahan dalam Perhitungan Pergeseran
+   - Masalah: Jika perhitungan pergeseran (shift) tidak benar, hasil enkripsi atau dekripsi bisa salah.
+   - Solusi: Pastikan bahwa perhitungan pergeseran dilakukan dengan benar, termasuk penanganan situasi di mana pergeseran melebihi jumlah huruf dalam alfabet (misalnya, menggunakan modulo).
+
+ 3. Kunci Negatif atau Nol
+   - Masalah: Jika kunci yang digunakan untuk enkripsi atau dekripsi adalah negatif atau nol, ini dapat menghasilkan perilaku yang tidak diinginkan.
+   - Solusi: Tambahkan validasi untuk memastikan bahwa kunci selalu positif dan sesuai dengan panjang alfabet. Jika kunci negatif, ubah menjadi positif dengan menambahkannya ke panjang alfabet.
+
+4. Kesalahan pada Tipe Data
+   - Masalah: Tipe data yang tidak tepat (misalnya, menggunakan string saat seharusnya integer) dapat menyebabkan error saat eksekusi.
+   - olusi: Pastikan bahwa semua variabel memiliki tipe data yang sesuai dan lakukan konversi jika diperlukan.
+
+5. Pengecualian saat Eksekusi
+   - Masalah: Jika terjadi kesalahan saat mengakses indeks atau karakter, program bisa berhenti.
+   - olusi: Gunakan blok try-except untuk menangani pengecualian dan memberikan pesan yang informatif kepada pengguna jika terjadi kesalahan.
+6. Output Tidak Sesuai Ekspektasi
+Masalah: Jika output dari fungsi tidak sesuai dengan yang diharapkan, ini bisa menunjukkan adanya kesalahan dalam logika.
+Solusi: Debug dengan mencetak nilai intermediate selama proses untuk melacak di mana kesalahan mungkin terjadi.
+     
 ![Hasil Eksekusi](Screenshots/Hasil_5.png)
 
 
