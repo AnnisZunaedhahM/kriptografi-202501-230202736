@@ -1,6 +1,6 @@
 # Laporan Praktikum Kriptografi
 <<<<<<< HEAD
-Minggu ke-: X  
+Minggu ke-:3  
 Topik: [Modular Math (Aritmetika Modular, GCD, Bilangan Prima, Logaritma Diskrit)]  
 Nama: [annis zunaedhah muthoharoh]  
 NIM: [230202736]  
@@ -255,9 +255,6 @@ Jadi, \( x = 4 \) adalah solusi dari logaritma diskrit ini.
  Penerapan dalam Kriptografi:
 
 Logaritma diskrit digunakan dalam protokol seperti Diffie-Hellman untuk pertukaran kunci, di mana keamanan bergantung pada kesulitan menghitung logaritma diskrit.
-
-\
->>>>>>> c90ac6548224b4edfb100b132df7b8a013efed7b
 )
 ---
 
