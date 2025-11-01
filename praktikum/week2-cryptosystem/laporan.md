@@ -110,7 +110,6 @@ if __name__ == "__main__":
 - Berikan tabel atau ringkasan hasil uji jika diperlukan.  
 - Jelaskan apakah hasil sesuai ekspektasi.
 jawab
-Berdasarkan gambar yang disertakan, berikut adalah analisis mengenai apakah hasilnya sesuai ekspektasi:
 Hasil
 1. Fungsi Enkripsi dan Dekripsi:
    - Jika fungsi enkripsi dan dekripsi berhasil menampilkan hasil yang diharapkan (misalnya, pesan yang telah dienkripsi dan kemudian didekripsi kembali ke bentuk asli), maka hasil tersebut sesuai dengan ekspektasi.
@@ -126,7 +125,6 @@ Jika semua elemen di atas menunjukkan bahwa fungsi bekerja dengan baik dan outpu
 
 - Bahas error (jika ada) dan solusinya. 
 jawab
-Berikut adalah beberapa potensi error yang mungkin muncul dalam kode enkripsi dan dekripsi, beserta solusinya:
 
 1. Error pada Input
    - Masalah: Jika input yang diberikan mengandung karakter yang tidak valid (misalnya, angka atau simbol), fungsi mungkin akan gagal atau menghasilkan output yang tidak diharapkan.
