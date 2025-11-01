@@ -1,10 +1,4 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-:3  
-Topik: [Modular Math (Aritmetika Modular, GCD, Bilangan Prima, Logaritma Diskrit)]  
-Nama: [annis zunaedhah muthoharoh]  
-NIM: [230202736]  
-Kelas: [5 IKRB]  
-=======
 Minggu ke-: 3
 Topik: [Modular Math (Aritmetika Modular, GCD, Bilangan Prima, Logaritma Diskrit)]  
 Nama: [Annis Zunaedhah M]  
