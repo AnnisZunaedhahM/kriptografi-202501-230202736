@@ -67,6 +67,27 @@ def encrypt(text, key):
 - Berikan tabel atau ringkasan hasil uji jika diperlukan.
   
 - Jelaskan apakah hasil sesuai ekspektasi.
+jawab
+Untuk mengevaluasi apakah hasil dari kode yang ditampilkan sesuai ekspektasi, kita perlu mempertimbangkan beberapa aspek:
+
+1. Fungsi Enkripsi dan Dekripsi
+   - Ekspektasi: Fungsi `caesar_encrypt` harus mampu mengenkripsi teks dengan benar menggunakan kunci yang diberikan. Sebaliknya, fungsi `caesar_decrypt` harus dapat mengembalikan teks terenkripsi ke bentuk aslinya.
+   - Pemeriksaan: Uji dengan beberapa contoh plaintext dan kunci untuk memastikan bahwa hasil enkripsi dan dekripsi sesuai. Misalnya, jika kita mengenkripsi "HELLO" dengan kunci 3, hasil yang diharapkan adalah "KHOOR". Jika kita kemudian mendekripsi "KHOOR" dengan kunci 3, kita harus kembali ke "HELLO".
+ 2. Penanganan Karakter
+   - Ekspektasi: Kode harus dapat menangani huruf besar dan kecil dengan baik serta mengabaikan karakter non-huruf (seperti angka atau simbol).
+   - Pemeriksaan: Pastikan bahwa karakter non-huruf tidak terpengaruh oleh proses enkripsi. Misalnya, teks "HELLO WORLD!" harus tetap menjadi "KHOOR ZRUOG!" setelah enkripsi.
+
+3. Penggunaan Kunci
+   - Ekspektasi: Kunci yang digunakan dalam proses enkripsi dan dekripsi harus konsisten dan tepat. Jika kunci yang digunakan untuk mendekripsi berbeda dari yang digunakan untuk mengenkripsi, hasilnya tidak akan sesuai.
+   - Pemeriksaan: Uji dengan kunci yang sama untuk enkripsi dan dekripsi, dan pastikan hasilnya sesuai.
+
+4. Output
+   - Ekspektasi: Output yang dihasilkan oleh kode (baik dari enkripsi maupun dekripsi) harus bisa diprediksi.
+   - Pemeriksaan: Bandingkan output dari fungsi dengan hasil yang diharapkan berdasarkan logika enkripsi Caesar.
+
+Kesimpulan
+Jika semua aspek di atas diperiksa dan hasilnya sesuai dengan ekspektasi, maka dapat dikatakan bahwa hasil dari kode tersebut sesuai dengan yang diharapkan. Jika ada ketidaksesuaian, perlu dilakukan debugging untuk menemukan sumber masalah.
+
 
 ![Hasil Eksekusi](Screenshots/Hasil_5.png)
 
