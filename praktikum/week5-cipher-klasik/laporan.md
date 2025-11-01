@@ -68,7 +68,6 @@ def encrypt(text, key):
   
 - Jelaskan apakah hasil sesuai ekspektasi.
 jawab
-Untuk mengevaluasi apakah hasil dari kode yang ditampilkan sesuai ekspektasi, kita perlu mempertimbangkan beberapa aspek:
 
 1. Fungsi Enkripsi dan Dekripsi
    - Ekspektasi: Fungsi `caesar_encrypt` harus mampu mengenkripsi teks dengan benar menggunakan kunci yang diberikan. Sebaliknya, fungsi `caesar_decrypt` harus dapat mengembalikan teks terenkripsi ke bentuk aslinya.
@@ -90,7 +89,6 @@ Jika semua aspek di atas diperiksa dan hasilnya sesuai dengan ekspektasi, maka d
 
 - Bahas error (jika ada) dan solusinya. 
 jawab
-Berikut adalah beberapa potensi error yang mungkin muncul dalam kode enkripsi dan dekripsi Caesar, beserta solusinya:
 
  1. Kesalahan dalam Penanganan Karakter Non-Huruf
    - Masalah: Jika kode tidak menangani karakter non-huruf dengan benar, seperti angka atau simbol, ini dapat memengaruhi hasil.
