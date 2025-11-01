@@ -63,17 +63,11 @@ def encrypt(text, key):
 ---
 
 ## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-jawab
-Hasil yang diberikan menunjukkan proses dekripsi yang berhasil menggunakan metode enkripsi klasik. Dalam contoh pertama, teks "KRIPTOGRAFI" dienkripsi menjadi "UVGZXMQVYPM" dan berhasil didekripsi kembali menjadi "CLASSIC CIPHER." Ini menunjukkan bahwa algoritma enkripsi dan dekripsi berfungsi dengan baik, mengkonfirmasi keakuratan implementasi. Hasil kedua juga menunjukkan bahwa "KRIPTOGRAFI" menghasilkan ciphertext yang sama, yang menegaskan konsistensi dalam proses. Selain itu, penggunaan Cipher Transposisi terlihat pada teks "TRANSPOSITIONCIPHER," yang menghasilkan ciphertext "TPIROOHASENICRST." Hasil-hasil ini menggambarkan bagaimana cipher klasik dapat menyembunyikan informasi dengan cara yang sederhana namun efektif, sekaligus memberikan pemahaman dasar tentang prinsip-prinsip kriptografi yang mendasari metode yang lebih kompleks dan aman yang digunakan saat ini.
-- Jelaskan apakah hasil sesuai ekspektasi.  
-jawab
-Hasil yang diperoleh dari proses enkripsi dan dekripsi menggunakan metode cipher klasik sesuai dengan ekspektasi. Setiap metode, baik Caesar, Vigenère, maupun Transposisi, berhasil mengenkripsi dan mendekripsi pesan dengan akurasi yang tinggi. Misalnya, ciphertext "UVGZXMQVYPM" berhasil dikembalikan menjadi "KRIPTOGRAFI," dan "TPIROOHASENICRST" berhasil didekripsi kembali menjadi "TRANSPOSITIONCIPHER." Ini menunjukkan bahwa algoritma telah diimplementasikan dengan benar dan berfungsi sesuai tujuan
-- Bahas error (jika ada) dan solusinya.
-jawab
- Tidak ada error signifikan yang teridentifikasi dalam kode atau proses enkripsi dan dekripsi. Namun, dalam konteks penggunaan metode klasik, ada beberapa potensi masalah yang perlu diperhatikan. Salah satunya adalah keamanan. Cipher klasik, seperti Caesar dan Vigenère, rentan terhadap analisis frekuensi, yang bisa digunakan oleh penyerang untuk membongkar pesan yang dienkripsi. Solusi untuk mengatasi isu keamanan ini adalah dengan menggunakan kunci yang lebih panjang dan kompleks, serta menggabungkan teknik enkripsi yang lebih modern dan aman.
+(- Lampirkan screenshot hasil eksekusi program (taruh di folder screenshots/).
 
+Berikan tabel atau ringkasan hasil uji jika diperlukan.
+
+Jelaskan apakah hasil sesuai ekspektasi. jawab Berdasarkan gambar yang ditampilkan, berikut adalah analisis apakah hasilnya sesuai ekspektasi:
 Hasil eksekusi program Caesar Cipher:
 
 ![Hasil Eksekusi](Screenshots/Hasil_5.png)
