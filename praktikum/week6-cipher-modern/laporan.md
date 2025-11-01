@@ -83,12 +83,38 @@ Apakah Hasil Sesuai Ekspektasi?
 
 ### Kesimpulan
 
-Secara keseluruhan, jika ciphertext berbeda dari plaintext dan dekripsi mengembalikan plaintext asli tanpa error, maka hasilnya memang sesuai ekspektasi. Namun, jika ada masalah dalam dekripsi atau jika ciphertext tidak dapat diperoleh, Anda mungkin perlu memeriksa kembali langkah-langkah dalam proses enkripsi dan dekripsi.
+Secara keseluruhan, jika ciphertext berbeda dari plaintext dan dekripsi mengembalikan plaintext asli tanpa error, maka hasilnya memang sesuai ekspektasi. Namun, jika ada masalah dalam dekripsi atau jika ciphertext tidak dapat diperoleh, Anda mungkin perlu memeriksa kembali langkah-langkah dalam proses enkripsi dan dekripsi.\
+
 - Bahas error (jika ada) dan solusinya. 
-
-Hasil eksekusi program Caesar Cipher:
 jawab
+Berikut adalah beberapa potensi error yang mungkin muncul saat menjalankan program Caesar Cipher, beserta solusinya:
 
+ 1. Kesalahan Input
+   - Masalah: Pengguna mungkin memasukkan karakter non-huruf atau input yang tidak valid.
+   - Solusi: Tambahkan validasi input untuk memastikan hanya huruf yang diperbolehkan. Anda bisa menggunakan fungsi untuk memfilter input sebelum proses enkripsi.
+
+2. Kunci Negatif atau Nol
+   - Masalah: Jika kunci yang digunakan adalah negatif atau nol, ini dapat menyebabkan hasil yang tidak diinginkan.
+   - Solusi: Pastikan kunci selalu positif. Anda bisa menambahkan validasi untuk memeriksa nilai kunci dan mengubahnya jika perlu (misalnya, menggunakan modulo dengan panjang alfabet).
+
+3. Kesalahan dalam Perhitungan Pergeseran
+   - Masalah: Kesalahan dalam menghitung pergeseran dapat menghasilkan output yang tidak benar.
+   - olusi: Pastikan untuk menggunakan operasi modulo untuk menjaga agar nilai pergeseran tetap dalam batas jumlah huruf dalam alfabet.
+
+4. Output Tidak Sesuai Ekspektasi
+   - Masalah: Jika ciphertext yang dihasilkan tidak sesuai dengan yang diharapkan, ini mungkin menunjukkan adanya kesalahan logika dalam algoritma.
+   - Solusi: Debug kode dengan mencetak nilai intermediate selama proses untuk melacak di mana kesalahan mungkin terjadi.
+
+5. Pengecualian saat Eksekusi
+   - Masalah: Jika terjadi kesalahan saat mengakses indeks atau karakter, program dapat berhenti.
+   - Solusi: Gunakan blok `try-except` untuk menangani pengecualian dan memberikan pesan yang informatif kepada pengguna jika terjadi kesalahan.
+
+6. Masalah dengan Karakter Non-Huruf
+   - Masalah: Karakter seperti spasi, angka, atau simbol mungkin tidak ditangani dengan baik.
+   - Solusi: Tentukan bagaimana karakter non-huruf harus diperlakukan. Umumnya, Anda bisa membiarkannya tidak berubah dan hanya mengenkripsi huruf.
+
+Kesimpulan
+Menangani potensi error dengan baik sangat penting untuk meningkatkan keandalan program Caesar Cipher. Dengan menerapkan solusi di atas, Anda dapat mencegah dan mengatasi masalah yang mungkin muncul selama eksekusi.
 ![Hasil Eksekusi](Screenshots/hasil_6.JPG)
 
 )
