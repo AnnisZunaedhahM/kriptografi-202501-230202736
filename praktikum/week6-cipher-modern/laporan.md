@@ -65,10 +65,6 @@ def encrypt(text, key):
 - Berikan tabel atau ringkasan hasil uji jika diperlukan.  
 - Jelaskan apakah hasil sesuai ekspektasi.
   jawab
-   Berdasarkan gambar yang Anda berikan, tampaknya Anda sedang bekerja dengan kode Python yang menggunakan algoritma AES untuk enkripsi. Berikut adalah beberapa poin untuk menjelaskan hasilnya:
-
-Apakah Hasil Sesuai Ekspektasi?
-
 1. Kunci dan Plaintext: 
    - Kunci yang digunakan dihasilkan secara acak dengan `get_random_bytes`, yang merupakan praktik baik untuk memastikan keamanan. Pastikan panjang kunci sesuai dengan spesifikasi AES (misalnya, 16, 24, atau 32 byte).
 
@@ -81,14 +77,12 @@ Apakah Hasil Sesuai Ekspektasi?
 4. Dekripsi yang Berhasil:
    - Jika hasil dekripsi mengembalikan nilai plaintext yang asli, maka ini menunjukkan bahwa algoritma dan implementasi berfungsi dengan baik.
 
-### Kesimpulan
+Kesimpulan
 
 Secara keseluruhan, jika ciphertext berbeda dari plaintext dan dekripsi mengembalikan plaintext asli tanpa error, maka hasilnya memang sesuai ekspektasi. Namun, jika ada masalah dalam dekripsi atau jika ciphertext tidak dapat diperoleh, Anda mungkin perlu memeriksa kembali langkah-langkah dalam proses enkripsi dan dekripsi.\
 
 - Bahas error (jika ada) dan solusinya. 
 jawab
-Berikut adalah beberapa potensi error yang mungkin muncul saat menjalankan program Caesar Cipher, beserta solusinya:
-
  1. Kesalahan Input
    - Masalah: Pengguna mungkin memasukkan karakter non-huruf atau input yang tidak valid.
    - Solusi: Tambahkan validasi input untuk memastikan hanya huruf yang diperbolehkan. Anda bisa menggunakan fungsi untuk memfilter input sebelum proses enkripsi.
