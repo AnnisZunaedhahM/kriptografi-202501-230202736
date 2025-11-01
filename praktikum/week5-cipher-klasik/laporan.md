@@ -28,6 +28,8 @@ Cipher Caesar adalah salah satu metode paling dasar, di mana setiap huruf dalam 
 Sementara itu, Cipher Vigenère menggunakan kunci yang lebih panjang untuk mengenkripsi pesan, sehingga meningkatkan keamanan. Dalam metode ini, setiap huruf dalam pesan digeser berdasarkan posisi huruf dalam kunci. Contohnya, jika pesan yang akan dienkripsi adalah "HELLO" dan kuncinya adalah "KEY", maka proses penggeseran dilakukan dengan menambahkan posisi huruf dalam kunci ke posisi huruf dalam pesan. Hasilnya adalah teks yang lebih kompleks dan lebih sulit untuk dipecahkan dibandingkan dengan Cipher Caesar. Namun, meskipun lebih aman, Cipher Vigenère masih memiliki kelemahan dan dapat dipecahkan dengan teknik tertentu, seperti analisis frekuensi yang lebih canggih.
 
 Cipher Transposisi berfungsi dengan mengubah posisi huruf dalam pesan tanpa mengubah huruf itu sendiri. Metode ini biasanya melibatkan penyusunan huruf dalam baris dan kolom, kemudian membaca huruf-huruf tersebut dalam urutan tertentu untuk membentuk cipher text. Misalnya, dengan menggunakan pola 2x3, huruf-huruf dalam pesan dapat diatur sedemikian rupa sehingga menghasilkan teks yang berbeda saat dibaca. Konsep modular aritmetika sangat penting dalam semua cipher klasik, karena memungkinkan perhitungan posisi huruf dalam alfabet secara siklis. Meskipun cipher klasik dapat dengan mudah dipecahkan dengan teknologi modern, pemahaman tentang metode ini dan konsep modular aritmetika tetap penting dalam sejarah dan perkembangan kriptografi, serta sebagai fondasi untuk metode enkripsi yang lebih kompleks yang digunakan saat ini.
+
+
 ---
 
 ## 3. Alat dan Bahan
