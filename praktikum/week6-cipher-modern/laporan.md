@@ -12,6 +12,7 @@ Kelas: [5 IKRB]
 1.Mengimplementasikan algoritma DES untuk blok data sederhana.
 2.Menerapkan algoritma AES dengan panjang kunci 128 bit.
 3.Menjelaskan proses pembangkitan kunci publik dan privat pada algoritma RSA.
+
 ---
 
 ## 2. Dasar Teori
@@ -25,6 +26,7 @@ Konsep modular aritmetika berperan penting dalam cipher klasik, karena melibatka
 Sebagai contoh, jika huruf 'A' (posisi 0) digeser 3 posisi, hasilnya adalah 'D' (posisi 3), yang menunjukkan bagaimana teks dapat dienkripsi menggunakan metode sederhana ini. Meskipun mudah dipahami dan diimplementasikan, cipher klasik tidak cukup aman untuk aplikasi saat ini. 
 
 Oleh karena itu, penting untuk mengganti metode ini dengan algoritma enkripsi yang lebih kompleks dan aman, seperti DES (Data Encryption Standard), AES (Advanced Encryption Standard), dan RSA (Rivest-Shamir-Adleman), yang menawarkan tingkat keamanan yang jauh lebih tinggi dalam komunikasi digital. Dengan demikian, pemahaman tentang cipher klasik dan modular aritmetika menjadi dasar yang penting sebelum melangkah ke teknik enkripsi modern.
+
 ---
 
 ## 3. Alat dan Bahan
