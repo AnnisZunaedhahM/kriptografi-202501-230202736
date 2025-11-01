@@ -11,9 +11,6 @@ Kelas: [ 5IKRB]
 2.Menentukan bilangan prima dan menghitung GCD (Greatest Common Divisor).
 3.Menerapkan logaritma diskrit sederhana dalam simulasi kriptografi.
 
-1.Menyelesaikan operasi aritmetika modular.
-2.Menentukan bilangan prima dan menghitung GCD (Greatest Common Divisor).
-3.Menerapkan logaritma diskrit sederhana dalam simulasi kriptografi.
 ---
 ## 2. Dasar Teori
 Ringkasan Teori Modular Arithmetic dan GCD
@@ -158,8 +155,9 @@ h adalah hasil, dan 𝑝
 p adalah modulus), memiliki beberapa tantangan utama:
 
 Kompleksitas Waktu: Algoritma yang ada untuk menyelesaikan logaritma diskrit, seperti algoritma Baby-step Giant-step atau Pollard's rho, memiliki waktu komputasi yang tinggi, terutama untuk bilangan yang besar. Ini membuatnya tidak praktis untuk digunakan dalam kriptografi.
-
 Keterbatasan Algoritma: Meskipun ada beberapa metode, tidak ada algoritma yang sepenuhnya efisien untuk semua kasus logaritma diskrit. Hal ini menciptakan tantangan dalam menemukan solusi dengan cepat, terutama ketika modulus sangat besar.
+
+
 ---
 
 ## 8. Kesimpulan
