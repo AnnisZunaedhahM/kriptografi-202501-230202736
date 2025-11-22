@@ -113,7 +113,6 @@ print("Waktu brute force AES-128 =", brute_force_time(2**128), "hari")
 ## 6. Hasil dan Pembahasan
 (- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
 - Berikan tabel atau ringkasan hasil uji jika diperlukan.
-  
 - Jelaskan apakah hasil sesuai ekspektasi.
 jawab
 Hasil

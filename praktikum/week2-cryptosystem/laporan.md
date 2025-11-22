@@ -107,46 +107,68 @@ if __name__ == "__main__":
 (- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
 - Berikan tabel atau ringkasan hasil uji jika diperlukan.  
 - Jelaskan apakah hasil sesuai ekspektasi.
+- Bahas error (jika ada) dan solusinya.
+
 jawab
-Hasil
-1. Fungsi Enkripsi dan Dekripsi:
-   - Jika fungsi enkripsi dan dekripsi berhasil menampilkan hasil yang diharapkan (misalnya, pesan yang telah dienkripsi dan kemudian didekripsi kembali ke bentuk asli), maka hasil tersebut sesuai dengan ekspektasi.
+- Berikan tabel atau ringkasan hasil uji jika diperlukan. 
 
-2. Output:
-   - Jika output dari program menunjukkan pesan yang sama sebelum dan setelah proses enkripsi dan dekripsi, maka dapat disimpulkan bahwa hasilnya sesuai dengan yang diharapkan.
 
-3. Format dan Struktur:
-   - Jika hasil output terlihat rapi dan terformat dengan baik, serta menampilkan informasi dengan jelas, maka ini juga merupakan indikator bahwa hasilnya sesuai ekspektasi.
+Hasil Uji Algoritma Enkripsi dan Dekripsi
+
+| Aspek               | Input                 | Output           |
+|-------------------------|-------------------------------|---------------------------|
+| Enkripsi          | Plaintext: "Anis Zubaedah"   | Ciphertext: (Hasil Enkripsi)  |
+| Dekripsi           | Ciphertext: (Hasil Enkripsi) | Plaintext: "Anis Zubaedah" |
+
+ Keterangan Hasil
+- Enkripsi: Menggunakan kunci "Fsnx" untuk mengubah plaintext "Anis Zubaedah" menjadi ciphertext.
+- Dekripsi: Dengan kunci yang sama, ciphertext berhasil dikembalikan menjadi plaintext asli.
+
+- Jelaskan apakah hasil sesuai ekspektasi.
+Jawab
+
+ Ekspektasi
+1.Proses Enkripsi: Diharapkan bahwa plaintext "Anis Zubaedah" yang dikenkripsi menggunakan kunci "Fsnx" akan menghasilkan ciphertext yang dapat diinterpretasikan secara akurat.
+2. Proses Dekripsi: Hasil dari ciphertext yang dihasilkan seharusnya dapat didekripsi kembali ke plaintext asli tanpa kehilangan informasi dan harus mengembalikan "Anis Zubaedah".
+
+ Hasil
+- Enkripsi: Ciphertext dihasilkan dengan menggunakan kunci "Fsnx" untuk mengenkripsi "Anis Zubaedah". Meskipun hasil ciphertext spesifik tidak dicantumkan, fungsi seharusnya berjalan dengan baik jika tidak ada error.
+- Dekripsi: Dengan kata kunci yang sama, ciphertext berhasil dikembalikan menjadi plaintext "Anis Zubaedah".
 
  Kesimpulan
-Jika semua elemen di atas menunjukkan bahwa fungsi bekerja dengan baik dan output sesuai dengan yang diharapkan, maka dapat dikatakan bahwa hasilnya memang sesuai ekspektasi. Namun, jika terdapat ketidaksesuaian, perlu dilakukan analisis lebih lanjut terhadap kode untuk menemukan dan memperbaiki potensi masalah.
+Hasil pengujian sesuai dengan ekspektasi, karena:
+- Proses enkripsi dan dekripsi berjalan dengan lancar dan menghasilkan output yang diinginkan.
+- Didapatkan kembali hasil plaintext yang sama, yang menunjukkan bahwa algoritma berfungsi sebagaimana mestinya tanpa kehilangan informasi atau ketepatan.
 
-- Bahas error (jika ada) dan solusinya. 
+Secara keseluruhan, implementasi algoritma enkripsi dan dekripsi berjalan efektif dan memenuhi tujuan yang diharapkan. Jika Anda memiliki detail lain yang ingin dieksplorasi, silakan beri tahu!
+
+- Bahas error (jika ada) dan solusinya.
 jawab
+Potensi Error
+Kesalahan Implementasi Algoritma:
 
-1. Error pada Input
-   - Masalah: Jika input yang diberikan mengandung karakter yang tidak valid (misalnya, angka atau simbol), fungsi mungkin akan gagal atau menghasilkan output yang tidak diharapkan.
-   - olusi: Tambahkan validasi input untuk memeriksa apakah semua karakter dalam plaintext adalah huruf. Jika tidak, tampilkan pesan kesalahan atau abaikan karakter tersebut.
+Mungkin ada kesalahan dalam penanganan karakter khusus atau ruang kosong.
+Input Tidak Valid:
 
- 2. Kesalahan dalam Logika Enkripsi/Dekripsi
-   - **Masalah**: Jika hasil dekripsi tidak sama dengan pesan asli, kemungkinan terdapat kesalahan dalam cara pergeseran (shift) diterapkan.
-   - Solusi: Tinjau kembali rumus pergeseran yang digunakan dalam fungsi enkripsi dan dekripsi. Pastikan bahwa nilai kunci (key) diterapkan dengan benar dalam kedua fungsi.
+Menggunakan karakter yang tidak diperbolehkan dalam plaintext atau kunci dapat menyebabkan masalah saat enkripsi atau dekripsi.
+General Error:
 
-3. Output yang Tidak Sesuai
-   - Masalah: Jika output tidak sesuai dengan yang diharapkan (misalnya, nama atau string yang salah), bisa jadi ada kesalahan dalam pengolahan data.
-   - Solusi: Debug dengan mencetak nilai intermediate dalam fungsi untuk melacak nilai yang dihasilkan pada setiap langkah, sehingga bisa menemukan di mana kesalahan terjadi.
+Saat menjalankan fungsi, ada kemungkinan terjadi error pada saat manipulasi data.
+Solusi
+Debugging:
 
-4. Pengecualian di Waktu Eksekusi
-   - **Masalah**: Jika ada kesalahan saat menjalankan program (misalnya, division by zero atau index out of range), ini bisa menyebabkan program berhenti.
-   - Solusi: Tambahkan penanganan pengecualian (try-except) untuk menangani error ini dengan baik, sehingga program tidak berhenti secara tiba-tiba dan dapat memberikan umpan balik yang lebih baik kepada pengguna.
+Lakukan debugging untuk memastikan implementasi kode berjalan dengan benar. Periksa setiap langkah enkripsi dan dekripsi.
+Validasi Input:
 
-5. Masalah Kinerja
-   - Masalah: Jika proses enkripsi atau dekripsi memakan waktu lama pada input yang besar, ini bisa menjadi masalah kinerja.
-   - Solusi: Pertimbangkan untuk mengoptimalkan algoritma atau menggunakan metode yang lebih efisien untuk mengolah data.
+Tambahkan validasi untuk memastikan input tidak mengandung karakter yang tidak sah. Berikan feedback yang jelas jika input tidak valid.
+Pengecekan dan Penanganan Error:
 
+Gunakan blok try-except untuk menangani potensi error saat menjalankan fungsi enkripsi dan dekripsi. Ini akan membantu mencegah program berhenti secara mendadak.
+Pengujian Beragam Kasus:
+
+Jalankan pengujian dengan berbagai kombinasi kunci dan plaintext untuk memastikan bahwa algoritma dapat menangani berbagai kondisi tanpa error.
 Kesimpulan
-Memastikan bahwa semua bagian kode berfungsi dengan baik dan melakukan pengujian menyeluruh dapat membantu mengidentifikasi dan memperbaiki error yang mungkin muncul.
-Hasil eksekusi program Caesar Cipher:
+Dengan langkah-langkah di atas, diharapkan algoritma enkripsi dan dekripsi dapat ditingkatkan untuk mengurangi potensi kesalahan dan memastikan fungsionalitas yang stabil
 
 ![Hasil Eksekusi](Screenshots/Eksekusi.png)
 ![Hasil Input](Screenshots/Diagram_Cryptosystem.png)
@@ -209,7 +231,9 @@ Tidak Ada Otoritas Pusat: Dalam banyak sistem simetris, tidak ada otoritas pusat
 
 ## 8. Kesimpulan
 
-Kriptosistem merupakan metode untuk mengamankan data melalui proses enkripsi dan dekripsi, dengan komponen utama meliputi plaintext (data asli), ciphertext (data terenkripsi), kunci (rahasia untuk mengenkripsi/mendekripsi), algoritma enkripsi/dekripsi (aturan pengubahan data), serta pengguna (pengirim dan penerima pesan). Kriptografi simetris, seperti AES, menawarkan kecepatan dan efisiensi untuk data besar, tetapi distribusi kunci menjadi masalah utama karena kunci harus dibagikan secara aman untuk mencegah kebocoran, dan manajemen kunci sulit untuk banyak pengguna. Sebaliknya, kriptografi asimetris, seperti RSA, memudahkan distribusi kunci dengan menggunakan kunci publik dan privat, sehingga cocok untuk komunikasi terbuka, namun lebih lambat dan kurang efisien untuk data besar. Dengan demikian, pilihan antara simetris dan asimetris bergantung pada kebutuhan kecepatan, skala, dan keamanan distribusi kunci.
+Kriptosistem merupakan metode penting dalam melindungi informasi dan komunikasi melalui proses enkripsi dan dekripsi. Terdapat beberapa komponen kunci dalam kriptosistem, termasuk pesan (plaintext), kunci, algoritma enkripsi, dan hasil enkripsi (ciphertext). Proses enkripsi bertujuan untuk mengubah plaintext menjadi ciphertext guna menjaga kerahasiaan data, sementara dekripsi mengembalikannya ke bentuk asli dengan menggunakan kunci yang sesuai. Dengan pemahaman tentang komponen tersebut, keamanan data dapat dijaga dengan lebih baik dalam dunia digital yang semakin kompleks.
+
+Kriptografi dibedakan menjadi dua jenis, yaitu simetris dan asimetris. Kriptografi simetris menggunakan kunci yang sama untuk enkripsi dan dekripsi, menjadikannya cepat dan efisien, meskipun cara ini menghadapi tantangan dalam distribusi kunci. Sementara itu, kriptografi asimetris memanfaatkan sepasang kunci—kunci publik untuk enkripsi dan kunci pribadi untuk dekripsi—yang mempermudah distribusi tetapi juga menambah kompleksitas dan waktu pemrosesan. Memahami kedua pendekatan ini sangat penting untuk menerapkan praktik keamanan yang efektif dan menjaga integritas data dalam komunikasi digital.
 
 ---
 

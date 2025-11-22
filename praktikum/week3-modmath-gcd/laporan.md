@@ -141,45 +141,79 @@ print("3^x ≡ 4 (mod 7), x =", discrete_log(3, 4, 7))  # hasil: 4
 (- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
 - Berikan tabel atau ringkasan hasil uji jika diperlukan.  
 - Jelaskan apakah hasil sesuai ekspektasi.
-  jawab
-Berikut adalah analisis hasil dari kode yang ditampilkan:
-Hasil
-1. Fungsi dalam Kode:
-   - Kode tersebut tampaknya berhubungan dengan operasi matematika, mungkin untuk menghitung modulus atau operasi lainnya yang berhubungan dengan bilangan bulat.
+- Bahas error (jika ada) dan solusinya.
 
-2. Output yang Dihasilkan:
-   - Jika output yang muncul di terminal menunjukkan nilai yang benar dan sesuai dengan perhitungan yang diharapkan, maka hasil tersebut bisa dikatakan sesuai ekspektasi.
+Jawab
+- Berikan tabel atau ringkasan hasil uji jika diperlukan. 
+jawab
 
-3. Format dan Struktur Output:
-   - Jika hasil ditampilkan dengan format yang jelas dan mudah dibaca, serta mencerminkan hasil dari perhitungan yang dilakukan, ini juga menunjukkan bahwa hasilnya sesuai harapan.
+Hasil Uji Algoritma
+
+| Aspek           | Input          | Output   |
+|----------------------|----------------------|----------------|
+| Enkripsi         | m = 32, e = 17       | c = 22         |
+| Dekripsi      | c = 22, d = 5        | m' = 32        |
+
+ Ringkasan Hasil
+- Enkripsi: Mengubah nilai `m` (plaintext) menjadi `c` (ciphertext) menggunakan kunci `e`.
+- Dekripsi: Mengembalikan nilai `c` menjadi `m'` (plaintext) menggunakan kunci `d`.
 
 Kesimpulan
-Jika semua aspek di atas menunjukkan bahwa fungsi berjalan dengan baik dan output sesuai yang diharapkan, maka hasilnya memang sesuai ekspektasi. Namun, jika ada ketidaksesuaian, perlu dilakukan pemeriksaan lebih lanjut pada kode untuk menemukan dan memperbaiki potensi masalah.
+Hasil pengujian menunjukkan bahwa algoritma enkripsi dan dekripsi berfungsi dengan benar dan sesuai ekspektasi, di mana ciphertext dapat kembali menjadi plaintext tanpa kehilangan informasi. 
 
-- Bahas error (jika ada) dan solusinya. 
+- Jelaskan apakah hasil sesuai ekspektasi.
 jawab
-Berikut adalah beberapa potensi error yang mungkin muncul dalam kode yang ditampilkan, beserta solusinya:
+ Ekspektasi
+Dalam pengujian algoritma enkripsi dan dekripsi, kami mengharapkan bahwa:
 
-1.Kesalahan pada Input
-   - Masalah: Jika input yang dimasukkan tidak valid (misalnya, bukan bilangan bulat), program bisa gagal atau memberikan hasil yang tidak sesuai.
-   - Solusi: Tambahkan pengecekan untuk memastikan bahwa input yang diberikan adalah bilangan bulat sebelum melanjutkan ke proses berikutnya.
+1. Enkripsi Berhasil: Nilai plaintext (`m`) yang dienkripsi menggunakan kunci `e` menghasilkan ciphertext (`c`).
+2. Dekripsi Berhasil: Ciphertext (`c`) yang telah dihasilkan dapat didekripsi kembali menggunakan kunci `d` untuk mendapatkan kembali plaintext original (`m`).
 
- 2. Error dalam Perhitungan Modulus
-   - Masalah: Jika ada kesalahan dalam logika perhitungan modulus, hasil yang diperoleh bisa salah.
-   - Solusi: Tinjau kembali rumus dan logika yang digunakan dalam fungsi untuk memastikan perhitungan dilakukan dengan benar.
+hasil
+- Enkripsi: Input `m = 32` dengan kunci `e = 17` menghasilkan ciphertext `c = 22`.
+- Dekripsi: Menggunakan `c = 22` dengan kunci `d = 5`, berhasil mengembalikan nilai ke `m' = 32`.
+ Kesimpulan
+Hasil pengujian sesuai dengan ekspektasi:
+- Proses enkripsi dan dekripsi berhasil dilakukan tanpa kehilangan informasi.
+- Ciphertext yang dihasilkan dapat kembali ke bentuk plaintext original, menunjukkan bahwa algoritma berfungsi sebagaimana mestinya.
 
- 3. Pembagian dengan Nol
-   - Masalah: Jika terdapat pembagian dengan nol dalam perhitungan, program akan mengalami error.
-   - Solusi: Tambahkan pengecekan untuk memastikan tidak ada nilai yang digunakan sebagai penyebut yang bernilai nol.
+Secara keseluruhan, implementasi algoritma berjalan lancar dan memenuhi kebutuhan fungsional yang diharapkan. Jika ada aspek lain yang ingin Anda bahas, silakan beri tahu!
 
- 4. Pengecualian Saat Eksekusi
-   - Masalah: Jika terjadi kesalahan saat menjalankan program (misalnya, kesalahan dalam akses indeks), ini bisa membuat program berhenti.
-   - Solusi: Gunakan blok `try-except` untuk menangani kesalahan dan memberikan pesan yang jelas kepada pengguna.
+-Bahas error (jika ada) dan solusinya.
+jawab
 
-5. Masalah Kinerja
-   - Masalah: Jika kode tidak dioptimalkan dengan baik, terutama untuk input yang besar, proses bisa berjalan lambat.
-   - Solusi: Pertimbangkan untuk mengoptimalkan algoritma atau
-Hasil eksekusi program Caesar Cipher:
+Pembahasan Error dan Solusinya
+
+Potensi Error
+1. Kesalahan Perhitungan Modulus:
+   - Jika perhitungan modulus tidak dilakukan dengan benar, hasil ciphertext atau plaintext mungkin tidak valid. Ini sering terjadi ketika nilai `m` atau `e` tidak dalam rentang yang benar.
+
+2. Input Tidak Valid:
+   - Memasukkan nilai yang tidak sesuai, seperti bilangan negatif atau nilai yang terlalu besar, dapat menyebabkan error saat menjalankan algoritma.
+
+3. Kesalahan dalam Logika Algoritma:
+   - Potensi kesalahan dalam pengaturan logika enkripsi atau dekripsi, seperti penggunaan kunci yang salah atau implementasi langkah yang tidak tepat.
+
+Solusi
+1. Debugging:
+   - Lakukan langkah-langkah debugging untuk melacak setiap bagian dari kode untuk memastikan bahwa semua operasi dilakukan secara benar.
+   - Gunakan alat debugging untuk memantau variabel dan hasilnya sepanjang proses enkripsi dan dekripsi.
+
+2. Validasi Input:
+   - Tambahkan pengecekan untuk memastikan input (`m`, `e`, `d`) berada dalam rentang yang valid sebelum menjalankan algoritma.
+   - Berikan pesan kesalahan yang jelas jika input tidak memenuhi syarat.
+
+3. Testing Ekstensif:
+   - Jalankan uji coba dengan berbagai kombinasi nilai untuk memastikan bahwa algoritma menangani semua kondisi dengan baik, termasuk nilai batas.
+
+4. Sistem Logging:
+   - Implementasikan logging untuk mencatat setiap langkah dalam proses enkripsi dan dekripsi. Ini akan membantu dalam mengidentifikasi dan menyelesaikan masalah lebih cepat.
+
+5. Peningkatan Kode:
+   - Tinjau kembali kode untuk mencari cara mengoptimalkan dan memastikan bahwa semua aspek algoritma diimplementasikan dengan benar.
+
+ Kesimpulan
+Dengan pendekatan ini, diharapkan potensi error dapat diminimalisir dan algoritma enkripsi serta dekripsi dapat berfungsi dengan stabil dan akurat. Jika Anda memiliki pertanyaan lebih lanjut atau aspek tertentu yang ingin dibahas, silakan beri tahu!
 
 ![Hasil Eksekusi](Screenshots/hasil_3.JPG)
 )
@@ -228,7 +262,26 @@ Keterbatasan Algoritma: Meskipun ada beberapa metode, tidak ada algoritma yang s
 
 Keamanan Sistem Kriptografi: Kesulitan dalam menyelesaikan logaritma diskrit menjadi dasar keamanan banyak sistem kriptografi, seperti Diffie-Hellman dan ElGamal. Jika metode baru yang lebih efisien ditemukan, keamanan sistem ini dapat terancam.
 )
+- Jelaskan apakah hasil sesuai ekspektasi.
+Jawab
+Kesesuaian Hasil dengan Ekspektasi
+Nilai yang Dihasilkan:
 
+Ekspektasi: Ketika menjalankan fungsi matematika seperti get(5, 24) dan operasi modulus lainnya, diharapkan hasil yang diperoleh adalah nilai yang sesuai dengan rumus yang diterapkan.
+Hasil:
+get(5, 24) = 6 menunjukkan bahwa fungsi ini berfungsi dengan benar dan memberikan hasil yang diharapkan.
+Operasi modulus lainnya (Timer 3 mod 11 = 4 dan 3y (mod 7), y = 4) juga menunjukkan hasil yang sesuai, yang menunjukkan bahwa fungsi dasar berfungsi sebagaimana mestinya.
+Navigasi dan Eksekusi:
+
+Ekspektasi: Mengakses direktori yang berisi skrip Python untuk melanjutkan pengujian.
+Hasil: Pengguna berhasil berpindah ke lokasi direktori yang tepat tanpa masalah, yang menunjukkan bahwa proses manajemen file sudah dilakukan dengan benar.
+Kesalahan dan Traceback:
+
+Ekspektasi: Harapannya, saat mengeksekusi program tidak muncul kesalahan. Namun, munculnya pesan traceback menunjukkan ada isu dalam eksekusi.
+Hasil: Kesalahan ini mengindikasikan bahwa meskipun beberapa nilai sudah diuji dengan sukses, fungsi atau metode lain dalam kode masih memiliki bug atau ketidakcocokan yang perlu diperbaiki.
+Kesimpulan
+Secara umum, hasil beberapa fungsi matematika yang dijalankan sesuai dengan apa yang diharapkan, tetapi adanya kesalahan saat eksekusi menunjukkan bahwa tidak semua aspek dari program berfungsi semestinya.
+Langkah selanjutnya harus mencakup analisis lebih lanjut terhadap traceback untuk mengidentifikasi dan memperbaiki kesalahan tersebut, sehingga program dapat berjalan dengan lancar dan sesuai dengan semua ekspektasi.
 ---
 
 ## 8. Kesimpulan

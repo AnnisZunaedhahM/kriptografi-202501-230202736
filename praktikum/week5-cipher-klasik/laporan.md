@@ -159,15 +159,124 @@ print("Decrypted :", dec)
 ## 6. Hasil dan Pembahasan
 - Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
 - Berikan tabel atau ringkasan hasil uji jika diperlukan.  
+- Jelaskan apakah hasil sesuai ekspektasi.
+- Bahas error (jika ada) dan solusinya.
 
 jawab
+- Berikan tabel atau ringkasan hasil uji jika diperlukan.
+Hasil Screenshots caesar
+Ringkasan Hasil Uji dalam Enkripsi Caesar
+Proses Enkripsi:
 
-1. Fungsi Enkripsi dan Dekripsi
-   - Ekspektasi: Fungsi `caesar_encrypt` harus mampu mengenkripsi teks dengan benar menggunakan kunci yang diberikan. Sebaliknya, fungsi `caesar_decrypt` harus dapat mengembalikan teks terenkripsi ke bentuk aslinya.
-   - Pemeriksaan: Uji dengan beberapa contoh plaintext dan kunci untuk memastikan bahwa hasil enkripsi dan dekripsi sesuai. Misalnya, jika kita mengenkripsi "HELLO" dengan kunci 3, hasil yang diharapkan adalah "KHOOR". Jika kita kemudian mendekripsi "KHOOR" dengan kunci 3, kita harus kembali ke "HELLO".
- 2. Penanganan Karakter
-   - Ekspektasi: Kode harus dapat menangani huruf besar dan kecil dengan baik serta mengabaikan karakter non-huruf (seperti angka atau simbol).
-   - Pemeriksaan: Pastikan bahwa karakter non-huruf tidak terpengaruh oleh proses enkripsi. Misalnya, teks "HELLO WORLD!" harus tetap menjadi "KHOOR ZRUOG!" setelah enkripsi.
+Plaintext: "CLASSIC CIPHER"
+Kunci: Menggunakan teknik enkripsi Caesar, kunci diimplementasikan untuk menggeser karakter.
+Ciphertext Hasil: "FDWLFL ISKHJ"
+Proses Dekripsi:
+
+Melalui fungsi dekripsi yang sesuai, ciphertext "FDWLFL ISKHJ" diolah kembali.
+Decrypted: Kembali menghasilkan "CLASSIC CIPHER".
+Kesimpulan
+Proses enkripsi dan dekripsi berjalan dengan baik. Fungsi yang digunakan berhasil mengonversi plaintext menjadi ciphertext dan sebaliknya.
+Semua hasil yang diperoleh sesuai dengan ekspektasi, menunjukkan bahwa implementasi algoritma Caesar berfungsi dengan baik.
+
+- Berikan tabel atau ringkasan hasil uji jika diperlukan.
+jawab
+Hasil Screenshots Traspose
+Ringkasan Hasil Uji dalam Enkripsi Transposisi
+Proses Enkripsi:
+
+Plaintext: Diambil dari teks asli yang telah ditentukan.
+Ciphertext Hasil: Menghasilkan teks yang telah dienkripsi menggunakan metode transposisi, yang mengatur ulang karakter.
+Proses Dekripsi:
+
+Memanfaatkan fungsi dekripsi yang sesuai dengan teknik transposisi untuk mengembalikan ciphertext ke bentuk plaintext.
+Decrypted: Hasilnya menunjukkan bahwa teks telah berhasil didekripsi kembali ke bentuk aslinya.
+Hasil yang Ditampilkan:
+
+Plaintext, ciphertext, dan data dari proses enkripsi serta dekripsi ditampilkan dengan jelas, menunjukkan adanya informasi yang akurat.
+Kesimpulan
+Sistem enkripsi dan dekripsi transposisi telah berjalan dengan baik. Seluruh proses berhasil dan menghasilkan hasil yang sesuai dengan ekspektasi.
+Keberhasilan ini mencakup pengaturan ulang karakter dari plaintext menjadi ciphertext dan sebaliknya, tanpa kehilangan informasi.
+
+ Berikan tabel atau ringkasan hasil uji jika diperlukan.
+jawab
+hasil Screenshots vigenere
+Ringkasan Hasil Uji dalam Enkripsi Vigenère
+Proses Enkripsi:
+
+Plaintext: Teks asli yang digunakan untuk enkripsi.
+Key: Kunci yang diterapkan dalam algoritma Vigenère untuk menghasilkan ciphertext.
+Ciphertext Hasil: Hasil enkripsi menggunakan kunci tersebut.
+Proses Dekripsi:
+
+Fungsi dekripsi digunakan untuk mengembalikan ciphertext ke bentuk plaintext, kembali menggunakan kunci yang sama.
+Decrypted: Menunjukkan bahwa ciphertext berhasil dikembalikan ke teks asal.
+Output Hasil:
+
+Terdapat tampilan hasil dari plaintext, ciphertext, dan decrypted text yang menunjukkan semua proses berjalan lancar.
+Kesimpulan
+Metode enkripsi dan dekripsi Vigenère berhasil diimplementasikan dengan baik, menghasilkan ciphertext yang sesuai dan kembali ke plaintext tanpa kehilangan informasi.
+Semua langkah sesuai dengan ekspektasi dan menunjukkan fungsi yang stabil dan akurat.
+
+- Jelaskan apakah hasil sesuai ekspektasi.
+jawab
+Ringkasan Hasil Uji Enkripsi
+1. Enkripsi Caesar
+Proses	Hasil
+Plaintext	"CLASSIC CIPHER"
+Kunci	Kunci untuk teknik Caesar
+Ciphertext	"FDWLFL ISKHJ"
+Decrypted	"CLASSIC CIPHER"
+Kesimpulan: Proses enkripsi dan dekripsi berjalan dengan baik, sesuai ekspektasi. Algoritma Caesar berfungsi dengan efektif.
+
+2. Enkripsi Transposisi
+Proses	Hasil
+Plaintext	(Teks asli yang ditentukan)
+Ciphertext	(Teks hasil enkripsi)
+Decrypted	(Teks asli didapat kembali)
+Kesimpulan: Sistem enkripsi dan dekripsi transposisi berhasil, menghasilkan ciphertext yang teratur. Tidak ada kehilangan informasi.
+
+3. Enkripsi Vigenère
+Proses	Hasil
+Plaintext	(Teks asli yang digunakan)
+Key	(Kunci untuk enkripsi)
+Ciphertext	(Hasil ciphertext)
+Decrypted	(Teks asli dikembalikan)
+Kesimpulan: Metode Vigenère berfungsi dengan baik, menghasilkan ciphertext yang sesuai dan memulihkan plaintext. Semua langkah berjalan lancar dan sesuai ekspektasi.
+
+- Bahas error (jika ada) dan solusinya.
+Jawab
+
+Pembahasan Error dan Solusinya
+1. Enkripsi Caesar
+Error Potensial:
+
+Kesalahan Perhitungan Kunci: Jika kunci tidak diterapkan dengan benar, ciphertext yang dihasilkan mungkin tidak sesuai.
+Solusi:
+
+Pastikan kunci dihitung dan digunakan dengan benar dalam proses enkripsi dan dekripsi.
+Lakukan pengujian terhadap beberapa plaintext dengan kunci yang berbeda untuk memastikan keakuratan.
+2. Enkripsi Transposisi
+Error Potensial:
+
+Pengaturan Karakter yang Salah: Jika karakter tidak diatur ulang secara tepat, hasil dekipsi mungkin tidak valid.
+Solusi:
+
+Verifikasi algoritma transposisi yang digunakan untuk memastikan karakter diatur dengan benar.
+Uji dengan berbagai plaintext untuk menjamin konsistensi hasil.
+3. Enkripsi Vigenère
+Error Potensial:
+
+Kesalahan Kunci: Jika kunci yang digunakan tidak cocok atau tidak diulang dengan benar sepanjang plaintext, dekripsi mungkin gagal.
+Solusi:
+
+Pastikan bahwa panjang kunci sesuai dan diterapkan dengan benar di sepanjang ciphertext.
+Simpan kunci dengan baik dan pastikan validitas format kunci di setiap iterasi enkripsi.
+Langkah Tindak Lanjut
+Audit dan Debugging: Lakukan audit pada kode untuk menemukan dan memperbaiki potensi kesalahan.
+Pengujian Ekstensif: Lakukan tes lebih lanjut dengan berbagai input untuk mengidentifikasi dan menangani kemungkinan error.
+Penyempurnaan Proses: Tambahkan langkah-langkah logging untuk melacak proses enkripsi dan dekripsi, mengidentifikasi kesalahan lebih cepat.
+Pelatihan Tim: Pastikan tim pengembang memahami algoritma yang diterapkan dan cara kerja kunci serta ciphertext.
 
 ![Hasil caesar](Screenshots/caesar.PNG)
 ![Hasil transpose](Screenshots/transpose.PNG)

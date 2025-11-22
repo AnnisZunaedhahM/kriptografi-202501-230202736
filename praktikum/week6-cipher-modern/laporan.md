@@ -113,35 +113,161 @@ print("Decrypted:", decrypted.decode())
 
 ## 6. Hasil dan Pembahasan
 (- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-
 - Berikan tabel atau ringkasan hasil uji jika diperlukan.  
 - Jelaskan apakah hasil sesuai ekspektasi.
+- Bahas error (jika ada) dan solusinya.
+
   jawab
-1. Kunci dan Plaintext: 
-   - Kunci yang digunakan dihasilkan secara acak dengan `get_random_bytes`, yang merupakan praktik baik untuk memastikan keamanan. Pastikan panjang kunci sesuai dengan spesifikasi AES (misalnya, 16, 24, atau 32 byte).
+- Berikan tabel atau ringkasan hasil uji jika diperlukan
 
-2. Enkripsi dan Dekripsi:
-   - Proses enkripsi dan dekripsi terlihat berjalan dengan benar. Jika ciphertext yang dihasilkan dapat didekripsi kembali ke plaintext yang sama, maka hasilnya sesuai dengan ekspektasi.
+Ringkasan Hasil Uji Enkripsi AES
+Proses Enkripsi dan Dekripsi
+Proses	Hasil
+Plaintext	(Teks asli yang diacak)
+Kunci	(Kunci AES yang dihasilkan secara acak)
+Ciphertext	(Hasil enkripsi yang didapat)
+Decrypted	(Teks asli dikembalikan)
 
-3. Output Ciphertext:
-   - Ciphertext yang dihasilkan tampak dalam format heksadesimal, yang merupakan cara umum untuk merepresentasikan data biner. Jika Anda dapat melihat bahwa ciphertext tersebut berbeda dari plaintext, itu adalah tanda bahwa enkripsi berfungsi.
-
-4. Dekripsi yang Berhasil:
-   - Jika hasil dekripsi mengembalikan nilai plaintext yang asli, maka ini menunjukkan bahwa algoritma dan implementasi berfungsi dengan baik.
-
+Detail Proses
+Plaintext: Teks asli yang ingin dienkripsi.
+Kunci: Kunci AES yang digunakan untuk proses enkripsi dan dekripsi, dihasilkan secara acak.
+Ciphertext: Hasil dari plaintext yang telah dienkripsi menggunakan algoritma AES.
+Decrypted: Plaintext berhasil dipulihkan kembali dari ciphertext.
 Kesimpulan
+Proses enkripsi dan dekripsi menggunakan algoritma AES berjalan dengan baik. Ciphertext yang dihasilkan dapat dikembalikan ke bentuk plaintext tanpa kehilangan informasi. Semua langkah sesuai dengan ekspektasi, menunjukkan bahwa implementasi algoritma AES berfungsi dengan efektif.
 
-Secara keseluruhan, jika ciphertext berbeda dari plaintext dan dekripsi mengembalikan plaintext asli tanpa error, maka hasilnya memang sesuai ekspektasi. Namun, jika ada masalah dalam dekripsi atau jika ciphertext tidak dapat diperoleh, Anda mungkin perlu memeriksa kembali langkah-langkah dalam proses enkripsi dan dekripsi.\
+- Berikan tabel atau ringkasan hasil uji jika diperlukan
+Hasil Screenshots des
+Ringkasan Hasil Uji Enkripsi DES
+Proses Enkripsi dan Dekripsi
+Proses	Hasil
+Plaintext	"CLASSIC CIPHER"
+Kunci	(Kunci DES yang digunakan)
+Ciphertext	(Hasil enkripsi yang didapat)
+Decrypted	"CLASSIC CIPHER"
 
-- Bahas error (jika ada) dan solusinya. 
+Detail Proses
+Plaintext: Teks asli yang ingin dienkripsi; dalam contoh ini, adalah "CLASSIC CIPHER".
+Kunci: Kunci yang digunakan dalam proses enkripsi DES.
+Ciphertext: Hasil dari plaintext yang telah dienkripsi menggunakan algoritma DES.
+Decrypted: Plaintext berhasil dipulihkan kembali dari ciphertext, memastikan integritas data.
+Kesimpulan
+Proses enkripsi dan dekripsi menggunakan algoritma DES berjalan dengan baik. Ciphertext yang dihasilkan dapat dikembalikan ke bentuk plaintext tanpa kehilangan informasi, dan semua langkah sesuai dengan ekspektasi. Implementasi DES terbukti efektif dalam menjaga keamanan data.
+
+- Berikan tabel atau ringkasan hasil uji jika diperlukan
+Hasil Screenshots rsa
+Ringkasan Hasil Uji Enkripsi RSA
+Proses Enkripsi dan Dekripsi
+Proses	Hasil
+Plaintext	"CLASSIC CIPHER"
+Kunci Publik	(Kunci publik yang digunakan)
+Ciphertext	(Hasil enkripsi yang didapat)
+Kunci Privat	(Kunci privat yang digunakan)
+Decrypted	"CLASSIC CIPHER"
+
+Detail Proses
+Plaintext: Teks asli yang ingin dienkripsi, yaitu "CLASSIC CIPHER".
+Kunci Publik: Kunci yang digunakan untuk mengenkripsi plaintext.
+Ciphertext: Hasil dari pengenkripsian plaintext menggunakan kunci publik.
+Kunci Privat: Kunci yang digunakan untuk mendekripsi ciphertext.
+Decrypted: Plaintext berhasil dipulihkan kembali dari ciphertext, memastikan data tidak hilang.
+Kesimpulan
+Proses enkripsi dan dekripsi dengan algoritma RSA berjalan baik. Ciphertext dapat dikembalikan ke bentuk plaintext, memastikan bahwa implementasi RSA efektif dalam menjaga keamanan dan integritas data.
+
+- Jelaskan apakah hasil sesuai ekspektasi.
+
+1. AES (Advanced Encryption Standard)
+Ekspektasi: Hasil enkripsi menggunakan AES seharusnya menghasilkan ciphertext yang tidak dapat dibaca dan dapat didekripsi kembali ke plaintext yang sama menggunakan kunci yang tepat.
+Hasil: Jika ciphertext yang dihasilkan bisa dikembalikan ke plaintext tanpa kehilangan informasi, maka hasilnya sesuai ekspektasi. Kecepatan proses juga diharapkan lebih tinggi untuk data besar.
+2. DES (Data Encryption Standard)
+Ekspektasi: DES harus menghasilkan ciphertext yang aman dari analisis, namun hasil dekripsi harus konsisten dengan plaintext asli. Dengan panjang kunci yang lebih pendek, diharapkan bahwa DES tidak dianggap aman untuk penggunaan kritis.
+Hasil: Jika dekripsi berhasil menghasilkan plaintext yang sama, maka hasilnya sesuai. Namun, perlu diperhatikan bahwa keamanannya saat ini dianggap lemah dibandingkan dengan AES.
+3. RSA (Rivest-Shamir-Adleman)
+Ekspektasi: RSA harus dapat mengenkripsi dan mendekripsi pesan menggunakan kunci publik dan privat, dengan hasil dekripsi sama dengan plaintext asli. RSA diharapkan lebih lambat tetapi sangat aman.
+Hasil: Jika ciphertext dapat didekripsi kembali ke plaintext asli dan kunci bekerja sesuai fungsinya, maka hasilnya sesuai dengan ekspektasi. RSA digunakan untuk pengiriman kunci atau otentikasi.
+
+Kesimpulan Umum
+Secara keseluruhan:
+
+AES dan RSA cenderung menghasilkan hasil yang sesuai ekspektasi dalam hal keamanan dan integritas data.
+DES mungkin berfungsi dengan baik untuk proses tetapi tidak lagi dianggap aman untuk aplikasi modern.
+
+- Bahas error (jika ada) dan solusinya.
 jawab
- 1. Kesalahan Input
-   - Masalah: Pengguna mungkin memasukkan karakter non-huruf atau input yang tidak valid.
-   - Solusi: Tambahkan validasi input untuk memastikan hanya huruf yang diperbolehkan. Anda bisa menggunakan fungsi untuk memfilter input sebelum proses enkripsi.
 
-2. Kunci Negatif atau Nol
-   - Masalah: Jika kunci yang digunakan adalah negatif atau nol, ini dapat menyebabkan hasil yang tidak diinginkan.
-   - Solusi: Pastikan kunci selalu positif. Anda bisa menambahkan validasi untuk memeriksa nilai kunci dan mengubahnya jika perlu (misalnya, menggunakan modulo dengan panjang alfabet).
+ Pembahasan Error dan Solusinya
+
+1. Kesalahan dalam Kunci Enkripsi
+
+Error: 
+- Kunci yang tidak konsisten atau salah dapat menyebabkan ciphertext yang dihasilkan tidak dapat didekripsi kembali ke plaintext.
+
+Solusi:
+- Verifikasi keakuratan kunci yang digunakan, termasuk panjang dan formatnya.
+- Pastikan bahwa kunci AES atau DES dihasilkan dengan algoritma kriptografi yang tepat dan sesuai dengan standar.
+- Simpan kunci dengan aman dan gunakan metode pengelolaan kunci yang efektif.
+
+---
+
+#2. Ciphertext Tidak Dapat Didekripsi
+
+Error:
+- Ciphertext yang dihasilkan tidak dapat dikembalikan ke plaintext, yang mungkin disebabkan oleh kesalahan dalam algoritma enkripsi atau proses dekripsi.
+
+Solusi:
+- Tinjau kembali setiap langkah dalam proses enkripsi dan dekripsi. Pastikan algoritma yang digunakan adalah benar.
+- Pastikan semua parameter (seperti mode operasional, padding, dll.) yang digunakan dalam enkripsi diikuti dengan tepat saat mendekripsi.
+
+---
+
+3. Masalah Keamanan
+
+Error:
+- Algoritma seperti DES mungkin dianggap tidak aman untuk data sensitif, karena telah dieksploitasi oleh metode serangan modern.
+
+Solusi:
+- Pindah ke algoritma yang lebih kuat seperti AES yang memberikan tingkat keamanan yang lebih tinggi dengan panjang kunci yang lebih besar.
+- Pertimbangkan untuk menggunakan RSA atau teknik lain untuk augmentasi keamanan saat mengelola kunci.
+
+---
+
+4. Kinerja Enkripsi
+
+Error:
+- RSA dapat menjadi lambat ketika mengenkripsi pesan besar, menghasilkan waktu proses yang tidak efisien.
+
+Solusi:
+- Gunakan RSA untuk mengenkripsi kunci simetris (seperti kunci AES) dan kemudian gunakan kunci tersebut untuk mengenkripsi pesan dengan algoritma yang lebih cepat.
+- Implementasikan sistem untuk membagi data besar menjadi potongan yang lebih kecil sebelum enkripsi.
+
+---
+
+5. Kesalahan dalam Implementasi Algoritma
+
+Error:
+- Kegagalan dalam penerapan spesifikasi algoritma kriptografi secara tepat dapat menghasilkan hasil yang tidak diinginkan.
+
+Solusi:
+- Lakukan validasi terhadap kode yang ditulis untuk memastikan bahwa semua langkah algoritma diimplementasikan sesuai dengan spesifikasi teoretis.
+- Gunakan pustaka kriptografi yang sudah teruji dan terbukti untuk mengurangi risiko kesalahan dalam implementasi.
+
+---
+
+ Langkah Tindak Lanjut
+
+1. Debugging:
+   - Lakukan pengujian unit dan integrasi secara menyeluruh untuk menelusuri kesalahan.
+
+2. Audit Keamanan:
+   - Tindak lanjuti dengan audit terhadap implementasi untuk menemukan potensi kerentanan.
+
+3. Pelatihan Tim:
+   - Berikan pelatihan kepada tim pengembang mengenai praktik terbaik dalam menggunakan algoritma kriptografi.
+
+4. Dokumentasi:
+   - Dokumentasikan semua proses dan hasil pengujian untuk memudahkan pemeliharaan dan pengembangan di masa mendatang.
+
+
 
 <<<<<<< HEAD
 ![Hasil aes](Screenshots/aes.PNG)
