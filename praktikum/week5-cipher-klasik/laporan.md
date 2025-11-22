@@ -169,9 +169,9 @@ jawab
    - Ekspektasi: Kode harus dapat menangani huruf besar dan kecil dengan baik serta mengabaikan karakter non-huruf (seperti angka atau simbol).
    - Pemeriksaan: Pastikan bahwa karakter non-huruf tidak terpengaruh oleh proses enkripsi. Misalnya, teks "HELLO WORLD!" harus tetap menjadi "KHOOR ZRUOG!" setelah enkripsi.
 
-![Hasil caesar](Screenshots/caesar.png)
-![Hasil caesar](Screenshots/transpose.png)
-![Hasil caesar](Screenshots/vigenere.png)
+![Hasil caesar](Screenshots/caesar.PNG)
+![Hasil transpose](Screenshots/transpose.PNG)
+![Hasil vigenere](Screenshots/vigenere.PNG)
 
 ---
 
