@@ -12,6 +12,7 @@ Kelas: [5 IKRB]
 1.Mengimplementasikan algoritma DES untuk blok data sederhana.
 2.Menerapkan algoritma AES dengan panjang kunci 128 bit.
 3.Menjelaskan proses pembangkitan kunci publik dan privat pada algoritma RSA.
+
 ---
 
 ## 2. Dasar Teori
@@ -25,6 +26,7 @@ Konsep modular aritmetika berperan penting dalam cipher klasik, karena melibatka
 Sebagai contoh, jika huruf 'A' (posisi 0) digeser 3 posisi, hasilnya adalah 'D' (posisi 3), yang menunjukkan bagaimana teks dapat dienkripsi menggunakan metode sederhana ini. Meskipun mudah dipahami dan diimplementasikan, cipher klasik tidak cukup aman untuk aplikasi saat ini. 
 
 Oleh karena itu, penting untuk mengganti metode ini dengan algoritma enkripsi yang lebih kompleks dan aman, seperti DES (Data Encryption Standard), AES (Advanced Encryption Standard), dan RSA (Rivest-Shamir-Adleman), yang menawarkan tingkat keamanan yang jauh lebih tinggi dalam komunikasi digital. Dengan demikian, pemahaman tentang cipher klasik dan modular aritmetika menjadi dasar yang penting sebelum melangkah ke teknik enkripsi modern.
+
 ---
 
 ## 3. Alat dan Bahan
@@ -38,9 +40,9 @@ Oleh karena itu, penting untuk mengganti metode ini dengan algoritma enkripsi ya
 ## 4. Langkah Percobaan
 (Tuliskan langkah yang dilakukan sesuai instruksi.  
 Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
+1. Membuat file `aes.py, des.py, rsa.py` di folder `praktikum/week6-cipher-modern/src/`.
 2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+3. Menjalankan program dengan perintah `python aes.py, python des.py, python rsa.py`.)
 
 ---
 
@@ -48,10 +50,62 @@ Contoh format:
 (Salin kode program utama yang dibuat atau dimodifikasi.  
 Gunakan blok kode:
 
+1. aes.py
 ```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
+from Crypto.Cipher import AES
+from Crypto.Random import get_random_bytes
+
+key = get_random_bytes(16)  # 128 bit key
+cipher = AES.new(key, AES.MODE_EAX)
+
+plaintext = b"Modern Cipher AES Example"
+ciphertext, tag = cipher.encrypt_and_digest(plaintext)
+
+print("Ciphertext:", ciphertext)
+
+# Dekripsi
+cipher_dec = AES.new(key, AES.MODE_EAX, nonce=cipher.nonce)
+decrypted = cipher_dec.decrypt(ciphertext)
+print("Decrypted:", decrypted.decode())
+```
+
+2. des.py
+```python
+from Crypto.Cipher import DES
+from Crypto.Random import get_random_bytes
+
+key = get_random_bytes(8)  # kunci 64 bit (8 byte)
+cipher = DES.new(key, DES.MODE_ECB)
+
+plaintext = b"ABCDEFGH"
+ciphertext = cipher.encrypt(plaintext)
+print("Ciphertext:", ciphertext)
+
+decipher = DES.new(key, DES.MODE_ECB)
+decrypted = decipher.decrypt(ciphertext)
+print("Decrypted:", decrypted)
+```
+
+3. rsa.py
+```python
+from Crypto.PublicKey import RSA
+from Crypto.Cipher import PKCS1_OAEP
+
+# Generate key pair
+key = RSA.generate(2048)
+private_key = key
+public_key = key.publickey()
+
+# Enkripsi dengan public key
+cipher_rsa = PKCS1_OAEP.new(public_key)
+plaintext = b"RSA Example"
+ciphertext = cipher_rsa.encrypt(plaintext)
+print("Ciphertext:", ciphertext)
+
+# Dekripsi dengan private key
+decipher_rsa = PKCS1_OAEP.new(private_key)
+decrypted = decipher_rsa.decrypt(ciphertext)
+print("Decrypted:", decrypted.decode())
 ```
 )
 
@@ -65,8 +119,9 @@ def encrypt(text, key):
 
 Hasil eksekusi program Caesar Cipher:
 
-![Hasil Eksekusi](Screenshots/hasil_6.JPG)
-
+![Hasil aes](Screenshots/aes.PNG)
+![Hasil des](Screenshots/des.PNG)
+![Hasil rsa](Screenshots/rsa.PNG)
 )
 
 ---
@@ -114,10 +169,10 @@ Cipher klasik, seperti Caesar dan Vigenère, mudah diserang dengan analisis frek
   - Kelemahan:
     - Tidak Mengubah Karakter: Jika penyerang berhasil mengidentifikasi pola posisi, mereka dapat membongkar pesan tanpa perlu mengetahui kunci.
     -Lebih Rentan terhadap Serangan Pola: Jika pola transposisi diketahui atau dapat diperkirakan, ciphertext dapat dibongkar meskipun frekuensi hurufnya terjaga.
+
 ---
 
 ## 8. Kesimpulan
-### Kesimpulan
 
 Kriptografi klasik, yang mencakup metode seperti Caesar Cipher dan Vigenère Cipher, memberikan dasar penting bagi perkembangan teknik enkripsi modern. Meskipun sederhana dan mudah dipahami, metode ini memiliki kelemahan signifikan, terutama dalam hal keamanan. Kelemahan utama dari cipher ini adalah kerentanannya terhadap analisis frekuensi, di mana penyerang dapat memanfaatkan pola frekuensi huruf dalam ciphertext untuk membongkar pesan yang terenkripsi. Hal ini menunjukkan bahwa meskipun cipher klasik dapat menyembunyikan informasi, mereka tidak cukup kuat untuk melindungi data dalam konteks komunikasi modern yang lebih kompleks.
 
@@ -130,6 +185,7 @@ Pada era modern, kebutuhan akan keamanan yang lebih tinggi telah mendorong penge
 Pentingnya memahami kelemahan cipher klasik tidak hanya untuk meningkatkan keamanan di masa kini, tetapi juga untuk memberikan wawasan tentang bagaimana kriptografi telah berevolusi. Dengan mempelajari teknik-teknik dasar, kita dapat lebih menghargai kompleksitas dan keefektifan metode enkripsi modern. Selain itu, pengetahuan tentang cipher klasik dapat membantu dalam memahami dasar-dasar teori informasi dan algoritma yang lebih canggih.
 
 Dalam kesimpulannya, meskipun cipher klasik seperti Caesar dan Vigenère memiliki nilai sejarah dan pendidikan yang penting, mereka tidak lagi memadai untuk memenuhi kebutuhan keamanan komunikasi saat ini. Perkembangan teknologi dan teknik serangan yang lebih canggih menuntut penggunaan algoritma yang lebih aman dan efektif. Mengingat pentingnya informasi dalam dunia digital saat ini, pemilihan metode enkripsi yang tepat menjadi lebih krusial dari sebelumnya untuk melindungi data dan menjaga privasi.
+
 ---
 
 ## 9. Daftar Pustaka

@@ -51,7 +51,7 @@ Bayangkan kamu ingin mengirim pesan rahasia ke teman. Pesan asli (plaintext) dia
 ---
 
 ## 3. Alat dan Bahan
-(- Python 3.x  
+- Python 3.x  
 - Visual Studio Code / editor lain
 - Chrome
 - Git dan akun GitHub  
@@ -62,19 +62,14 @@ Bayangkan kamu ingin mengirim pesan rahasia ke teman. Pesan asli (plaintext) dia
 ## 4. Langkah Percobaan
 (Tuliskan langkah yang dilakukan sesuai instruksi.  
 Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
+1. Membuat file `simple_crypto.py` di folder `praktikum/week2-cryptosystem/src/`.
 2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+3. Menjalankan program dengan perintah `python simple_crypto.py`.)
 
 ---
 
 ## 5. Source Code
-(Salin kode program utama yang dibuat atau dimodifikasi.  
-Gunakan blok kode:
-
-
-# file: praktikum/week2-cryptosystem/src/simple_crypto.py
-
+```python
 def encrypt(plaintext, key):
     result = ""
     for char in plaintext:
@@ -96,7 +91,7 @@ def decrypt(ciphertext, key):
     return result
 
 if __name__ == "__main__":
-    message = "Cryptosystem Test"
+    message = "anis zubaedah"
     key = 5
 
     enc = encrypt(message, key)
@@ -105,6 +100,9 @@ if __name__ == "__main__":
     print("Plaintext :", message)
     print("Ciphertext:", enc)
     print("Decrypted :", dec)
+```
+---
+
 ## 6. Hasil dan Pembahasan
 (- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
 - Berikan tabel atau ringkasan hasil uji jika diperlukan.  
@@ -169,6 +167,7 @@ Tidak Ada Otoritas Pusat: Dalam banyak sistem simetris, tidak ada otoritas pusat
 
 
 )
+
 ---
 
 ## 8. Kesimpulan

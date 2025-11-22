@@ -12,25 +12,27 @@ Kelas: [5IKRB]
 1.Melakukan simulasi protokol Diffie-Hellman untuk pertukaran kunci publik.
 2.Menjelaskan mekanisme pertukaran kunci rahasia menggunakan bilangan prima dan logaritma diskrit.
 3.Menganalisis potensi serangan pada protokol Diffie-Hellman (termasuk serangan Man-in-the-Middle / MITM).
+
 ---
 
 ## 2. Dasar Teori
 (Ringkas teori relevan (cukup 2–3 paragraf).  
 Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
 
-### Diffie-Hellman Key Exchange
+Diffie-Hellman Key Exchange
 
-**Definisi**: Diffie-Hellman Key Exchange adalah metode untuk menghasilkan kunci bersama antara dua pihak yang tidak saling mengenal, tanpa perlu mengirimkan kunci tersebut secara langsung melalui saluran komunikasi yang mungkin tidak aman. Metode ini memungkinkan kedua pihak untuk melakukan enkripsi komunikasi mereka dengan kunci yang sama tanpa harus bertukar kunci secara langsung.
+efinisi: Diffie-Hellman Key Exchange adalah metode untuk menghasilkan kunci bersama antara dua pihak yang tidak saling mengenal, tanpa perlu mengirimkan kunci tersebut secara langsung melalui saluran komunikasi yang mungkin tidak aman. Metode ini memungkinkan kedua pihak untuk melakukan enkripsi komunikasi mereka dengan kunci yang sama tanpa harus bertukar kunci secara langsung.
 
-**Prinsip Dasar**: Proses ini didasarkan pada konsep matematika dari bilangan bulat dan eksponensiasi modular. Dua pihak, sebut saja Alice dan Bob, sepakat pada dua angka: basis (g) dan modulus (p), di mana p adalah bilangan prima besar. Alice kemudian memilih angka acak (a) sebagai kunci privatnya dan menghitung nilai \( A = g^a \mod p \), yang kemudian dikirimkan ke Bob. Bob melakukan hal yang sama dengan memilih kunci privat (b) dan menghitung \( B = g^b \mod p \).
+Prinsip Dasar: Proses ini didasarkan pada konsep matematika dari bilangan bulat dan eksponensiasi modular. Dua pihak, sebut saja Alice dan Bob, sepakat pada dua angka: basis (g) dan modulus (p), di mana p adalah bilangan prima besar. Alice kemudian memilih angka acak (a) sebagai kunci privatnya dan menghitung nilai \( A = g^a \mod p \), yang kemudian dikirimkan ke Bob. Bob melakukan hal yang sama dengan memilih kunci privat (b) dan menghitung \( B = g^b \mod p \).
 
-**Kunci Bersama**: Setelah menerima nilai dari satu sama lain, Alice dan Bob dapat menghitung kunci bersama. Alice mengambil nilai \( B \) yang dikirimkan Bob dan menghitung \( K = B^a \mod p \). Sementara itu, Bob mengambil nilai \( A \) yang dikirimkan Alice dan menghitung \( K = A^b \mod p \). Keduanya akan menghasilkan kunci yang sama, \( K \), yang dapat digunakan untuk enkripsi komunikasi mereka.
+Kunci Bersama: Setelah menerima nilai dari satu sama lain, Alice dan Bob dapat menghitung kunci bersama. Alice mengambil nilai \( B \) yang dikirimkan Bob dan menghitung \( K = B^a \mod p \). Sementara itu, Bob mengambil nilai \( A \) yang dikirimkan Alice dan menghitung \( K = A^b \mod p \). Keduanya akan menghasilkan kunci yang sama, \( K \), yang dapat digunakan untuk enkripsi komunikasi mereka.
 
-**Keamanan**: Keamanan Diffie-Hellman terletak pada kesulitan untuk memecahkan masalah logaritma diskrit, yaitu, menemukan kunci privat dari nilai yang diterima. Meskipun nilai \( A \) dan \( B \) dapat dilihat oleh pihak ketiga, tanpa kunci privat \( a \) atau \( b \), pihak ketiga tidak dapat dengan mudah menemukan kunci bersama \( K \).
+Keamanan Keamanan Diffie-Hellman terletak pada kesulitan untuk memecahkan masalah logaritma diskrit, yaitu, menemukan kunci privat dari nilai yang diterima. Meskipun nilai \( A \) dan \( B \) dapat dilihat oleh pihak ketiga, tanpa kunci privat \( a \) atau \( b \), pihak ketiga tidak dapat dengan mudah menemukan kunci bersama \( K \).
 
 **Aplikasi**: Diffie-Hellman Key Exchange sering digunakan dalam protokol keamanan modern, seperti TLS/SSL, untuk mengamankan komunikasi di internet. Metode ini memungkinkan pengguna untuk melakukan pertukaran kunci dengan aman, sehingga melindungi data dari penyadapan dan serangan.
 
 Dengan memahami prinsip dasar Diffie-Hellman, kita dapat menghargai bagaimana metode ini berkontribusi pada keamanan komunikasi digital saat ini, menyediakan cara yang efisien dan aman untuk membangun kunci enkripsi bersama.
+
 ---
 
 ## 3. Alat dan Bahan
@@ -44,9 +46,9 @@ Dengan memahami prinsip dasar Diffie-Hellman, kita dapat menghargai bagaimana me
 ## 4. Langkah Percobaan
 (Tuliskan langkah yang dilakukan sesuai instruksi.  
 Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
+1. Membuat file `diffie_hellman.py` di folder `praktikum/week7-diffie-hellman/src/`.
 2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+3. Menjalankan program dengan perintah `python diffie_hellman.py`.)
 
 ---
 
@@ -55,9 +57,26 @@ Contoh format:
 Gunakan blok kode:
 
 ```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
+import random
+
+# parameter umum (disepakati publik)
+p = 23  # bilangan prima
+g = 5   # generator
+
+# private key masing-masing pihak
+a = random.randint(1, p-1)  # secret Alice
+b = random.randint(1, p-1)  # secret Bob
+
+# public key
+A = pow(g, a, p)
+B = pow(g, b, p)
+
+# exchange public key
+shared_secret_A = pow(B, a, p)
+shared_secret_B = pow(A, b, p)
+
+print("Kunci bersama Alice :", shared_secret_A)
+print("Kunci bersama Bob   :", shared_secret_B)
 ```
 )
 
@@ -105,6 +124,7 @@ Untuk mencegah serangan Man-in-the-Middle pada protokol Diffie-Hellman, beberapa
 - Protokol Keamanan Tambahan: Menggunakan protokol keamanan yang lebih kompleks seperti TLS (Transport Layer Security) yang menggabungkan Diffie-Hellman dengan otentikasi dan integritas untuk melindungi dari serangan MITM. Protokol ini memastikan pertukaran kunci dilakukan dengan aman dan terjamin.
 
 )
+
 ---
 
 ## 8. Kesimpulan

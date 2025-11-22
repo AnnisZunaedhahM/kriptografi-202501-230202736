@@ -1,10 +1,12 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: 04
-Topik: [Entropy & Unicity Distance (Evaluasi Kekuatan Kunci dan Brute Force]  
+Topik: [Entropy & Unicity Distance (Evaluasi Kekuatan Kunci dan Brute Force)]  
 Nama: [Annis Zunaedhah M]  
 NIM: [230202736]  
 Kelas: [5 IKRB]  
+
 ---
+
 ## 1. Tujuan
 (Tuliskan tujuan pembelajaran praktikum sesuai modul.)
 1.Menyelesaikan perhitungan sederhana terkait entropi kunci.
@@ -13,8 +15,10 @@ Kelas: [5 IKRB]
 4.Menganalisis kekuatan kunci berdasarkan entropi dan unicity distance.
 5.Mengevaluasi potensi serangan brute force pada kriptosistem sederhana.
 
+---
+
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
+Ringkas teori relevan (cukup 2–3 paragraf).  
 Ringkasan Teori Entropi dan Unicity Distance
 1. Teori Entropi
 Entropi adalah konsep yang berasal dari teori informasi, yang diusulkan oleh Claude Shannon. Entropi mengukur ketidakpastian atau ketidakteraturan dalam sebuah sistem. Dalam konteks informasi, entropi memberikan ukuran rata-rata informasi yang diperlukan untuk menggambarkan keadaan suatu variabel acak.
@@ -58,6 +62,8 @@ Di mana:
 - Entropi tinggi dalam kunci dan pesan menciptakan unicity distance yang lebih besar, sehingga meningkatkan keamanan sistem kriptografi.
 - Analisis entropi membantu menentukan seberapa kuat kunci dan pesan, serta berapa banyak informasi yang dibutuhkan untuk menjamin keunikan kunci.
 
+---
+
 ## 3. Alat dan Bahan
 (- Python 3.x  
 - Visual Studio Code / editor lain  
@@ -69,9 +75,9 @@ Di mana:
 ## 4. Langkah Percobaan
 (Tuliskan langkah yang dilakukan sesuai instruksi.  
 Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
+1. Membuat file `entropy_unicity.py` di folder `praktikum/week4-entropy-unicity/src/`.
 2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+3. Menjalankan program dengan perintah `python entropy_unicity.py`.)
 
 ---
 
@@ -80,9 +86,25 @@ Contoh format:
 Gunakan blok kode:
 
 ```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
+import math
+
+def entropy(keyspace_size):
+    return math.log2(keyspace_size)
+
+print("Entropy ruang kunci 26 =", entropy(26), "bit")
+print("Entropy ruang kunci 2^128 =", entropy(2**128), "bit")
+def unicity_distance(HK, R=0.75, A=26):
+    return HK / (R * math.log2(A))
+
+HK = entropy(26)
+print("Unicity Distance untuk Caesar Cipher =", unicity_distance(HK))
+def brute_force_time(keyspace_size, attempts_per_second=1e6):
+    seconds = keyspace_size / attempts_per_second
+    days = seconds / (3600*24)
+    return days
+
+print("Waktu brute force Caesar Cipher (26 kunci) =", brute_force_time(26), "hari")
+print("Waktu brute force AES-128 =", brute_force_time(2**128), "hari")
 ```
 )
 
@@ -134,6 +156,7 @@ Dalam konteks kriptografi, entropy dan unicity distanceadalah dua konsep fundame
 
 3. Meskipun algoritma kriptografi mungkin kuat, serangan brute-force tetap menjadi ancaman karena kemajuan dalam komputasi dan kemungkinan penggunaan kunci yang lemah. Oleh karena itu, penting bagi pengguna dan pengembang untuk memahami dan menerapkan prinsip entropy dan unicity distance untuk meningkatkan keamanan kunci dalam sistem mereka.
 Secara keseluruhan, kombinasi antara pemahaman tentang entropy, unicity distance, dan potensi ancaman dari serangan brute-force adalah kunci untuk merancang sistem kriptografi yang aman dan efektif. Dengan memperhatikan faktor-faktor ini, kita dapat melindungi data dari berbagai serangan dan memastikan integritas serta kerahasiaan informasi yang dikirimkan.
+
 ---
 
 ## 9. Daftar Pustaka

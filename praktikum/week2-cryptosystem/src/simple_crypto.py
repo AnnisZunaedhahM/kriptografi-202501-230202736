@@ -1,5 +1,3 @@
-# file: praktikum/week2-cryptosystem/src/simple_crypto.py
-
 def encrypt(plaintext, key):
     result = ""
     for char in plaintext:

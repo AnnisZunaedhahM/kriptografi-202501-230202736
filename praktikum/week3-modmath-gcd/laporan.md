@@ -1,19 +1,12 @@
 # Laporan Praktikum Kriptografi
-<<<<<<< HEAD
-Minggu ke-: X  
-Topik: [Modular Math (Aritmetika Modular, GCD, Bilangan Prima, Logaritma Diskrit)]  
-Nama: [annis zunaedhah muthoharoh]  
-NIM: [230202736]  
-Kelas: [5 IKRB]  
-=======
 Minggu ke-: 3
 Topik: [Modular Math (Aritmetika Modular, GCD, Bilangan Prima, Logaritma Diskrit)]  
 Nama: [Annis Zunaedhah M]  
 NIM: [230202736]  
 Kelas: [ 5IKRB]  
->>>>>>> c90ac6548224b4edfb100b132df7b8a013efed7b
 
 ---
+
 ## 1. Tujuan
 (Tuliskan tujuan pembelajaran praktikum sesuai modul.)
 1.Menyelesaikan operasi aritmetika modular.
@@ -23,7 +16,9 @@ Kelas: [ 5IKRB]
 1.Menyelesaikan operasi aritmetika modular.
 2.Menentukan bilangan prima dan menghitung GCD (Greatest Common Divisor).
 3.Menerapkan logaritma diskrit sederhana dalam simulasi kriptografi.
+
 ---
+
 ## 2. Dasar Teori
 Ringkasan Teori Modular Arithmetic dan GCD
  1. Modular Arithmetic (Aritmetika Modular)
@@ -86,6 +81,8 @@ Untuk menghitung \( \text{gcd}(48, 18) \):
 Kesimpulan
 Modular arithmetic dan GCD adalah dua konsep fundamental dalam matematika yang memiliki aplikasi luas dalam teori bilangan dan kriptografi. Memahami kedua konsep ini memungkinkan kita untuk melakukan operasi matematis yang lebih kompleks dan mendesain algoritma yang lebih efisien. Dengan demikian, pengetahuan tentang aritmetika modular dan GCD sangat penting dalam pengembangan aplikasi yang aman dan efektif.
 
+---
+
 ## 3. Alat dan Bahan
 (- Python 3.x  
 - Visual Studio Code / editor lain  
@@ -97,20 +94,48 @@ Modular arithmetic dan GCD adalah dua konsep fundamental dalam matematika yang m
 ## 4. Langkah Percobaan
 (Tuliskan langkah yang dilakukan sesuai instruksi.  
 Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
+1. Membuat file `modular_math.py` di folder `praktikum/week3-modmath-gcd/src/`.
 2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+3. Menjalankan program dengan perintah `python modular_math.py`.)
 
 ---
 
 ## 5. Source Code
-(Salin kode program utama yang dibuat atau dimodifikasi.  
-Gunakan blok kode:
-
 ```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
+def mod_add(a, b, n): return (a + b) % n
+def mod_sub(a, b, n): return (a - b) % n
+def mod_mul(a, b, n): return (a * b) % n
+def mod_exp(base, exp, n): return pow(base, exp, n)  # eksponensiasi modular
+
+print("7 + 5 mod 12 =", mod_add(7, 5, 12))
+print("7 * 5 mod 12 =", mod_mul(7, 5, 12))
+print("7^128 mod 13 =", mod_exp(7, 128, 13))
+def gcd(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+print("gcd(54, 24) =", gcd(54, 24))
+def egcd(a, b):
+    if a == 0:
+        return b, 0, 1
+    g, x1, y1 = egcd(b % a, a)
+    return g, y1 - (b // a) * x1, x1
+
+def modinv(a, n):
+    g, x, _ = egcd(a, n)
+    if g != 1:
+        return None
+    return x % n
+
+print("Invers 3 mod 11 =", modinv(3, 11))  # hasil: 4
+def discrete_log(a, b, n):
+    for x in range(n):
+        if pow(a, x, n) == b:
+            return x
+    return None
+
+print("3^x ≡ 4 (mod 7), x =", discrete_log(3, 4, 7))  # hasil: 4
 ```
 )
 
@@ -130,7 +155,6 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 7. Jawaban Pertanyaan
-<<<<<<< HEAD
 (Jawab pertanyaan diskusi yang diberikan pada modul. 
 soal: 
 1.Apa peran aritmetika modular dalam kriptografi modern?
@@ -172,97 +196,11 @@ Kompleksitas Waktu: Algoritma yang ada untuk menyelesaikan logaritma diskrit, se
 Keterbatasan Algoritma: Meskipun ada beberapa metode, tidak ada algoritma yang sepenuhnya efisien untuk semua kasus logaritma diskrit. Hal ini menciptakan tantangan dalam menemukan solusi dengan cepat, terutama ketika modulus sangat besar.
 
 Keamanan Sistem Kriptografi: Kesulitan dalam menyelesaikan logaritma diskrit menjadi dasar keamanan banyak sistem kriptografi, seperti Diffie-Hellman dan ElGamal. Jika metode baru yang lebih efisien ditemukan, keamanan sistem ini dapat terancam.
-=======
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-1.Menyelesaikan operasi aritmetika modular.
-2.Menentukan bilangan prima dan menghitung GCD (Greatest Common Divisor).
-3.Menerapkan logaritma diskrit sederhana dalam simulasi kriptografi.
-jawab
-Berikut adalah penjelasan terperinci mengenai masing-masing topik yang Anda sebutkan:
-
-1. Menyelesaikan Operasi Aritmetika Modular?
-
-Aritmetika modular adalah sistem aritmatika yang berhubungan dengan sisa dari pembagian. Notasi yang umum digunakan adalah:
-
-\[ a \equiv b \mod m \]
-
-yang berarti bahwa \( a \) dan \( b \) memiliki sisa yang sama ketika dibagi oleh \( m \).
-
- Contoh:
-
-Misalkan kita ingin menghitung \( 17 + 5 \mod 12 \).
-
-1. Hitung \( 17 + 5 = 22 \).
-2. Hitung sisa pembagian \( 22 \div 12 \), yang memberikan sisa 10.
-
-Jadi, \( 17 + 5 \equiv 10 \mod 12 \).
-
-Operasi Dasar:
-
-- **Penjumlahan: \( (a + b) \mod m \)
-- **Pengurangan: \( (a - b) \mod m \)
-- **Perkalian: \( (a \times b) \mod m \)
-- **Pangkat: \( (a^b) \mod m \)
-
-2. Menentukan Bilangan Prima dan Menghitung GCD?
-
- Bilangan Prima
-
-Bilangan prima adalah bilangan bulat lebih besar dari 1 yang hanya memiliki dua faktor, yaitu 1 dan dirinya sendiri. Contoh bilangan prima: 2, 3, 5, 7, 11, 13, dll.
-
- Metode Menentukan Bilangan Prima:
-
-1. Pembagian: Cek apakah bilangan tersebut dapat dibagi oleh bilangan prima lebih kecil dari akar kuadrat bilangan tersebut.
-2. Sieve of Eratosthenes: Algoritma yang efisien untuk menemukan semua bilangan prima hingga angka tertentu.
-
-Menghitung GCD
-
-GCD (Greatest Common Divisor) adalah bilangan bulat terbesar yang dapat membagi dua bilangan tanpa sisa. Metode yang umum digunakan adalah Algoritma Euclidean.
-
- Contoh Menghitung GCD:
-
-Misalkan kita ingin menghitung GCD dari 48 dan 18.
-
-1. Bagi 48 dengan 18, sisa adalah 12 (48 = 18 * 2 + 12).
-2. Bagi 18 dengan 12, sisa adalah 6 (18 = 12 * 1 + 6).
-3. Bagi 12 dengan 6, sisa adalah 0 (12 = 6 * 2 + 0).
-
-Karena sisa menjadi 0, GCD adalah 6.
- 3. Menerapkan Logaritma Diskrit Sederhana dalam Simulasi Kriptografi
-
-Logaritma diskrit adalah konsep yang digunakan dalam kriptografi untuk keamanan data. Dalam konteks ini, kita biasanya berbicara tentang masalah logaritma diskrit dalam kelompok bilangan modulo.
-
- Notasi:
-
-Misalkan kita memiliki bilangan bulat \( g \) (basis) dan \( y \) (hasil), kita ingin menemukan \( x \) sehingga:
-
-\[ g^x \equiv y \mod p \]
-
-Contoh:
-
-Misalkan \( g = 3 \), \( y = 4 \), dan \( p = 11 \). Kita ingin menemukan \( x \) sehingga:
-
-\[ 3^x \equiv 4 \mod 11 \]
-
-Coba nilai \( x \):
-
-- \( x = 1 \): \( 3^1 = 3 \)
-- \( x = 2 \): \( 3^2 = 9 \)
-- \( x = 3 \): \( 3^3 = 27 \equiv 5 \mod 11 \)
-- \( x = 4 \): \( 3^4 = 81 \equiv 4 \mod 11 \)
-
-Jadi, \( x = 4 \) adalah solusi dari logaritma diskrit ini.
- Penerapan dalam Kriptografi:
-
-Logaritma diskrit digunakan dalam protokol seperti Diffie-Hellman untuk pertukaran kunci, di mana keamanan bergantung pada kesulitan menghitung logaritma diskrit.
-
-\
->>>>>>> c90ac6548224b4edfb100b132df7b8a013efed7b
 )
+
 ---
 
 ## 8. Kesimpulan
-<<<<<<< HEAD
 Aritmetika modular memiliki peran yang sangat krusial dalam kriptografi modern, menjadi dasar bagi berbagai algoritma yang digunakan untuk melindungi data. Dengan menggunakan operasi pada bilangan bulat dalam suatu modulus, aritmetika modular memungkinkan proses enkripsi dan dekripsi pesan dilakukan dengan aman dan efisien.
 
 Invers modular merupakan bagian penting dalam algoritma kunci publik, seperti RSA. Tanpa invers ini, dekripsi pesan tidak mungkin dilakukan, dan perhitungan kunci privat menjadi sulit. Ini menambah lapisan keamanan, karena menemukan invers modular pada bilangan bulat besar sangat sulit, sehingga membuat kunci privat menjadi aman dari upaya pemecahan oleh penyerang.
@@ -270,9 +208,6 @@ Invers modular merupakan bagian penting dalam algoritma kunci publik, seperti RS
 Namun, tantangan terbesar adalah menyelesaikan logaritma diskrit untuk modulus yang besar. Meskipun ada beberapa algoritma yang bisa digunakan, banyak di antaranya memiliki kompleksitas waktu yang tinggi, sehingga tidak praktis untuk digunakan dalam kriptografi. Kesulitan ini menjadi salah satu alasan mengapa sistem kriptografi tetap aman; jika ditemukan metode yang lebih efisien, bisa berisiko terhadap keamanan enkripsi yang ada saat ini.
 
 Secara keseluruhan, memahami aritmetika modular, invers modular, dan logaritma diskrit sangat penting untuk menerapkan dan memahami keamanan dalam sistem kriptografi. Ketiga konsep ini saling terkait dan bekerja sama untuk menjaga kerahasiaan dan integritas data di dunia digital yang semakin kompleks.
-=======
-Program Python yang disusun memberikan fondasi yang kuat dalam memahami dan menerapkan konsep-konsep penting dalam aritmetika modular dan teori bilangan. Berikut adalah ringkasan detail dari setiap komponen yang diimplementasikan:
->>>>>>> c90ac6548224b4edfb100b132df7b8a013efed7b
 
 1. Aritmetika Modular:
    - Fungsi Penjumlahan (`mod_add`): Menghitung hasil penjumlahan dua bilangan dalam ruang modulo, berguna untuk menghindari overflow dan menjaga hasil dalam batas tertentu.
@@ -296,6 +231,7 @@ Program Python yang disusun memberikan fondasi yang kuat dalam memahami dan mene
 ### Implikasi dan Aplikasi
 Implementasi fungsi-fungsi ini tidak hanya menunjukkan dasar-dasar matematika, tetapi juga bagaimana konsep-konsep ini diterapkan dalam kriptografi modern. Dengan memahami dan menggunakan fungsi ini, pengguna dapat:
 - Mengembangkan algoritma kr
+
 ---
 
 ## 9. Daftar Pustaka
@@ -311,11 +247,7 @@ Contoh:
 Contoh:
 ```
 commit abc12345
-<<<<<<< HEAD
-Author: annis zunaedhah muthoharoh <email:anniszunaedah@gmail.com>
-=======
 Author: Annis Zunaedhah M <email:anniszunaedah@gmail.com>
->>>>>>> c90ac6548224b4edfb100b132df7b8a013efed7b
 Date:   2025-09-20
 
     week2-cryptosystem: implementasi Caesar Cipher dan laporan )

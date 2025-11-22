@@ -5,12 +5,16 @@ Nama: annis zunaedhah muthoharoh
 NIM:  230202736 
 Kelas: [5 IKRB]  
 
+---
+
 ## 1. Tujuan
 (Tuliskan tujuan pembelajaran praktikum sesuai modul.)
 1.Menjelaskan sejarah dan evolusi kriptografi dari masa klasik hingga modern.
 2.Menyebutkan prinsip Confidentiality, Integrity, Availability (CIA) dengan benar.
 3.Menyimpulkan peran kriptografi dalam sistem keamanan informasi modern.
 4.Menyiapkan repositori GitHub sebagai media kerja praktikum.
+
+---
 
 ## 2. Dasar Teori
 (Ringkas teori relevan (cukup 2–3 paragraf).  
@@ -85,6 +89,7 @@ Mekanisme: Menggunakan perangkat keras yang andal, bandwidth jaringan yang memad
   Terminal
 
 ---
+
 ## 4. Langkah Percobaan
 (Tuliskan langkah yang dilakukan sesuai instruksi.  
 Contoh format:
@@ -158,6 +163,7 @@ Kriptografi Klasik: Terutama digunakan dalam situasi di mana komunikasi aman dap
 Kriptografi Modern: Digunakan dalam berbagai aplikasi, termasuk transaksi keuangan online, komunikasi aman di internet, dan sistem identifikasi digital.Quiz Singkat
 
 )
+
 ---
 
 ## 8. Kesimpulan

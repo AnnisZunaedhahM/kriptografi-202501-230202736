@@ -41,9 +41,9 @@ Cipher Transposisi berfungsi dengan mengubah posisi huruf dalam pesan tanpa meng
 ## 4. Langkah Percobaan
 (Tuliskan langkah yang dilakukan sesuai instruksi.  
 Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
+1. Membuat file `caesar.py, tranpose.py, vigenere.py` di folder `praktikum/week5-cipher-klasik/src/`.
 2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+3. Menjalankan program dengan perintah `python caesar.py, python tranpose.py, python vigenere.py`.)
 
 ---
 
@@ -51,17 +51,111 @@ Contoh format:
 (Salin kode program utama yang dibuat atau dimodifikasi.  
 Gunakan blok kode:
 
+1. caesar.py
 ```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
+def caesar_encrypt(plaintext, key):
+    result = ""
+    for char in plaintext:
+        if char.isalpha():
+            shift = 65 if char.isupper() else 97
+            result += chr((ord(char) - shift + key) % 26 + shift)
+        else:
+            result += char
+    return result
+
+def caesar_decrypt(ciphertext, key):
+    return caesar_encrypt(ciphertext, -key)
+
+# Contoh uji
+msg = "CLASSIC CIPHER"
+key = 3
+enc = caesar_encrypt(msg, key)
+dec = caesar_decrypt(enc, key)
+print("Plaintext :", msg)
+print("Ciphertext:", enc)
+print("Decrypted :", dec)
+```
+
+2. transpose.py
+```python
+def transpose_encrypt(plaintext, key=5):
+    ciphertext = [''] * key
+    for col in range(key):
+        pointer = col
+        while pointer < len(plaintext):
+            ciphertext[col] += plaintext[pointer]
+            pointer += key
+    return ''.join(ciphertext)
+
+def transpose_decrypt(ciphertext, key=5):
+    num_of_cols = int(len(ciphertext) / key + 0.9999)
+    num_of_rows = key
+    num_of_shaded_boxes = (num_of_cols * num_of_rows) - len(ciphertext)
+    plaintext = [''] * num_of_cols
+    col = 0
+    row = 0
+    for symbol in ciphertext:
+        plaintext[col] += symbol
+        col += 1
+        if (col == num_of_cols) or (col == num_of_cols - 1 and row >= num_of_rows - num_of_shaded_boxes):
+            col = 0
+            row += 1
+    return ''.join(plaintext)
+
+# Contoh uji
+msg = "TRANSPOSITIONCIPHER"
+enc = transpose_encrypt(msg, key=5)
+dec = transpose_decrypt(enc, key=5)
+print("Plaintext :", msg)
+print("Ciphertext:", enc)
+print("Decrypted :", dec)
+```
+
+3. vigenere.py
+```python
+def vigenere_encrypt(plaintext, key):
+    result = []
+    key = key.lower()
+    key_index = 0
+    for char in plaintext:
+        if char.isalpha():
+            shift = ord(key[key_index % len(key)]) - 97
+            base = 65 if char.isupper() else 97
+            result.append(chr((ord(char) - base + shift) % 26 + base))
+            key_index += 1
+        else:
+            result.append(char)
+    return "".join(result)
+
+def vigenere_decrypt(ciphertext, key):
+    result = []
+    key = key.lower()
+    key_index = 0
+    for char in ciphertext:
+        if char.isalpha():
+            shift = ord(key[key_index % len(key)]) - 97
+            base = 65 if char.isupper() else 97
+            result.append(chr((ord(char) - base - shift) % 26 + base))
+            key_index += 1
+        else:
+            result.append(char)
+    return "".join(result)
+
+# Contoh uji
+msg = "KRIPTOGRAFI"
+key = "KEY"
+enc = vigenere_encrypt(msg, key)
+dec = vigenere_decrypt(enc, key)
+print("Plaintext :", msg)
+print("Ciphertext:", enc)
+print("Decrypted :", dec)
 ```
 )
 
 ---
 
 ## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
+- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
 - Berikan tabel atau ringkasan hasil uji jika diperlukan.  
 jawab
 Hasil yang diberikan menunjukkan proses dekripsi yang berhasil menggunakan metode enkripsi klasik. Dalam contoh pertama, teks "KRIPTOGRAFI" dienkripsi menjadi "UVGZXMQVYPM" dan berhasil didekripsi kembali menjadi "CLASSIC CIPHER." Ini menunjukkan bahwa algoritma enkripsi dan dekripsi berfungsi dengan baik, mengkonfirmasi keakuratan implementasi. Hasil kedua juga menunjukkan bahwa "KRIPTOGRAFI" menghasilkan ciphertext yang sama, yang menegaskan konsistensi dalam proses. Selain itu, penggunaan Cipher Transposisi terlihat pada teks "TRANSPOSITIONCIPHER," yang menghasilkan ciphertext "TPIROOHASENICRST." Hasil-hasil ini menggambarkan bagaimana cipher klasik dapat menyembunyikan informasi dengan cara yang sederhana namun efektif, sekaligus memberikan pemahaman dasar tentang prinsip-prinsip kriptografi yang mendasari metode yang lebih kompleks dan aman yang digunakan saat ini.
@@ -74,8 +168,9 @@ jawab
 
 Hasil eksekusi program Caesar Cipher:
 
-![Hasil Eksekusi](Screenshots/Hasil_5.png)
-
+![Hasil caesar](Screenshots/caesar.png)
+![Hasil caesar](Screenshots/transpose.png)
+![Hasil caesar](Screenshots/vigenere.png)
 
 ---
 
@@ -120,11 +215,10 @@ Kelemahan
 - Lebih Rumit: Implementasi cipher transposisi bisa lebih rumit dibandingkan dengan cipher substitusi. Ini memerlukan pemahaman yang lebih baik tentang struktur dan pola.
 - Keterbatasan pada Jenis Pesan: Cipher transposisi mungkin tidak berfungsi dengan baik untuk pesan yang sangat pendek, karena kurangnya data untuk diacak.
 )
+
 ---
 
 ## 8. Kesimpulan
-## Kesimpulan
-
 Cipher klasik, termasuk Caesar Cipher, Vigenère Cipher, dan transposisi, merupakan metode enkripsi yang telah digunakan selama berabad-abad untuk menyembunyikan informasi. Meskipun teknik ini sederhana dan mudah dipahami, mereka memiliki kelemahan yang signifikan yang membuatnya kurang aman dibandingkan dengan metode enkripsi modern. Pemahaman tentang kelemahan ini sangat penting bagi siapa pun yang ingin memahami dasar-dasar kriptografi.
 
 Kelemahan utama Caesar Cipher terletak pada keamanan yang rendah, karena hanya ada 25 kemungkinan pergeseran. Ini membuatnya mudah dipecahkan dengan metode brute-force. Selain itu, pola frekuensi huruf dalam bahasa yang digunakan tetap terlihat, sehingga memudahkan penyerang untuk mengenali kunci. Di sisi lain, Vigenère Cipher menawarkan keamanan yang lebih baik dengan menggunakan kunci yang lebih panjang, tetapi masih rentan terhadap analisis frekuensi, terutama jika kunci digunakan berulang kali.
