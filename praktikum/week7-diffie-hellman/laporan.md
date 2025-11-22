@@ -87,63 +87,107 @@ print("Kunci bersama Bob   :", shared_secret_B)
 - Berikan tabel atau ringkasan hasil uji jika diperlukan.
     
 - Jelaskan apakah hasil sesuai ekspektasi.
+
+- Bahas error (jika ada) dan solusinya.
   jawab
+Berikut adalah ringkasan hasil uji untuk protokol pertukaran kunci, seperti yang ditunjukkan dalam cuplikan kode, yang biasanya diimplementasikan menggunakan algoritma Diffie-Hellman.
 
-Cara Mengevaluasi Hasil
+Ringkasan Hasil Uji
 
-1. Verifikasi Output:
-   - Bandingkan output yang dihasilkan oleh program dengan output yang diharapkan. Pastikan nilai-nilai kunci, ciphertext, atau hasil perhitungan sesuai dengan apa yang Anda harapkan.
+| Aspek                  | Keterangan                         |
+|-------------------------------|-------------------------------------------|
+| Metode                | Pertukaran Kunci (Diffie-Hellman)         |
+| Pengirim                 | Alice                                     |
+| Parameter Awal           | \( p \) (bilangan prima), \( g \) (basis) |
+| Kunci Pribadi Alice      | (kunci pribadi yang dihasilkan)         |
+| Kunci Publik Alice       | (dihasilkan dari kunci privat Alice)    |
+| Kunci Pribadi Bob         | (kunci pribadi yang dihasilkan)         |
+| Kunci Publik Bob          | (dihasilkan dari kunci privat Bob)      |
+| Kunci Bersama           | (hasil perhitungan kunci bersama)       |
+| asil                     | "Kunci bersama Alice: [nilai key]"      |
 
-2. Uji Kasus:
-   - Lakukan pengujian dengan berbagai input, termasuk kasus batas (edge cases) dan input yang tidak biasa. Pastikan program berfungsi dengan baik dalam semua situasi.
 
-3. Debugging:
-   - Jika ada hasil yang tidak sesuai, gunakan teknik debugging untuk melacak bagian mana dari kode yang mungkin menyebabkan masalah. Periksa nilai variabel selama eksekusi.
+Aspek	Hasil
+Pengguna	Alice
+Privat Kunci Alice	(Kunci privat Alice yang digunakan)
+Kunci Publik Alice	(Kunci publik Alice yang dihasilkan)
+Public Key Bob	(Kunci publik Bob yang diambil)
+Shared Secret	(Kunci bersama yang dihasilkan)
+Konten Dikodekan	(Data atau pesan yang dienkripsi)
 
-4. Logika Algoritma:
-   - Tinjau logika algoritma yang digunakan. Pastikan semua langkah berjalan sesuai dengan spesifikasi algoritma yang diimplementasikan.
+Detail Proses
+Penggunaan Kunci Publik: Alice menggunakan kunci publiknya untuk membuat kunci bersama yang dapat digunakan dalam komunikasi.
+Shared Secret: Hasil dari proses ini harus sama bagi kedua pengguna, yaitu Alice dan Bob, setelah menggunakan kunci publik dan privat masing-masing. Ini memastikan bahwa keduanya memiliki akses ke kunci yang sama untuk enkripsi/dekripsi selanjutnya.
+Keamanan: Proses ini bertujuan untuk menghasilkan kunci bersama dengan aman, yang memperkuat integritas komunikasi antar pihak.
+Kesimpulan
+Hasil dari uji ini mencerminkan penggunaan yang tepat dari algoritma penukaran kunci dalam kriptografi. Jika semua langkah berhasil dan kunci bersama dihasilkan sesuai ekspektas.
 
-5. Komentar dan Dokumentasi:
-   - Pastikan kode Anda memiliki komentar dan dokumentasi yang jelas. Ini dapat membantu Anda dan orang lain memahami tujuan dari setiap bagian kode.
-6. Masalah dengan Karakter Non-Huruf
-Masalah: Karakter seperti spasi, angka, atau simbol mungkin tidak ditangani dengan baik.
-Solusi: Tentukan bagaimana karakter non-huruf harus diperlakukan. Umumnya, Anda bisa membiarkannya tidak berubah dan hanya mengenkripsi huruf.
-- Bahas error (jika ada) dan solusinya. 
+- Jelaskan apakah hasil sesuai ekspektasi.
 jawab
-Berikut adalah beberapa potensi error yang umum terjadi dalam program:
+- Shared Secret:
 
-1. Error Sintaksis
-   - Masalah: Kesalahan penulisan kode seperti tanda kurung yang hilang atau kesalahan dalam indentasi.
-   - Solusi: Periksa dan perbaiki kesalahan sintaksis dengan teliti. Gunakan editor kode yang mendukung linting untuk membantu mendeteksi kesalahan ini.
+Hasil yang diharapkan adalah bahwa kunci bersama (shared secret) yang dihasilkan antara Alice dan Bob harus identik setelah proses penukaran kunci.
+Kunci ini akan digunakan untuk mengenkripsi dan mendekripsi pesan, sehingga harus sama untuk kedua pihak.
+- Keamanan:
+Proses penukaran kunci harus aman, sehingga kunci yang dihasilkan tidak dapat dengan mudah diambil oleh pihak ketiga.
+- Validitas Kunci Publik dan Privat:
+Kunci publik dan privat masing-masing pengguna harus berfungsi dengan baik, dan tidak ada kesalahan dalam algoritma yang diimplementasikan.
+- Hasil
+Jika:
 
- 2. Error Logika
-   - Masalah: Program berjalan tanpa error, tetapi hasilnya tidak sesuai dengan yang diharapkan.
-   - Solusi: Telusuri logika algoritma dengan mencetak nilai variabel di berbagai titik dalam program untuk memastikan bahwa semua langkah berjalan seperti yang diinginkan.
+Kunci bersama yang dihasilkan oleh Alice dan Bob sesuai (identik), maka hasilnya sesuai ekspektasi. Ini menunjukkan bahwa proses penukaran kunci berhasil.
+Keamanan komunikasi terjamin, sehingga pihak ketiga tidak dapat mengakses kunci bersama.
+Jika:
 
- 3. Kesalahan Input
-   - Masalah: Pengguna mungkin memasukkan data yang tidak valid, yang bisa menyebabkan program crash.
-   - Solusi: Tambahkan validasi input untuk memastikan bahwa data yang diterima sesuai dengan yang diharapkan (misalnya, tipe data yang benar).
+Kunci bersama tidak sama atau ada masalah dalam proses, maka hasilnya tidak sesuai ekspektasi. Ini dapat menunjukkan kesalahan dalam implementasi atau kerentanan dalam sistem.
+Kesimpulan
+Dalam kasus ini, jika proses penukaran kunci berhasil, dan semua pihak mendapat hasil yang diharapkan, maka sistem berfungsi sesuai ekspektasi. Namun, jika ada ketidakcocokan, perlu dilakukan analisis untuk menemukan dan memperbaiki potensi masalah
 
- 4. Kesalahan Pembagian dengan Nol
-   - Masalah: Jika program melakukan pembagian dan penyebut bernilai nol, ini akan menyebabkan error.
-   - Solusi: Tambahkan pemeriksaan untuk memastikan bahwa penyebut tidak bernilai nol sebelum melakukan pembagian.
+- Bahas error (jika ada) dan solusinya.
+jawab
+Analisis Error dan Solusinya: Implementasi Penukaran Kunci
+Potensi Error yang Mungkin Terjadi
+1.Kesalahan dalam Pembangkitan Kunci:
 
- 5.Kesalahan Akses Memori
-   - Masalah: Mengakses indeks array atau list yang tidak ada dapat menyebabkan program crash.
-   - Solusi: Pastikan akses indeks selalu dalam batas yang benar. Gunakan pernyataan kondisi untuk memeriksa panjang array sebelum mengakses indeks tertentu.
-6. **Kesalahan Tipe Data
-   - Masalah: Menggunakan tipe data yang tidak sesuai untuk operasi tertentu (misalnya, mencoba menggabungkan string dan integer).
-   - Solusi: Periksa dan konversi tipe data jika perlu sebelum melakukan operasi.
+Deskripsi: Kunci publik atau privat mungkin tidak dihasilkan dengan benar, yang dapat menyebabkan kunci bersama yang tidak valid.
+Solusi: Verifikasi algoritma yang digunakan untuk menghasilkan kunci. Pastikan semua parameter dan proses acak (randomization) berfungsi sesuai spesifikasi.
+2.Kunci Bersama Tidak Sesuai:
 
- 7. Kesalahan Jaringan
-   - Masalah: Jika program melakukan operasi jaringan, kesalahan seperti timeout atau tidak terhubung dapat terjadi.
-   - Solusi: Implementasikan penanganan pengecualian untuk mengelola kesalahan jaringan dan berikan pesan yang jelas kepada pengguna.
-8. Penyimpanan Data
-   - Masalah: Jika program menyimpan data ke file dan terjadi kesalahan, data mungkin hilang atau rusak.
-   - Solusi: Gunakan blok `try-except` untuk menangani kesalahan saat membaca atau menulis file, dan pastikan untuk menutup file dengan benar.
- Kesimpulan
-Menangani error dengan baik adalah kunci untuk membangun program yang handal dan mudah digunakan. Dengan menerapkan solusi di atas, Anda dapat mengurangi risiko kesalahan dan meningkatkan pengalaman pengguna. Jika ada error spesifik yang Anda temui, silakan berikan detail lebih lanjut untuk analisis yang lebih mendalam.
-Hasil eksekusi program Caesar Cipher:
+Deskripsi: Alice dan Bob tidak mendapatkan kunci bersama yang identik.
+Solusi:
+Periksa kembali langkah-langkah yang diambil oleh masing-masing pihak saat menghitung kunci bersama.
+Pastikan bahwa kunci publik dari masing-masing pihak digunakan dengan benar dalam proses perhitungan.
+3.Keamanan Kunci Publik:
+
+Deskripsi: Kunci publik mungkin terkena penyadapan, memungkinkan pihak ketiga untuk menyusup ke proses.
+Solusi:
+Gunakan protokol yang menyediakan integritas (misalnya, digital signatures) untuk memverifikasi keaslian kunci publik.
+Pertimbangkan penggunaan infrastruktur kunci publik (PKI) yang dapat memberikan sertifikasi kunci.
+4.Kesalahan dalam Enkripsi/Dekripsi:
+
+Deskripsi: Data yang dienkripsi tidak dapat didekripsi dengan benar.
+Solusi:
+Tinjau algoritma enkripsi yang digunakan. Pastikan algoritma dan panjang kunci sesuai dan didukung oleh kedua belah pihak.
+Verifikasi bahwa data yang dienkripsi sama dan tidak hilang atau korup.
+Pengaturan Waktu dan Sinkronisasi:
+
+Deskripsi: Jika algoritma membutuhkan komponen waktu, masalah dengan sinkronisasi waktu dapat menyebabkan kegagalan.
+Solusi: Pastikan bahwa semua sistem yang terlibat memiliki waktu yang disinkronkan, atau gunakan metode yang tidak bergantung pada waktu.
+Langkah Tindak Lanjut
+1.Debugging:
+
+Lakukan debugging untuk menentukan pada tahap mana kesalahan terjadi.
+Tambahkan logging detail untuk melacak nilai pada setiap langkah.
+2.Uji Coba Ulang:
+
+Coba menjalankan ulang proses dengan parameter yang berbeda atau di lingkungan yang terpisah untuk mengidentifikasi masalah.
+3.Audit Keamanan:
+
+Lakukan audit untuk memastikan bahwa implementasi mengikuti standar keamanan dan praktik terbaik.
+
+4.Dokumentasi:
+Selalu dokumentasikan proses dan perubahan yang dilakukan untuk referensi di masa mendatang.
+
 
 ![Hasil Eksekusi](Screenshots/Hasil_7.JPG)
 
