@@ -28,6 +28,8 @@ Cipher Caesar adalah salah satu metode paling dasar, di mana setiap huruf dalam 
 Sementara itu, Cipher Vigenère menggunakan kunci yang lebih panjang untuk mengenkripsi pesan, sehingga meningkatkan keamanan. Dalam metode ini, setiap huruf dalam pesan digeser berdasarkan posisi huruf dalam kunci. Contohnya, jika pesan yang akan dienkripsi adalah "HELLO" dan kuncinya adalah "KEY", maka proses penggeseran dilakukan dengan menambahkan posisi huruf dalam kunci ke posisi huruf dalam pesan. Hasilnya adalah teks yang lebih kompleks dan lebih sulit untuk dipecahkan dibandingkan dengan Cipher Caesar. Namun, meskipun lebih aman, Cipher Vigenère masih memiliki kelemahan dan dapat dipecahkan dengan teknik tertentu, seperti analisis frekuensi yang lebih canggih.
 
 Cipher Transposisi berfungsi dengan mengubah posisi huruf dalam pesan tanpa mengubah huruf itu sendiri. Metode ini biasanya melibatkan penyusunan huruf dalam baris dan kolom, kemudian membaca huruf-huruf tersebut dalam urutan tertentu untuk membentuk cipher text. Misalnya, dengan menggunakan pola 2x3, huruf-huruf dalam pesan dapat diatur sedemikian rupa sehingga menghasilkan teks yang berbeda saat dibaca. Konsep modular aritmetika sangat penting dalam semua cipher klasik, karena memungkinkan perhitungan posisi huruf dalam alfabet secara siklis. Meskipun cipher klasik dapat dengan mudah dipecahkan dengan teknologi modern, pemahaman tentang metode ini dan konsep modular aritmetika tetap penting dalam sejarah dan perkembangan kriptografi, serta sebagai fondasi untuk metode enkripsi yang lebih kompleks yang digunakan saat ini.
+
+
 ---
 
 ## 3. Alat dan Bahan
@@ -157,16 +159,15 @@ print("Decrypted :", dec)
 ## 6. Hasil dan Pembahasan
 - Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
 - Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-jawab
-Hasil yang diberikan menunjukkan proses dekripsi yang berhasil menggunakan metode enkripsi klasik. Dalam contoh pertama, teks "KRIPTOGRAFI" dienkripsi menjadi "UVGZXMQVYPM" dan berhasil didekripsi kembali menjadi "CLASSIC CIPHER." Ini menunjukkan bahwa algoritma enkripsi dan dekripsi berfungsi dengan baik, mengkonfirmasi keakuratan implementasi. Hasil kedua juga menunjukkan bahwa "KRIPTOGRAFI" menghasilkan ciphertext yang sama, yang menegaskan konsistensi dalam proses. Selain itu, penggunaan Cipher Transposisi terlihat pada teks "TRANSPOSITIONCIPHER," yang menghasilkan ciphertext "TPIROOHASENICRST." Hasil-hasil ini menggambarkan bagaimana cipher klasik dapat menyembunyikan informasi dengan cara yang sederhana namun efektif, sekaligus memberikan pemahaman dasar tentang prinsip-prinsip kriptografi yang mendasari metode yang lebih kompleks dan aman yang digunakan saat ini.
-- Jelaskan apakah hasil sesuai ekspektasi.  
-jawab
-Hasil yang diperoleh dari proses enkripsi dan dekripsi menggunakan metode cipher klasik sesuai dengan ekspektasi. Setiap metode, baik Caesar, Vigenère, maupun Transposisi, berhasil mengenkripsi dan mendekripsi pesan dengan akurasi yang tinggi. Misalnya, ciphertext "UVGZXMQVYPM" berhasil dikembalikan menjadi "KRIPTOGRAFI," dan "TPIROOHASENICRST" berhasil didekripsi kembali menjadi "TRANSPOSITIONCIPHER." Ini menunjukkan bahwa algoritma telah diimplementasikan dengan benar dan berfungsi sesuai tujuan
-- Bahas error (jika ada) dan solusinya.
-jawab
- Tidak ada error signifikan yang teridentifikasi dalam kode atau proses enkripsi dan dekripsi. Namun, dalam konteks penggunaan metode klasik, ada beberapa potensi masalah yang perlu diperhatikan. Salah satunya adalah keamanan. Cipher klasik, seperti Caesar dan Vigenère, rentan terhadap analisis frekuensi, yang bisa digunakan oleh penyerang untuk membongkar pesan yang dienkripsi. Solusi untuk mengatasi isu keamanan ini adalah dengan menggunakan kunci yang lebih panjang dan kompleks, serta menggabungkan teknik enkripsi yang lebih modern dan aman.
 
-Hasil eksekusi program Caesar Cipher:
+jawab
+
+1. Fungsi Enkripsi dan Dekripsi
+   - Ekspektasi: Fungsi `caesar_encrypt` harus mampu mengenkripsi teks dengan benar menggunakan kunci yang diberikan. Sebaliknya, fungsi `caesar_decrypt` harus dapat mengembalikan teks terenkripsi ke bentuk aslinya.
+   - Pemeriksaan: Uji dengan beberapa contoh plaintext dan kunci untuk memastikan bahwa hasil enkripsi dan dekripsi sesuai. Misalnya, jika kita mengenkripsi "HELLO" dengan kunci 3, hasil yang diharapkan adalah "KHOOR". Jika kita kemudian mendekripsi "KHOOR" dengan kunci 3, kita harus kembali ke "HELLO".
+ 2. Penanganan Karakter
+   - Ekspektasi: Kode harus dapat menangani huruf besar dan kecil dengan baik serta mengabaikan karakter non-huruf (seperti angka atau simbol).
+   - Pemeriksaan: Pastikan bahwa karakter non-huruf tidak terpengaruh oleh proses enkripsi. Misalnya, teks "HELLO WORLD!" harus tetap menjadi "KHOOR ZRUOG!" setelah enkripsi.
 
 ![Hasil caesar](Screenshots/caesar.png)
 ![Hasil caesar](Screenshots/transpose.png)

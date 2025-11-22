@@ -29,9 +29,9 @@ Kunci Bersama: Setelah menerima nilai dari satu sama lain, Alice dan Bob dapat m
 
 Keamanan Keamanan Diffie-Hellman terletak pada kesulitan untuk memecahkan masalah logaritma diskrit, yaitu, menemukan kunci privat dari nilai yang diterima. Meskipun nilai \( A \) dan \( B \) dapat dilihat oleh pihak ketiga, tanpa kunci privat \( a \) atau \( b \), pihak ketiga tidak dapat dengan mudah menemukan kunci bersama \( K \).
 
-**Aplikasi**: Diffie-Hellman Key Exchange sering digunakan dalam protokol keamanan modern, seperti TLS/SSL, untuk mengamankan komunikasi di internet. Metode ini memungkinkan pengguna untuk melakukan pertukaran kunci dengan aman, sehingga melindungi data dari penyadapan dan serangan.
+Aplikasi: Diffie-Hellman Key Exchange sering digunakan dalam protokol keamanan modern, seperti TLS/SSL, untuk mengamankan komunikasi di internet. Metode ini memungkinkan pengguna untuk melakukan pertukaran kunci dengan aman, sehingga melindungi data dari penyadapan dan serangan.
 
-Dengan memahami prinsip dasar Diffie-Hellman, kita dapat menghargai bagaimana metode ini berkontribusi pada keamanan komunikasi digital saat ini, menyediakan cara yang efisien dan aman untuk membangun kunci enkripsi bersama.
+Dengan memahami prinsip dasar Diffie Hellman,kita dapat menghargai bagaimana metode ini berkontribusi pada keamanan komunikasi digital saat ini ,menyediakan cara yg efisien dan aman untuk membangun kunci enkripsi bersama.
 
 ---
 
@@ -84,10 +84,65 @@ print("Kunci bersama Bob   :", shared_secret_B)
 
 ## 6. Hasil dan Pembahasan
 (- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
+- Berikan tabel atau ringkasan hasil uji jika diperlukan.
+    
+- Jelaskan apakah hasil sesuai ekspektasi.
+  jawab
 
+Cara Mengevaluasi Hasil
+
+1. Verifikasi Output:
+   - Bandingkan output yang dihasilkan oleh program dengan output yang diharapkan. Pastikan nilai-nilai kunci, ciphertext, atau hasil perhitungan sesuai dengan apa yang Anda harapkan.
+
+2. Uji Kasus:
+   - Lakukan pengujian dengan berbagai input, termasuk kasus batas (edge cases) dan input yang tidak biasa. Pastikan program berfungsi dengan baik dalam semua situasi.
+
+3. Debugging:
+   - Jika ada hasil yang tidak sesuai, gunakan teknik debugging untuk melacak bagian mana dari kode yang mungkin menyebabkan masalah. Periksa nilai variabel selama eksekusi.
+
+4. Logika Algoritma:
+   - Tinjau logika algoritma yang digunakan. Pastikan semua langkah berjalan sesuai dengan spesifikasi algoritma yang diimplementasikan.
+
+5. Komentar dan Dokumentasi:
+   - Pastikan kode Anda memiliki komentar dan dokumentasi yang jelas. Ini dapat membantu Anda dan orang lain memahami tujuan dari setiap bagian kode.
+6. Masalah dengan Karakter Non-Huruf
+Masalah: Karakter seperti spasi, angka, atau simbol mungkin tidak ditangani dengan baik.
+Solusi: Tentukan bagaimana karakter non-huruf harus diperlakukan. Umumnya, Anda bisa membiarkannya tidak berubah dan hanya mengenkripsi huruf.
+- Bahas error (jika ada) dan solusinya. 
+jawab
+Berikut adalah beberapa potensi error yang umum terjadi dalam program:
+
+1. Error Sintaksis
+   - Masalah: Kesalahan penulisan kode seperti tanda kurung yang hilang atau kesalahan dalam indentasi.
+   - Solusi: Periksa dan perbaiki kesalahan sintaksis dengan teliti. Gunakan editor kode yang mendukung linting untuk membantu mendeteksi kesalahan ini.
+
+ 2. Error Logika
+   - Masalah: Program berjalan tanpa error, tetapi hasilnya tidak sesuai dengan yang diharapkan.
+   - Solusi: Telusuri logika algoritma dengan mencetak nilai variabel di berbagai titik dalam program untuk memastikan bahwa semua langkah berjalan seperti yang diinginkan.
+
+ 3. Kesalahan Input
+   - Masalah: Pengguna mungkin memasukkan data yang tidak valid, yang bisa menyebabkan program crash.
+   - Solusi: Tambahkan validasi input untuk memastikan bahwa data yang diterima sesuai dengan yang diharapkan (misalnya, tipe data yang benar).
+
+ 4. Kesalahan Pembagian dengan Nol
+   - Masalah: Jika program melakukan pembagian dan penyebut bernilai nol, ini akan menyebabkan error.
+   - Solusi: Tambahkan pemeriksaan untuk memastikan bahwa penyebut tidak bernilai nol sebelum melakukan pembagian.
+
+ 5.Kesalahan Akses Memori
+   - Masalah: Mengakses indeks array atau list yang tidak ada dapat menyebabkan program crash.
+   - Solusi: Pastikan akses indeks selalu dalam batas yang benar. Gunakan pernyataan kondisi untuk memeriksa panjang array sebelum mengakses indeks tertentu.
+6. **Kesalahan Tipe Data
+   - Masalah: Menggunakan tipe data yang tidak sesuai untuk operasi tertentu (misalnya, mencoba menggabungkan string dan integer).
+   - Solusi: Periksa dan konversi tipe data jika perlu sebelum melakukan operasi.
+
+ 7. Kesalahan Jaringan
+   - Masalah: Jika program melakukan operasi jaringan, kesalahan seperti timeout atau tidak terhubung dapat terjadi.
+   - Solusi: Implementasikan penanganan pengecualian untuk mengelola kesalahan jaringan dan berikan pesan yang jelas kepada pengguna.
+8. Penyimpanan Data
+   - Masalah: Jika program menyimpan data ke file dan terjadi kesalahan, data mungkin hilang atau rusak.
+   - Solusi: Gunakan blok `try-except` untuk menangani kesalahan saat membaca atau menulis file, dan pastikan untuk menutup file dengan benar.
+ Kesimpulan
+Menangani error dengan baik adalah kunci untuk membangun program yang handal dan mudah digunakan. Dengan menerapkan solusi di atas, Anda dapat mengurangi risiko kesalahan dan meningkatkan pengalaman pengguna. Jika ada error spesifik yang Anda temui, silakan berikan detail lebih lanjut untuk analisis yang lebih mendalam.
 Hasil eksekusi program Caesar Cipher:
 
 ![Hasil Eksekusi](Screenshots/Hasil_7.JPG)

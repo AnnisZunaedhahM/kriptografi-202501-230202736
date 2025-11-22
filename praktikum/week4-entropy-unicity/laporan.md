@@ -112,9 +112,47 @@ print("Waktu brute force AES-128 =", brute_force_time(2**128), "hari")
 
 ## 6. Hasil dan Pembahasan
 (- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
+- Berikan tabel atau ringkasan hasil uji jika diperlukan.
+  
+- Jelaskan apakah hasil sesuai ekspektasi.
+jawab
+Hasil
+1. Fungsi dalam Kode:
+   - Kode tersebut tampaknya berkaitan dengan enkripsi, khususnya dengan metode Caesar Cipher. Fungsi-fungsi yang ada mungkin digunakan untuk menghitung jarak enkripsi dan melakukan brute force untuk menemukan kunci.
+
+2. Output yang Dihasilkan:
+   - Jika output yang muncul di terminal menunjukkan hasil yang benar, seperti jarak enkripsi yang akurat dan hasil dari upaya brute force yang sesuai, maka hasil tersebut bisa dikatakan sesuai ekspektasi.
+
+3. Format dan Penyajian Output:
+   - Jika hasil ditampilkan dengan cara yang jelas dan mudah dipahami, serta mencerminkan hasil dari perhitungan yang dilakukan, ini juga menunjukkan bahwa hasilnya sesuai harapan.
+
+Kesimpulan
+Jika semua elemen di atas menunjukkan bahwa fungsi berjalan dengan baik dan output sesuai dengan yang diharapkan, maka hasilnya memang sesuai ekspektasi. Namun, jika ada ketidaksesuaian, penting untuk memeriksa kembali kode untuk menemukan dan memperbaiki potensi masalah.
+
 - Bahas error (jika ada) dan solusinya. 
+jawab
+ 1. Kesalahan pada Input
+   - Masalah: Jika input yang dimasukkan tidak valid (misalnya, karakter yang tidak sesuai untuk enkripsi), program bisa gagal atau memberikan hasil yang tidak diharapkan.
+   - olusi: Tambahkan validasi untuk memastikan bahwa input yang diberikan adalah teks yang valid sebelum melanjutkan ke proses enkripsi.
+
+ 2. rror dalam Perhitungan Jarak
+   - **Masalah: Jika terdapat kesalahan dalam logika perhitungan jarak enkripsi, hasil yang didapat bisa salah.
+   - olusi: Periksa rumus yang digunakan untuk menghitung jarak dan pastikan bahwa semua langkah perhitungan dilakukan dengan benar.
+
+ 3. Pengecualian Saat Eksekusi
+   - Masalah: Jika terjadi kesalahan saat menjalankan program, seperti kesalahan dalam akses indeks atau pembagian dengan nol, ini bisa membuat program berhenti.
+   - Solusi: Gunakan blok `try-except` untuk menangani pengecualian dan memberikan pesan yang informatif kepada pengguna jika terjadi kesalahan.
+
+4. Masalah Kinerja
+   - Masalah: Jika proses brute force memakan waktu lama, terutama untuk kunci yang lebih kompleks, ini bisa menjadi masalah kinerja.
+   - olusi: Pertimbangkan untuk mengoptimalkan algoritma brute force atau menggunakan metode yang lebih efisien untuk mempercepat proses.
+
+5. Output yang Tidak Sesuai
+   - Masalah: Jika output dari fungsi tidak sesuai dengan yang diharapkan (misalnya, hasil brute force tidak menemukan kunci yang benar), ini bisa menunjukkan adanya kesalahan dalam logika.
+   - Solusi: Debug dengan mencetak nilai intermediate selama proses untuk melacak di mana kesalahan mungkin terjadi.
+
+Kesimpulan
+Dengan melakukan pemeriksaan dan penanganan error yang baik, Anda dapat meningkatkan keandalan kode dan mencegah terjadinya masalah saat eksekusi. Pastikan untuk melakukan pengujian menyeluruh untuk mendeteksi dan memperbaiki potensi masalah yang mungkin muncul.
 
 Hasil eksekusi program Caesar Cipher:
 

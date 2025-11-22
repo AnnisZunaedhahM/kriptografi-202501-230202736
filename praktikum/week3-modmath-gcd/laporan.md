@@ -13,10 +13,6 @@ Kelas: [ 5IKRB]
 2.Menentukan bilangan prima dan menghitung GCD (Greatest Common Divisor).
 3.Menerapkan logaritma diskrit sederhana dalam simulasi kriptografi.
 
-1.Menyelesaikan operasi aritmetika modular.
-2.Menentukan bilangan prima dan menghitung GCD (Greatest Common Divisor).
-3.Menerapkan logaritma diskrit sederhana dalam simulasi kriptografi.
-
 ---
 
 ## 2. Dasar Teori
@@ -144,9 +140,45 @@ print("3^x ≡ 4 (mod 7), x =", discrete_log(3, 4, 7))  # hasil: 4
 ## 6. Hasil dan Pembahasan
 (- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
 - Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
+- Jelaskan apakah hasil sesuai ekspektasi.
+  jawab
+Berikut adalah analisis hasil dari kode yang ditampilkan:
+Hasil
+1. Fungsi dalam Kode:
+   - Kode tersebut tampaknya berhubungan dengan operasi matematika, mungkin untuk menghitung modulus atau operasi lainnya yang berhubungan dengan bilangan bulat.
 
+2. Output yang Dihasilkan:
+   - Jika output yang muncul di terminal menunjukkan nilai yang benar dan sesuai dengan perhitungan yang diharapkan, maka hasil tersebut bisa dikatakan sesuai ekspektasi.
+
+3. Format dan Struktur Output:
+   - Jika hasil ditampilkan dengan format yang jelas dan mudah dibaca, serta mencerminkan hasil dari perhitungan yang dilakukan, ini juga menunjukkan bahwa hasilnya sesuai harapan.
+
+Kesimpulan
+Jika semua aspek di atas menunjukkan bahwa fungsi berjalan dengan baik dan output sesuai yang diharapkan, maka hasilnya memang sesuai ekspektasi. Namun, jika ada ketidaksesuaian, perlu dilakukan pemeriksaan lebih lanjut pada kode untuk menemukan dan memperbaiki potensi masalah.
+
+- Bahas error (jika ada) dan solusinya. 
+jawab
+Berikut adalah beberapa potensi error yang mungkin muncul dalam kode yang ditampilkan, beserta solusinya:
+
+1.Kesalahan pada Input
+   - Masalah: Jika input yang dimasukkan tidak valid (misalnya, bukan bilangan bulat), program bisa gagal atau memberikan hasil yang tidak sesuai.
+   - Solusi: Tambahkan pengecekan untuk memastikan bahwa input yang diberikan adalah bilangan bulat sebelum melanjutkan ke proses berikutnya.
+
+ 2. Error dalam Perhitungan Modulus
+   - Masalah: Jika ada kesalahan dalam logika perhitungan modulus, hasil yang diperoleh bisa salah.
+   - Solusi: Tinjau kembali rumus dan logika yang digunakan dalam fungsi untuk memastikan perhitungan dilakukan dengan benar.
+
+ 3. Pembagian dengan Nol
+   - Masalah: Jika terdapat pembagian dengan nol dalam perhitungan, program akan mengalami error.
+   - Solusi: Tambahkan pengecekan untuk memastikan tidak ada nilai yang digunakan sebagai penyebut yang bernilai nol.
+
+ 4. Pengecualian Saat Eksekusi
+   - Masalah: Jika terjadi kesalahan saat menjalankan program (misalnya, kesalahan dalam akses indeks), ini bisa membuat program berhenti.
+   - Solusi: Gunakan blok `try-except` untuk menangani kesalahan dan memberikan pesan yang jelas kepada pengguna.
+
+5. Masalah Kinerja
+   - Masalah: Jika kode tidak dioptimalkan dengan baik, terutama untuk input yang besar, proses bisa berjalan lambat.
+   - Solusi: Pertimbangkan untuk mengoptimalkan algoritma atau
 Hasil eksekusi program Caesar Cipher:
 
 ![Hasil Eksekusi](Screenshots/hasil_3.JPG)
@@ -192,7 +224,6 @@ h adalah hasil, dan 𝑝
 p adalah modulus), memiliki beberapa tantangan utama:
 
 Kompleksitas Waktu: Algoritma yang ada untuk menyelesaikan logaritma diskrit, seperti algoritma Baby-step Giant-step atau Pollard's rho, memiliki waktu komputasi yang tinggi, terutama untuk bilangan yang besar. Ini membuatnya tidak praktis untuk digunakan dalam kriptografi.
-
 Keterbatasan Algoritma: Meskipun ada beberapa metode, tidak ada algoritma yang sepenuhnya efisien untuk semua kasus logaritma diskrit. Hal ini menciptakan tantangan dalam menemukan solusi dengan cepat, terutama ketika modulus sangat besar.
 
 Keamanan Sistem Kriptografi: Kesulitan dalam menyelesaikan logaritma diskrit menjadi dasar keamanan banyak sistem kriptografi, seperti Diffie-Hellman dan ElGamal. Jika metode baru yang lebih efisien ditemukan, keamanan sistem ini dapat terancam.
