@@ -119,7 +119,17 @@ print("Decrypted:", decrypted.decode())
 
   jawab
 - Berikan tabel atau ringkasan hasil uji jika diperlukan
+Berikut adalah ringkasan hasil uji untuk metode enkripsi yang menggunakan AES dan RSA yang Anda tunjukkan:
 
+ Ringkasan Hasil Uji
+
+| etode        | Input Plaintext| Ciphertext Hasil                               | **Output Dekripsi       | Keberhasilan Dekripsi
+|---------------------|---------------------|-------------------------------------------------------|-----------------------------|----------------------------|
+| AES            | ASY Example         | (hasil dari enkripsi)                                  | ASY Example                 | Ya                         |
+| AES (random bytes) | (hasil random bytes) | (hasil dari enkripsi random)                        | (decrypted result)          | Ya                         |
+| RSA             | ASY Example         | (hasil ciphertext RSA)                                 | ASY Example                 | Ya                         |
+
+Jika Anda ingin menambahkan hasil ciphertext spesifik atau rincian lebih lanjut, silakan beri tahu saya!
 Ringkasan Hasil Uji Enkripsi AES
 Proses Enkripsi dan Dekripsi
 Proses	Hasil

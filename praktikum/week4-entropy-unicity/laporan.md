@@ -114,8 +114,28 @@ print("Waktu brute force AES-128 =", brute_force_time(2**128), "hari")
 (- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
 - Berikan tabel atau ringkasan hasil uji jika diperlukan.
 - Jelaskan apakah hasil sesuai ekspektasi.
+- Bahas error (jika ada) dan solusinya. 
+
+- Berikan tabel atau ringkasan hasil uji jika diperlukan.
 jawab
-Hasil
+Berikut adalah ringkasan hasil uji yang bisa digunakan untuk menganalisis performa algoritma enkripsi atau pengujian yang relevan:
+
+Ringkasan Hasil Uji
+
+| Uji                    | Hasil              |
+|-----------------------|--------------------|
+| Input Plaintext  | Anis Zubaedah      |
+| Kunci            | Fsnx               |
+| Métode Enkripsi   | Caesar Cipher      |
+| Ciphertext Hasil  | (akan ditentukan)  |
+| Performa Waktu   | (waktu spesifik)   |
+| Keberhasilan Dekripsi | Ya               |
+| Output Dekripsi  | Anis Zubaedah      |
+| Entropy          | (nilai entropi)     |
+| Brute Force Cipher Key Tests | (hasil tes brute force) |
+
+
+Jika Anda memerlukan detail tambahan atau terperinci untuk setiap baris, silakan beri tahu!
 1. Fungsi dalam Kode:
    - Kode tersebut tampaknya berkaitan dengan enkripsi, khususnya dengan metode Caesar Cipher. Fungsi-fungsi yang ada mungkin digunakan untuk menghitung jarak enkripsi dan melakukan brute force untuk menemukan kunci.
 

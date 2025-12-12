@@ -164,6 +164,17 @@ print("Decrypted :", dec)
 
 jawab
 - Berikan tabel atau ringkasan hasil uji jika diperlukan.
+Berikut adalah ringkasan hasil uji untuk ketiga metode enkripsi yang Anda sebutkan: Caesar Cipher, Transpose Cipher, dan Vigenère Cipher.
+
+Ringkasan Hasil Uji
+
+| Metode          | Input Plaintext | Kunci     | Ciphertext Hasil         | Output Dekripsi  | Keberhasilan Dekripsi** |
+|----------------------|---------------------|-----------------|-------------------------------|-----------------------|----------------------------|
+| Caesar Cipher   | CLASSIC CIPHER      | N/A             | (hasil dari enkripsi)        | CLASSIC CIPHER        | Ya                         |
+| Transpose Cipher | CLASSIC CIPHER      | N/A             | (hasil dari enkripsi)        | CLASSIC CIPHER        | Ya                         |
+|Vigenère Cipher* | CLASSIC CIPHER      | KEY             | (hasil dari enkripsi)        | CLASSIC CIPHER        | Ya                         |
+
+Jika Anda memiliki hasil ciphertext spesifik atau data lain yang ingin ditambahkan, silakan beri tahu!
 Hasil Screenshots caesar
 Ringkasan Hasil Uji dalam Enkripsi Caesar
 Proses Enkripsi:
@@ -179,8 +190,6 @@ Kesimpulan
 Proses enkripsi dan dekripsi berjalan dengan baik. Fungsi yang digunakan berhasil mengonversi plaintext menjadi ciphertext dan sebaliknya.
 Semua hasil yang diperoleh sesuai dengan ekspektasi, menunjukkan bahwa implementasi algoritma Caesar berfungsi dengan baik.
 
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.
-jawab
 Hasil Screenshots Traspose
 Ringkasan Hasil Uji dalam Enkripsi Transposisi
 Proses Enkripsi:
