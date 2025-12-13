@@ -1,9 +1,9 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: X  
 Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Nama: [Annis Zunaedhah Muthoharoh]  
+NIM: [230202736]  
+Kelas: [5 IKRB]  
 
 ---
 
