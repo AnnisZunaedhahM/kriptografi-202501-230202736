@@ -168,7 +168,7 @@ Kesalahan Implementasi yang Tidak Disengaja: Jika Anda tidak mengubah pesan, mak
 
 Kesimpulan: Berdasarkan pesan kegagalan tanda tangan tidak cocok dengan pesan, program Anda telah berhasil melakukan tugas utamanya, yaitu menjamin integritas data. Jika integritas terganggu (pesan diubah), sistem harus memberikan hasil "Tidak Valid".
 
-![Hasil Eksekusi](screenshots/hasil.P)
+![Hasil Eksekusi](screenshots/hasil.PNG)
 )
 
 ---
