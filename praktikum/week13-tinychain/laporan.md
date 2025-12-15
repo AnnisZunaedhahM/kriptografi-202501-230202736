@@ -120,8 +120,8 @@ Proof of Work (PoW) memiliki beberapa kelemahan terkait efisiensi energi, antara
 3. Biaya Operasional: Selain dampak lingkungan, biaya operasional yang tinggi juga menjadi kelemahan. Penambang harus mengeluarkan biaya yang signifikan untuk listrik dan perangkat keras, yang dapat menghambat partisipasi pengguna baru dalam jaringan. Hal ini juga dapat mengarah pada sentralisasi, di mana hanya entitas dengan sumber daya yang cukup yang mampu berinvestasi dalam kompetisi penambangan.
 
 4. Keterbatasan Skalabilitas: Dengan tingginya konsumsi energi, PoW juga menghadapi tantangan dalam skalabilitas. Ketika lebih banyak transaksi dilakukan, semakin banyak penambang yang terlibat, dan kebutuhan energi dapat meningkat, yang dapat memperlambat waktu pemrosesan transaksi dan membuat jaringan kurang efisien.
-
 Kelemahan-kelemahan ini mendorong pencarian alternatif lain, seperti Proof of Stake (PoS), yang lebih efisien dalam penggunaan energi sambil tetap menjaga keamanan jaringan.
+
 )
 ---
 
