@@ -120,9 +120,6 @@ Risiko Utama dalam Implementasi Smart Contract dan Cara Mitigasinya
 
 3. Tidak Dapat Diubah: Setelah smart contract diluncurkan di blockchain, sulit untuk mengubah atau memperbarui kontrak tersebut. Jika terjadi kesalahan atau ada kebutuhan untuk memperbarui fungsionalitas, kontrak yang tidak dapat diubah dapat menyebabkan masalah serius. Untuk mengatasi hal ini, pengembang bisa menggunakan pola desain yang memungkinkan pembaruan, seperti proxy contracts yang mendukung upgradeability. Selain itu, penting untuk menyertakan solusi fallback yang memastikan bahwa jika terjadi kesalahan, pengguna tetap dapat mengakses aset mereka dengan aman.
 
-Dengan memahami risiko-risiko ini dan menerapkan langkah mitigasi yang tepat, organisasi dapat meningkatkan keamanan dan keandalan smart contract yang mereka implementasikan.
-
-)
 ---
 
 ## 8. Kesimpulan
