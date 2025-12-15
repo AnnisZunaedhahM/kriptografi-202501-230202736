@@ -266,7 +266,8 @@ Dengan menggunakan sistem sertifikasi yang kuat dan proses verifikasi identitas,
 
 Public Key Infrastructure (PKI) dan Certificate Authority (CA) memainkan peran krusial dalam menjamin keamanan komunikasi digital dan otentikasi identitas di dunia maya. Dengan menggunakan sertifikat digital, PKI memungkinkan entitas untuk melakukan transaksi aman dan terlindungi dari berbagai serangan, seperti man-in-the-middle (MITM). CA bertanggung jawab untuk menerbitkan, mengelola, dan mencabut sertifikat, sehingga memastikan bahwa identitas pemilik sertifikat diakui dan dipercaya oleh pengguna lain. Proses verifikasi yang ketat saat penerbitan sertifikat membantu membangun kepercayaan di lingkungan online, yang sangat penting bagi aplikasi e-commerce dan komunikasi sensitif.
 
-Keberadaan PKI dan CA juga memberikan mekanisme untuk enkripsi data, yang membuat informasi yang ditransmisikan menjadi tidak dapat diakses oleh pihak ketiga. Dengan pengaturan yang tepat dan penggunaan sertifikat dari CA yang diakui, risiko pencurian data dan penipuan identitas dapat diminimalkan. Secara keseluruhan, PKI dan CA adalah fondasi penting dalam menciptakan ekosistem digital yang aman dan terpercaya, memungkinkan individu dan organisasi untuk berinteraksi dengan keyakinan di ruang siber.
+Keberadaan PKI dan CA juga memberikan mekanisme untuk enkripsi data, yang membuat informasi yang ditransmisikan menjadi tidak dapat diakses oleh pihak ketiga. Dengan pengaturan yang tepat dan penggunaan sertifikat dari CA yang diakui, risiko pencurian data dan penipuan identitas dapat diminimalkan. Secara keseluruhan, PKI dan CA adalah fondasi penting dalam menciptakan ekosistem digital yang aman dan terpercaya, memungkinkan individu dan organisasi untuk berinteraksi dengan keyakinan di ruang siber
+
 ---
 
 ## 9. Daftar Pustaka
