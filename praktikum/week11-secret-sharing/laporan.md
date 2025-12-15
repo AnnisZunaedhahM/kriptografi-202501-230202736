@@ -12,6 +12,7 @@ Kelas: [5 IKRB]
 1.Menjelaskan konsep Shamir Secret Sharing (SSS).
 2.Melakukan simulasi pembagian rahasia ke beberapa pihak menggunakan skema SSS.
 3.Menganalisis keamanan skema distribusi rahasia.
+
 ---
 
 ## 2. Dasar Teori
@@ -130,7 +131,7 @@ Keuntungan:
 ### Kesimpulan
 
 Implementasi Shamir’s Secret Sharing dalam lembaga keuangan seperti bank tidak hanya meningkatkan keamanan data, tetapi juga menciptakan sistem yang lebih robust dan responsif terhadap risiko yang dapat muncul, baik dari inside maupun outside threats.
-)
+
 ---
 
 ## 8. Kesimpulan
