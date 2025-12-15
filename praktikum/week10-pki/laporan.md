@@ -1,6 +1,6 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: 10
-Topik: [Public Key Infrastructure PKI & Certificate Authority]  
+Topik:  [Public Key Infrastructure PKI & Certificate Authority]
 Nama: [Annis Zunaedhah Muthoharoh]  
 NIM: [230202736]  
 Kelas: [5 IKRB]  
@@ -12,6 +12,7 @@ Kelas: [5 IKRB]
 1.Membuat sertifikat digital sederhana.
 2.Menjelaskan peran Certificate Authority (CA) dalam sistem PKI.
 3.Mengevaluasi fungsi PKI dalam komunikasi aman (contoh: HTTPS, TLS).
+
 ---
 
 ## 2. Dasar Teori
