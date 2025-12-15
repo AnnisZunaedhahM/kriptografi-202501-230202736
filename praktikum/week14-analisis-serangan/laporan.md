@@ -9,10 +9,10 @@ Kelas: [5 IKRB]
 
 ## 1. Tujuan
 (Tuliskan tujuan pembelajaran praktikum sesuai modul.)
-
 1.Mengidentifikasi jenis serangan pada sistem informasi nyata.
 2.Mengevaluasi kelemahan algoritma kriptografi yang digunakan.
 3.Memberikan rekomendasi algoritma kriptografi yang sesuai untuk perbaikan keamanan.
+
 ---
 
 ## 2. Dasar Teori
@@ -26,6 +26,7 @@ Analisis serangan kriptografi merupakan metodologi yang digunakan untuk membongk
 Salah satu contoh penting dalam analisis serangan adalah serangan ciphertext-only, di mana penyerang hanya memiliki akses ke ciphertext (data yang telah dienkripsi) tanpa tahu plaintext (data asli) atau kunci yang digunakan. Dalam serangan ini, penyerang menerapkan analisis matematis untuk mengungkapkan isi pesan. Konsep ini menunjukkan pentingnya memilih algoritma kriptografi yang kuat dan menerapkannya dengan benar, karena kelemahan dalam algoritma dapat dimanfaatkan untuk mengakses informasi sensitif.
 
 Selain itu, serangan kriptografi juga dapat melibatkan teknik manipulasi, seperti serangan chosen plaintext, di mana penyerang memilih pesan tertentu untuk dienkripsi dan kemudian menganalisis hasilnya. Dengan memahami cara kerja algoritma enkripsi dan melakukan analisis yang mendalam, penyerang dapat menemukan celah untuk mengakses data tanpa izin. Oleh karena itu, penting bagi para profesional keamanan informasi untuk terus memperbarui dan memperkuat sistem kriptografi guna melindungi data dari berbagai jenis serangan.
+
 ---
 
 ## 3. Alat dan Bahan
@@ -111,6 +112,7 @@ Cara Organisasi Memastikan Keamanan Sistem Kriptografi di Masa Depan
 4. Implementasi Protokol Manajemen Kunci yang Aman: Kunci enkripsi adalah komponen krusial dalam sistem kriptografi. Oleh karena itu, organisasi harus mengimplementasikan praktik yang aman dalam pengelolaan kunci, termasuk penggunaan penyimpanan yang aman, rotasi kunci secara berkala, serta autentikasi multi-faktor untuk akses ke kunci tersebut.
 
 Dengan langkah-langkah ini, organisasi dapat meningkatkan daya tahan sistem kriptografi mereka dan menjaga keamanan data di masa depan. Keamanan kriptografi bukanlah suatu tujuan akhir, melainkan proses berkelanjutan yang memerlukan perhatian dan penyesuaian seiring berkembangnya teknologi dan ancaman baru.
+
 )
 ---
 
@@ -124,6 +126,7 @@ Analisis serangan kriptografi merupakan langkah penting dalam melindungi sistem 
 Selain itu, perhatian terhadap kelemahan dalam algoritma dan implementasi adalah aspek krusial yang tidak boleh diabaikan. Kelemahan algoritma sering kali bersumber dari desain yang kurang kuat, seperti penggunaan kunci yang pendek atau algoritma yang tidak lagi dianggap aman. Di sisi lain, kelemahan implementasi biasanya berasal dari kesalahan dalam pengkodean atau pengelolaan kunci yang kurang baik, seperti penyimpanan kunci dalam format yang mudah diakses. Menyelesaikan kedua masalah tersebut melibatkan pemilihan algoritma yang lebih kuat dan penerapan praktik yang baik dalam pengelolaan kunci, memastikan bahwa celah yang ada ditutup dan sistem berfungsi dengan optimal.
 
 Akhirnya, menjaga sistem kriptografi agar tetap aman di masa depan memerlukan komitmen yang berkelanjutan dari seluruh organisasi. Proses ini mencakup pembaruan rutin untuk menerapkan algoritma dan protokol terbaru, serta memberikan pelatihan kepada karyawan tentang kesadaran keamanan dan praktik terbaik dalam penggunaan sistem. Melakukan audit keamanan secara berkala dan pengujian penetrasi juga penting untuk mengidentifikasi dan mengatasi potensi kelemahan sebelum dapat dieksploitasi oleh penyerang. Dengan pendekatan proaktif ini, organisasi dapat membangun fondasi yang kuat untuk melindungi data mereka dari serangan yang semakin kompleks dan beragam.
+
 ---
 
 ## 9. Daftar Pustaka
