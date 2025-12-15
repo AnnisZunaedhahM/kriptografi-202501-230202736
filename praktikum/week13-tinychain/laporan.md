@@ -9,10 +9,10 @@ Kelas: [5  IKRB]
 
 ## 1. Tujuan
 (Tuliskan tujuan pembelajaran praktikum sesuai modul.)
-
 1.Menjelaskan peran hash function dalam blockchain.
 2.Melakukan simulasi sederhana Proof of Work (PoW).
 3.Menganalisis keamanan cryptocurrency berbasis kriptografi.
+
 ---
 
 ## 2. Dasar Teori
@@ -135,6 +135,7 @@ Proof of Work (PoW) adalah mekanisme konsensus yang digunakan dalam TinyChain un
 Salah satu keunggulan PoW adalah kemampuannya untuk menciptakan proses verifikasi yang transparan dan dapat diandalkan. Setiap blok baru yang ditambahkan ke blockchain berisi hash dari blok sebelumnya, membentuk rantai yang terhubung. Jika ada yang mencoba mengubah informasi dalam satu blok, perubahan itu akan merusak rantai dan tampak jelas bagi semua peserta jaringan. Ini meningkatkan ketahanan terhadap penipuan, termasuk upaya double spending, di mana seseorang mencoba menghabiskan cryptocurrency yang sama lebih dari sekali.
 
 Namun, mekanisme PoW juga memiliki kelemahan, terutama dalam hal efisiensi energi. Proses penambangan memerlukan konsumsi daya yang tinggi, yang berpotensi berdampak negatif pada lingkungan. Biaya operasional yang besar ini dapat menghambat partisipasi pengguna baru, menciptakan risiko sentralisasi, dan menghadirkan tantangan dalam skalabilitas jaringan. Oleh karena itu, meskipun PoW efektif menjaga keamanan, tantangan ini mendorong eksplorasi solusi alternatif yang lebih efisien, seperti Proof of Stake (PoS), untuk masa depan TinyChain.
+
 ---
 
 ## 9. Daftar Pustaka
