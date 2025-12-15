@@ -23,6 +23,7 @@ Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
 Shamir’s Secret Sharing adalah suatu metode kriptografi yang digunakan untuk membagi rahasia menjadi beberapa bagian (shares) sedemikian rupa sehingga hanya sejumlah bagian tertentu (threshold) yang diperlukan untuk merekonstruksi rahasia tersebut. Metode ini berdasar pada teori polinomial, di mana rahasia dianggap sebagai nilai dari polinomial di suatu titik, dan bagian-bagian tersebut adalah nilai dari polinomial di titik-titik lain. Dengan menggunakan polinomial berderajat \( t-1 \), di mana \( t \) adalah jumlah minimum bagian yang diperlukan untuk membangun kembali rahasia, Shamir dapat menjamin bahwa setiap sekelompok bagian yang kurang dari \( t \) tidak mengungkapkan informasi tentang rahasia yang asli.
 
 Proses pembagian ini melibatkan pemilihan koefisien dari polinomial secara acak dan menggunakan rahasia sebagai nilai konstan polinomial. Para peserta kemudian diberikan nilai-nilai polinomial yang berbeda berdasarkan titik yang sudah ditentukan. Untuk merekonstruksi rahasia, sekurang-kurangnya \( t \) peserta harus menjalin kerjasama untuk mengumpulkan bagian mereka dan menggunakan interpolasi polinomial (seperti metode Lagrange) untuk menemukan nilai rahasia pada titik yang telah ditentukan. Metode ini efisien dan memberikan tingkat keamanan yang tinggi, memungkinkan distribusi rahasia secara aman dalam sistem distribusi tanpa mengungkapkan informasi lebih dari yang diperlukan.
+
 ---
 
 ## 3. Alat dan Bahan
