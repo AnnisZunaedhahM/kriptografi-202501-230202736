@@ -21,7 +21,6 @@ Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
 
 Public Key Infrastructure (PKI) dan Certificate Authority (CA)
 Public Key Infrastructure (PKI) adalah suatu kerangka kerja yang memungkinkan penggunaan enkripsi kunci publik untuk mengamankan komunikasi data. PKI menyediakan manajemen kunci, terdiri dari perangkat lunak dan perangkat keras, yang mendukung pembuatan, distribusi, penyimpanan, dan pencabutan sertifikat digital. Dengan PKI, pengguna dapat memverifikasi identitas pihak lain secara online dan memastikan integritas dan kerahasiaan data yang dikirimkan.
-
 Salah satu komponen utama dari PKI adalah Certificate Authority (CA), yaitu entitas terpercaya yang bertanggung jawab untuk menerbitkan dan mengelola sertifikat digital. CA melakukan verifikasi identitas individu atau organisasi sebelum menerbitkan sertifikat, yang berisi kunci publik dan informasi identitas pemilik. Dengan sertifikat ini, pengguna dapat melakukan komunikasi aman, seperti dalam transaksi e-commerce atau pengiriman email yang terenkripsi, karena fakta bahwa identitas pengirim telah diverifikasi oleh CA yang tepercaya.
 ---
 
