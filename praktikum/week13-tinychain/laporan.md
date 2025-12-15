@@ -79,6 +79,7 @@ Hasil eksekusi program Caesar Cipher:
 - Pertanyaan 
 
 1.Mengapa fungsi hash sangat penting dalam blockchain?
+
 jawab
  Pentingnya Fungsi Hash dalam Blockchain
 
@@ -93,6 +94,7 @@ Fungsi hash sangat penting dalam blockchain karena beberapa alasan utama:
 Dengan semua manfaat ini, fungsi hash menjadi fondasi penting dalam menjaga keamanan, integritas, dan efisiensi sistem blockchain.
 
 2.Bagaimana Proof of Work mencegah double spending?
+
 jawab
 Cara Proof of Work Mencegah Double Spending
 
@@ -107,6 +109,7 @@ Proof of Work (PoW) mencegah double spending—situasi di mana seseorang berusah
 Dengan kombinasi verifikasi transaksi, integritas rantai blok, dan mekanisme konsensus, Proof of Work secara efektif mencegah double spending dan memastikan keandalan sistem blockchain.
 
 3.Apa kelemahan dari PoW dalam hal efisiensi energi?
+
 jawab
 
  Kelemahan Proof of Work dalam Hal Efisiensi Energi
