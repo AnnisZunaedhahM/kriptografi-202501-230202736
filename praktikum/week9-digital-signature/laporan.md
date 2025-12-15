@@ -9,9 +9,11 @@ Kelas: [5 IKRB]
 
 ## 1. Tujuan
 (Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+
 1.Mengimplementasikan tanda tangan digital menggunakan algoritma RSA/DSA.
 2.Memverifikasi keaslian tanda tangan digital.
 3.Menjelaskan manfaat tanda tangan digital dalam otentikasi pesan dan integritas data.
+
 ---
 
 ## 2. Dasar Teori
@@ -257,6 +259,7 @@ Dari semua peran tersebut, CA merupakan komponen vital dalam menyediakan keperca
 Dalam percobaan ini, implementasi tanda tangan digital menggunakan algoritma RSA berhasil menunjukkan kemampuan yang kuat dalam menjamin integritas dan otentikasi pesan. Proses yang melibatkan hashing pesan dan enkripsi kunci privat memungkinkan pengirim untuk membuat tanda tangan digital yang unik dan terhubung langsung dengan isi pesan. Hal ini memastikan bahwa setiap perubahan pada pesan dapat terdeteksi, sehingga menjamin bahwa informasi tetap akurat dan tidak dimanipulasi.
 
 Selain itu, penggunaan Certificate Authority (CA) meningkatkan kepercayaan dalam sistem tanda tangan digital dengan menyediakan sertifikat yang mengaitkan identitas pengguna dengan kunci publik mereka. CA juga bertanggung jawab untuk validasi identitas dan pengelolaan lifecycle sertifikat, menjadikannya komponen penting dalam memastikan keamanan komunikasi digital. Dengan demikian, sistem tanda tangan digital dan CA bekerja secara sinergis untuk menciptakan ekosistem yang aman dan dapat dipercaya.
+
 ---
 
 ## 9. Daftar Pustaka
