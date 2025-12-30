@@ -131,7 +131,9 @@ Dengan kata lain, kriptografi memainkan peran penting dalam melindungi privasi d
 
 Kriptografi memainkan peran vital dalam mendukung privasi komunikasi digital dengan menyediakan mekanisme enkripsi yang melindungi data sensitif dari akses tidak sah. Dengan menggunakan teknik seperti enkripsi end-to-end, individu dapat menjaga kerahasiaan informasi pribadi mereka dalam berbagai konteks, dari transaksi keuangan hingga komunikasi sehari-hari. Perlindungan ini sangat penting di era digital yang semakin rentan terhadap kejahatan siber dan penyalahgunaan data, membangun kepercayaan di antara pengguna terhadap layanan online.
 
+
 Namun, penggunaan kriptografi juga menghadapi tantangan hukum dan etika yang signifikan. Pemerintah dan lembaga penegak hukum sering kali berada di persimpangan antara menjaga keamanan publik dan menghormati privasi individu, yang memicu perdebatan tentang perlunya akses ke data yang terenkripsi untuk tujuan penyelidikan. Selain itu, aspek etis muncul ketika membahas kemungkinan penyalahgunaan kriptografi untuk aktivitas ilegal. Dengan demikian, menemukan keseimbangan yang tepat antara perlindungan privasi dan kepentingan keamanan tetap menjadi tantangan kompleks dalam konteks teknologi modern.
+
 )
 ---
 
