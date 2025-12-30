@@ -9,9 +9,11 @@ Kelas: [5 IKRB]
 
 ## 1. Tujuan
 (Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+
 1.Mengembangkan proyek sederhana berbasis algoritma kriptografi.
 2.Mendokumentasikan proses implementasi proyek ke dalam repository Git.
 3.Menyusun laporan teknis hasil proyek akhir.
+
 ---
 
 ## 2. Dasar Teori
@@ -25,6 +27,7 @@ TinyCoin ERC20 adalah token yang dibangun di atas standar ERC20 di jaringan Ethe
 Salah satu keunggulan dari TinyCoin adalah desentralisasi dan keamanan yang ditawarkan oleh blockchain Ethereum. Dengan memanfaatkan teknologi blockchain, setiap transaksi dan kepemilikan token tercatat secara permanen dan transparan, sehingga sulit untuk dimanipulasi. Hal ini memberikan kepercayaan lebih bagi pengguna dalam bertransaksi, karena mereka dapat memverifikasi setiap langkah tanpa memerlukan pihak ketiga. Di samping itu, TinyCoin dapat memanfaatkan smart contracts untuk mengotomatisasi berbagai proses, seperti distribusi token dan eksekusi kesepakatan tanpa campur tangan manusia.
 
 Namun, pengembangan TinyCoin juga menghadapi tantangan, termasuk isu skalabilitas dan biaya transaksi yang sering terjadi di jaringan Ethereum. Ketika banyak pengguna bertransaksi secara bersamaan, jaringan dapat mengalami kemacetan, yang menyebabkan biaya transaksi meningkat. Oleh karena itu, penting bagi tim pengembang untuk melakukan perencanaan yang baik dan mempertimbangkan solusi alternatif, seperti penggunaan layer kedua atau protokol lain untuk meningkatkan efisiensi. Dengan memahami tantangan dan manfaat ini, TinyCoin dapat berpotensi menjadi kontribusi yang signifikan dalam ekosistem cryptocurrency.
+
 ---
 
 ## 3. Alat dan Bahan
@@ -117,12 +120,11 @@ Risiko Utama dalam Implementasi Smart Contract dan Cara Mitigasinya
 
 3. Tidak Dapat Diubah: Setelah smart contract diluncurkan di blockchain, sulit untuk mengubah atau memperbarui kontrak tersebut. Jika terjadi kesalahan atau ada kebutuhan untuk memperbarui fungsionalitas, kontrak yang tidak dapat diubah dapat menyebabkan masalah serius. Untuk mengatasi hal ini, pengembang bisa menggunakan pola desain yang memungkinkan pembaruan, seperti proxy contracts yang mendukung upgradeability. Selain itu, penting untuk menyertakan solusi fallback yang memastikan bahwa jika terjadi kesalahan, pengguna tetap dapat mengakses aset mereka dengan aman.
 
-Dengan memahami risiko-risiko ini dan menerapkan langkah mitigasi yang tepat, organisasi dapat meningkatkan keamanan dan keandalan smart contract yang mereka implementasikan.
-)
 ---
 
 ## 8. Kesimpulan
 (Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+
 ### Kesimpulan Proyek Kelompok – TinyCoin ERC20
 
 Proyek TinyCoin ERC20 merupakan sebuah inisiatif yang menggunakan standar ERC20 di jaringan Ethereum untuk menciptakan token digital yang dapat digunakan dalam berbagai aplikasi. Dengan mengikuti standar ini, TinyCoin mendukung interoperabilitas dengan berbagai dompet dan aplikasi decentralized, sehingga memudahkan pengguna dalam melakukan transaksi. Keberadaan TinyCoin dapat menjadi kontribusi penting dalam ekosistem cryptocurrency, membantu memperluas adopsi dan penggunaan token di kalangan pengguna.
@@ -132,6 +134,7 @@ Salah satu keunggulan utama dari TinyCoin adalah keamanan yang difasilitasi oleh
 Namun, pengembangan TinyCoin juga menghadapi tantangan yang perlu diatasi. Salah satunya adalah isu skalabilitas yang sering dialami oleh jaringan Ethereum, di mana biaya transaksi dapat meningkat ketika jumlah pengguna dan transaksi meningkat. Maka dari itu, sangat penting bagi tim pengembang untuk merencanakan solusi yang tepat agar TinyCoin dapat menangani beban transaksi yang tinggi tanpa mengorbankan biaya bagi pengguna.
 
 Secara keseluruhan, proyek TinyCoin ERC20 menawarkan peluang besar untuk mengembangkan ekosistem token yang aman dan efisien. Dengan memperhatikan tantangan yang ada dan berfokus pada praktik terbaik dalam pengembangan, TinyCoin dapat membantu menciptakan pengalaman yang lebih baik bagi pengguna, serta berkontribusi pada inovasi teknologi blockchain di masa depan. Proyek ini menunjukkan potensi besar yang dimiliki token digital dalam memfasilitasi transaksi dan interaksi di dunia cryptocurrency.
+
 ---
 
 ## 9. Daftar Pustaka

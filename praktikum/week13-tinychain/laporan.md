@@ -9,10 +9,10 @@ Kelas: [5  IKRB]
 
 ## 1. Tujuan
 (Tuliskan tujuan pembelajaran praktikum sesuai modul.)
-
 1.Menjelaskan peran hash function dalam blockchain.
 2.Melakukan simulasi sederhana Proof of Work (PoW).
 3.Menganalisis keamanan cryptocurrency berbasis kriptografi.
+
 ---
 
 ## 2. Dasar Teori
@@ -79,6 +79,7 @@ Hasil eksekusi program Caesar Cipher:
 - Pertanyaan 
 
 1.Mengapa fungsi hash sangat penting dalam blockchain?
+
 jawab
  Pentingnya Fungsi Hash dalam Blockchain
 
@@ -93,6 +94,7 @@ Fungsi hash sangat penting dalam blockchain karena beberapa alasan utama:
 Dengan semua manfaat ini, fungsi hash menjadi fondasi penting dalam menjaga keamanan, integritas, dan efisiensi sistem blockchain.
 
 2.Bagaimana Proof of Work mencegah double spending?
+
 jawab
 Cara Proof of Work Mencegah Double Spending
 
@@ -107,6 +109,7 @@ Proof of Work (PoW) mencegah double spending—situasi di mana seseorang berusah
 Dengan kombinasi verifikasi transaksi, integritas rantai blok, dan mekanisme konsensus, Proof of Work secara efektif mencegah double spending dan memastikan keandalan sistem blockchain.
 
 3.Apa kelemahan dari PoW dalam hal efisiensi energi?
+
 jawab
 
  Kelemahan Proof of Work dalam Hal Efisiensi Energi
@@ -120,8 +123,8 @@ Proof of Work (PoW) memiliki beberapa kelemahan terkait efisiensi energi, antara
 3. Biaya Operasional: Selain dampak lingkungan, biaya operasional yang tinggi juga menjadi kelemahan. Penambang harus mengeluarkan biaya yang signifikan untuk listrik dan perangkat keras, yang dapat menghambat partisipasi pengguna baru dalam jaringan. Hal ini juga dapat mengarah pada sentralisasi, di mana hanya entitas dengan sumber daya yang cukup yang mampu berinvestasi dalam kompetisi penambangan.
 
 4. Keterbatasan Skalabilitas: Dengan tingginya konsumsi energi, PoW juga menghadapi tantangan dalam skalabilitas. Ketika lebih banyak transaksi dilakukan, semakin banyak penambang yang terlibat, dan kebutuhan energi dapat meningkat, yang dapat memperlambat waktu pemrosesan transaksi dan membuat jaringan kurang efisien.
-
 Kelemahan-kelemahan ini mendorong pencarian alternatif lain, seperti Proof of Stake (PoS), yang lebih efisien dalam penggunaan energi sambil tetap menjaga keamanan jaringan.
+
 )
 ---
 
@@ -135,6 +138,7 @@ Proof of Work (PoW) adalah mekanisme konsensus yang digunakan dalam TinyChain un
 Salah satu keunggulan PoW adalah kemampuannya untuk menciptakan proses verifikasi yang transparan dan dapat diandalkan. Setiap blok baru yang ditambahkan ke blockchain berisi hash dari blok sebelumnya, membentuk rantai yang terhubung. Jika ada yang mencoba mengubah informasi dalam satu blok, perubahan itu akan merusak rantai dan tampak jelas bagi semua peserta jaringan. Ini meningkatkan ketahanan terhadap penipuan, termasuk upaya double spending, di mana seseorang mencoba menghabiskan cryptocurrency yang sama lebih dari sekali.
 
 Namun, mekanisme PoW juga memiliki kelemahan, terutama dalam hal efisiensi energi. Proses penambangan memerlukan konsumsi daya yang tinggi, yang berpotensi berdampak negatif pada lingkungan. Biaya operasional yang besar ini dapat menghambat partisipasi pengguna baru, menciptakan risiko sentralisasi, dan menghadirkan tantangan dalam skalabilitas jaringan. Oleh karena itu, meskipun PoW efektif menjaga keamanan, tantangan ini mendorong eksplorasi solusi alternatif yang lebih efisien, seperti Proof of Stake (PoS), untuk masa depan TinyChain.
+
 ---
 
 ## 9. Daftar Pustaka
