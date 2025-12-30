@@ -13,7 +13,6 @@ Kelas: [5 IKRB]
 1.Menganalisis penggunaan kriptografi pada email dan SSL/TLS.
 2.Menjelaskan enkripsi dalam transaksi e-commerce.
 3.Mengevaluasi isu etika & privasi dalam penggunaan kriptografi di kehidupan sehari-hari.
-
 ---
 
 ## 2. Dasar Teori
@@ -66,9 +65,7 @@ def encrypt(text, key):
 
 Hasil eksekusi program Caesar Cipher:
 
-![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
+![Hasil Eksekusi](screenshots/hasil.png)
 )
 
 ---
@@ -125,18 +122,20 @@ jawab
 3. antangan Etika:
    - Dari segi etika, penggunaan kriptografi menimbulkan pertanyaan tentang batasan antara privasi individu dan transparansi. Sementara kriptografi dapat melindungi data pribadi, ia juga bisa disalahgunakan oleh individu atau kelompok untuk tujuan yang tidak etis, seperti melakukan aktivitas kriminal. Diskusi etis berputar di sekitar sejauh mana privasi harus dilindungi, dan apakah ada justifikasi moral untuk memberikan pengecualian dalam hal akses ke data terenkripsi untuk kepentingan keamanan nasional atau publik.
 
+### Kesimpulan
+
+Dengan kata lain, kriptografi memainkan peran penting dalam melindungi privasi dalam komunikasi digital, namun juga menghadirkan tantangan signifikan di bidang hukum dan etika. Menciptakan keseimbangan yang tepat antara perlindungan privasi dan kebutuhan untuk keamanan publik tetap menjadi isu kompleks yang memerlukan dialog berkelanjutan antara pemangku kepentingan, termasuk pemerintah, organisasi, dan masyarakat umum.
+
+### Kesimpulan
+
+Kriptografi memainkan peran vital dalam mendukung privasi komunikasi digital dengan menyediakan mekanisme enkripsi yang melindungi data sensitif dari akses tidak sah. Dengan menggunakan teknik seperti enkripsi end-to-end, individu dapat menjaga kerahasiaan informasi pribadi mereka dalam berbagai konteks, dari transaksi keuangan hingga komunikasi sehari-hari. Perlindungan ini sangat penting di era digital yang semakin rentan terhadap kejahatan siber dan penyalahgunaan data, membangun kepercayaan di antara pengguna terhadap layanan online.
+
+Namun, penggunaan kriptografi juga menghadapi tantangan hukum dan etika yang signifikan. Pemerintah dan lembaga penegak hukum sering kali berada di persimpangan antara menjaga keamanan publik dan menghormati privasi individu, yang memicu perdebatan tentang perlunya akses ke data yang terenkripsi untuk tujuan penyelidikan. Selain itu, aspek etis muncul ketika membahas kemungkinan penyalahgunaan kriptografi untuk aktivitas ilegal. Dengan demikian, menemukan keseimbangan yang tepat antara perlindungan privasi dan kepentingan keamanan tetap menjadi tantangan kompleks dalam konteks teknologi modern.
 )
 ---
 
 ## 8. Kesimpulan
 (Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
-### Kesimpulan
-
-Aplikasi Transport Layer Security (TLS) merupakan komponen penting dalam e-commerce, berfungsi untuk melindungi data yang dikirimkan melalui internet. Dengan menerapkan TLS, informasi sensitif seperti detail kartu kredit, alamat, dan data pribadi lainnya dapat dienkripsi, sehingga mengurangi risiko pencurian data oleh pihak yang tidak berwenang. Keamanan ini sangat krusial dalam membangun kepercayaan konsumen terhadap platform e-commerce, yang pada gilirannya mendorong pertumbuhan sektor ini.
-
-Selain mengamankan data, TLS juga memberikan integritas terhadap komunikasi antara pengguna dan server. Ini berarti bahwa data yang dikirimkan tidak dapat diubah atau dipalsukan selama transmisi. Keberadaan sertifikat digital dan otentikasi yang dilakukan oleh TLS memastikan bahwa konsumen bertransaksi dengan entitas yang sah, mengurangi kemungkinan penipuan. Hal ini menjadi elemen kunci dalam menjaga reputasi bisnis online dan meningkatkan loyalitas pelanggan.
-
-Namun, meskipun TLS menawarkan banyak manfaat, penerapannya memerlukan pemeliharaan yang baik dan pembaruan berkala untuk melindungi terhadap kerentanan yang baru muncul. Bisnis e-commerce harus terus memantau dan memperbarui sistem keamanan mereka agar tetap di depan ancaman siber. Dengan memprioritaskan keamanan melalui TLS, e-commerce tidak hanya melindungi data konsumen tetapi juga menciptakan lingkungan berbelanja yang lebih aman dan nyaman.
 
 ---
 
@@ -153,8 +152,8 @@ Contoh:
 Contoh:
 ```
 commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
+Author: Nama:annis zunaedhah muthoharoh <email : anniszunaedah@gmail.com>
+Date:   2025-12-08
 
     week2-cryptosystem: implementasi Caesar Cipher dan laporan )
 ```
