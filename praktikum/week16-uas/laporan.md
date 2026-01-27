@@ -1,95 +1,130 @@
-# Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+# CyberCoin (IGC) - Web3 Play-to-Earn Ecosystem
+
+## 👤 Author Information
+
+* **Name:** Annis Zunaedhah M
+* **Student ID (NIM):** 230202736
+* **Class:** 5IKRB
+* **Institution:** Universitas Putra Bangsa
+* **Subject:** Cryptography
+* **Kelompok:** Kriptografi Kelompok 4
+* **Kontribusi:** PPT, Laporan, Website
+
+
+**CyberCoin (IGC)** adalah sebuah *Decentralized Application* (DApp) berbasis web yang mensimulasikan ekosistem *Play-to-Earn* (P2E) secara komprehensif. Proyek ini dibangun untuk mendemonstrasikan integrasi antara antarmuka pengguna (UI) modern dengan dompet kripto (Web3 Wallet) dalam skenario ekonomi game digital.
+
+Aplikasi ini memungkinkan pengguna untuk menghubungkan dompet MetaMask mereka, menambang sumber daya (*mining*), melakukan *staking* aset, bermain *mini-games* di Arcade, serta melakukan transaksi jual-beli NFT secara *Peer-to-Peer*.
+
+## 🌟 Fitur Utama
+
+Aplikasi ini terdiri dari empat pilar utama yang saling terintegrasi:
+
+### 1. 💎 Dashboard Ekonomi (Economy Core)
+Pusat kendali utama bagi pengguna dengan tata letak Grid responsif.
+* **Mining Zone:** Simulasi penambangan sumber daya (*Resources*) dengan interaksi klik. Dilengkapi efek partikel visual dan umpan balik suara.
+* **Staking Vault:** Fitur untuk mengunci koin IGC demi mendapatkan "Mining Boost" (Multiplier 1.5x) pada aktivitas penambangan.
+* **Resource Exchange:** Mekanisme konversi nilai tukar dari *Raw Resources* menjadi token mata uang utama (*IGC Coin*).
+* **Daily Rewards:** Sistem retensi pengguna berupa kalender 7 hari dengan hadiah progresif (Bonus Besar di hari ke-7).
+
+### 2. 🎮 Arcade Center
+Kumpulan *mini-games* interaktif yang menggunakan *Resources* sebagai taruhan (*betting*) dengan logika probabilitas yang adil:
+* **Blackjack:** Permainan kartu klasik Player vs Dealer.
+* **Spin The Wheel:** Roda keberuntungan dengan fisika putaran yang realistis (*smooth easing*).
+* **Dice Roll:** Permainan dadu probabilitas tinggi.
+* **Coin Flip:** Taruhan cepat (Heads/Tails).
+* **Clicker Blitz:** Mode tantangan kecepatan (30 detik).
+
+### 3. 🖼️ NFT Marketplace
+Ekosistem perdagangan aset digital berupa lencana (*Badges*) beranimasi.
+* **Minting Station:** Pengguna dapat mencetak (*mint*) NFT baru menggunakan saldo IGC mereka.
+* **P2E Trading:** Pengguna dapat mendaftarkan koleksi mereka untuk dijual (*List for Sale*) dan membeli NFT milik orang lain dari *Global Feed*.
+* **Visual Tier:** Aset NFT dikategorikan berdasarkan kelangkaan (Bronze, Silver, Gold, Legendary) dengan efek visual neon yang berbeda.
+
+### 4. 👤 Profil & Identitas Web3
+Halaman manajemen identitas pengguna.
+* **Wallet Integration:** Menampilkan alamat dompet asli (e.g., `0x12...89B`) dan saldo ETH secara *real-time*.
+* **Rank System:** Lencana peringkat dinamis berdasarkan kepemilikan aset (Bronze, Silver, Platinum, Master).
+* **Transaction History:** Log aktivitas transparan yang mencatat setiap klaim, transfer, dan hasil permainan.
 
 ---
 
-## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+## 🛠️ Teknologi yang Digunakan (Tech Stack)
+
+Proyek ini dibangun menggunakan standar industri pengembangan web modern:
+
+* **Frontend Framework:** React.js (Vite)
+* **Styling:** Tailwind CSS (untuk desain responsif dan *Glassmorphism*).
+* **Icons:** Lucide React.
+* **Animation:** Framer Motion (untuk transisi halaman dan efek partikel).
+* **Web3 Integration:** `window.ethereum` API (Direct Injection) untuk koneksi MetaMask tanpa ketergantungan *third-party* yang berat.
+* **State Management:** React Hooks & Context API.
 
 ---
 
-## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+## 🚀 Cara Menjalankan Project (Installation)
+
+Ikuti langkah-langkah berikut untuk menjalankan aplikasi ini di komputer lokal (Localhost):
+
+**Prasyarat:**
+1.  Pastikan **Node.js** sudah terinstal di komputer.
+2.  Pastikan Browser (Chrome/Edge/Brave) memiliki ekstensi **MetaMask**.
+
+**Langkah Instalasi:**
+
+1.  **Clone Repository / Extract File:**
+    Unduh source code dan ekstrak ke folder tujuan.
+    ```bash
+    contoh:  C:\Users\User\Downloads> git clone https://github.com/Useronetyu/kita-no.git
+
+2.  **Masuk ke Direktori Proyek:**
+    Buka terminal (Command Prompt/Terminal) dan arahkan ke folder proyek.
+    ```bash
+    cd kita-no
+    ```
+
+3.  **Instal Dependensi:**
+    Jalankan perintah berikut untuk mengunduh semua *library* yang dibutuhkan:
+    ```bash
+    npm install
+    ```
+
+4.  **Jalankan Server Lokal:**
+    Aktifkan mode pengembangan:
+    ```bash
+    npm run dev
+    ```
+
+5.  **Buka di Browser:**
+    Klik link yang muncul di terminal (biasanya `http://localhost:8080` atau `http://localhost:5173`).
 
 ---
 
-## 3. Alat dan Bahan
-(- Python 3.x  
-- Visual Studio Code / editor lain  
-- Git dan akun GitHub  
-- Library tambahan (misalnya pycryptodome, jika diperlukan)  )
+## 🔗 Panduan Koneksi Wallet (Penting)
+
+Aplikasi ini menggunakan metode **Direct Web3 Injection**.
+
+1.  Klik tombol **"Connect Wallet"** di pojok kanan atas.
+2.  *Pop-up* ekstensi MetaMask akan muncul meminta izin koneksi.
+3.  Klik **"Approve"** atau **"Connect"**.
+4.  Setelah terhubung, alamat dompet Anda akan muncul di *header*.
+    * *Catatan:* Jika Anda membuka aplikasi ini di perangkat yang tidak memiliki MetaMask, sistem akan secara otomatis masuk ke "Simulation Mode" agar fitur aplikasi tetap dapat didemonstrasikan.
 
 ---
 
-## 4. Langkah Percobaan
-(Tuliskan langkah yang dilakukan sesuai instruksi.  
-Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
-2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+## 📱 Responsivitas Mobile
+
+Aplikasi ini didesain dengan pendekatan *Mobile-First*:
+* **Navigasi:** Menggunakan *Hamburger Menu* (Drawer) pada layar kecil.
+* **Layout:** Grid otomatis berubah dari 2 kolom (Desktop) menjadi 1 kolom vertikal (Mobile) untuk kenyamanan *scrolling*.
+* **Missions:** Modal misi tampil presisi di tengah layar dengan latar belakang *backdrop blur*.
 
 ---
 
-## 5. Source Code
-(Salin kode program utama yang dibuat atau dimodifikasi.  
-Gunakan blok kode:
+## 📝 Lisensi & Kredit
 
-```python
-# contoh potongan kode
-def encrypt(text, key):
-    return ...
-```
-)
+Proyek ini dikembangkan sebagai bagian dari tugas simulasi implementasi Kriptografi dan Pengembangan Web3.
+**Developer:** Kelompok 4
+**Tahun:** 2026
 
 ---
-
-## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
-
-Hasil eksekusi program Caesar Cipher:
-
-![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
-)
-
----
-
-## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
----
-
-## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
-
----
-
-## 9. Daftar Pustaka
-(Cantumkan referensi yang digunakan.  
-Contoh:  
-- Katz, J., & Lindell, Y. *Introduction to Modern Cryptography*.  
-- Stallings, W. *Cryptography and Network Security*.  )
-
----
-
-## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
-```
-commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
-
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
-```
+*Dibuat dengan dedikasi tinggi untuk mengeksplorasi masa depan internet terdesentralisasi.*
