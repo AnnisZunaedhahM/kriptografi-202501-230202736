@@ -2,7 +2,7 @@
 
 ## 👤 Author Information
 
-* **Name:** Annis Zunaedhah M
+* **Name:** Annis Zunaedhah Muthoharoh
 * **Student ID (NIM):** 230202736
 * **Class:** 5IKRB
 * **Institution:** Universitas Putra Bangsa
